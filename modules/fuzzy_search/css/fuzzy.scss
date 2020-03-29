@@ -1,0 +1,93 @@
+@charset "utf-8";
+@import '../../../src/scss/common/common.scss';
+//组件用盒模型，避免打乱使用者结构
+.fuzzy-search,
+.fuzzy-search-menu {
+    @extend %box-sizing;
+}
+
+//搜索框
+.fuzzy-search {
+    position: relative;
+    height: 30px;
+    //搜索按钮
+    .search-icon {
+        content: '';
+        position: absolute;
+        top: 50%;
+        right: 24px;
+        width: 16px;
+        height: 16px;
+        margin-top: -8px;
+        background: url("../img/search.png") no-repeat;
+        background-size: cover;
+        cursor: pointer;
+    }
+    //清除按钮
+    .search-clear {
+        content: '';
+        position: absolute;
+        top: 50%;
+        right: 4px;
+        width: 16px;
+        height: 16px;
+        margin-top: -8px;
+        background: url("../img/clear.png") no-repeat;
+        background-size: cover;
+        cursor: pointer;
+    }
+    //输入框
+    input[type="text"].fuzzy-search-input {
+        width: 100%;
+        height: 100%;
+        padding: 2px 42px 2px 8px;
+        vertical-align: top;
+        border: 1px solid #ccc;
+        border-radius: 5px;
+		font-size: 14px;
+    }
+    //搜索框只读
+    input[readonly].fuzzy-search-input {
+        cursor: default;
+    }
+    //搜索框禁用
+    input[disabled].fuzzy-search-input {
+        cursor: no-drop;
+        background: #fff;
+        &~em.search-icon,
+        &~em.search-clear {
+            cursor: no-drop;
+        }
+    }
+}
+
+//下拉菜单
+.fuzzy-search-menu {
+    position: absolute;
+    width: 100%;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    max-height: 280px;
+    background: #fff;
+    color: #666;
+    display: none;
+    overflow: auto;
+    li {
+        width: 100%;
+        padding: 0 10px;
+        line-height: 30px;
+        cursor: pointer;
+        position: relative;
+        &.seled,
+        &:hover {
+            background: #eee;
+        }
+    }
+}
+
+//溢出.
+.text-over {
+    @extend %ellipsis;
+    margin: 0 0;
+    width: 100%; //这个方法在table中不成功，始终都是跟着内容宽度在变化，只能手工设置宽度
+}

@@ -1,0 +1,85 @@
+.fuzzy-search,
+.fuzzy-search-menu {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+  .fuzzy-search *,
+  .fuzzy-search-menu *,
+  .fuzzy-search *:before,
+  .fuzzy-search-menu *:before,
+  .fuzzy-search *:after,
+  .fuzzy-search-menu *:after {
+    -moz-box-sizing: inherit;
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit; }
+
+.text-over {
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap; }
+
+.fuzzy-search {
+  position: relative;
+  height: 30px; }
+  .fuzzy-search .search-icon {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 24px;
+    width: 16px;
+    height: 16px;
+    margin-top: -8px;
+    background: url("../img/search.png") no-repeat;
+    background-size: cover;
+    cursor: pointer; }
+  .fuzzy-search .search-clear {
+    content: '';
+    position: absolute;
+    top: 50%;
+    right: 4px;
+    width: 16px;
+    height: 16px;
+    margin-top: -8px;
+    background: url("../img/clear.png") no-repeat;
+    background-size: cover;
+    cursor: pointer; }
+  .fuzzy-search input[type="text"].fuzzy-search-input {
+    width: 100%;
+    height: 100%;
+    padding: 2px 42px 2px 8px;
+    vertical-align: top;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    font-size: 14px; }
+  .fuzzy-search input[readonly].fuzzy-search-input {
+    cursor: default; }
+  .fuzzy-search input[disabled].fuzzy-search-input {
+    cursor: no-drop;
+    background: #fff; }
+    .fuzzy-search input[disabled].fuzzy-search-input ~ em.search-icon, .fuzzy-search input[disabled].fuzzy-search-input ~ em.search-clear {
+      cursor: no-drop; }
+
+.fuzzy-search-menu {
+  position: absolute;
+  width: 100%;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  max-height: 280px;
+  background: #fff;
+  color: #666;
+  display: none;
+  overflow: auto; }
+  .fuzzy-search-menu li {
+    width: 100%;
+    padding: 0 10px;
+    line-height: 30px;
+    cursor: pointer;
+    position: relative; }
+    .fuzzy-search-menu li.seled, .fuzzy-search-menu li:hover {
+      background: #eee; }
+
+.text-over {
+  margin: 0 0;
+  width: 100%; }
+
+/*# sourceMappingURL=fuzzy.css.map */
