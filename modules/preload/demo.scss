@@ -1,0 +1,92 @@
+@charset "utf-8";
+@import '../../src/scss/reset/reset.scss';
+html,body{
+	width: 100%;
+	height: 100%;
+	background: #eee;
+}
+//示例框
+.example-box{
+	display: flex;
+	justify-content: space-between;//两边对齐
+	flex-wrap:wrap;//换行
+	padding: 10px;
+}
+//示例
+.example{
+	display: none;
+	//width: calc(33.33% - 26.66px);
+	width: 100%;
+	padding: 10px;
+	background: #fff;
+	margin-bottom: 10px;
+	&:hover{
+		box-shadow: 0px 0px 15px #666;
+	}
+	//标题
+	h1{
+		padding-bottom: 10px;
+		font-size: 18px;
+		font-weight: normal;
+		text-align: center;
+		line-height: 26px;
+		position: relative;
+		z-index: 2;
+	}
+	//图片盒子
+	.box{
+		text-align:center;
+		img{
+			width: 100%;
+		}
+		//按钮
+		.btn-box{
+			padding-top: 10px;
+		}
+		.btn{
+			display:inline-block;
+			height:30px;
+			line-height:30px;
+			border:1px solid #ccc;
+			background-color:#fff;
+			padding:0 20px;
+			margin-right:50px;
+			color:#333;
+			&:hover{
+				background: #eee;
+			}
+			&:nth-child(1){
+				display: none;
+			}
+		}
+	}
+}
+//加载进度
+.example{
+	position: relative;
+	.loading{
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: #fff;
+		text-align: center;
+		display: table;
+	}
+	.progress{
+		font-size: 30px;
+		display: table-cell;
+		vertical-align: middle;
+	}
+}
+//示例1：不使用预加载技术
+.example1{}
+//示例2：图片无序加载-使用无序预加载
+.example2{}
+//示例3：图片无序加载-封装预加载插件
+.example3{}
+//示例4：图片有序加载-使用有序预加载
+.example4{}
+//示例5：图片有序加载-封装预加载插件
+.example5{}
