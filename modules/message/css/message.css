@@ -1,0 +1,222 @@
+/* message提示框 */
+
+.iui-message {
+    font-size: 12px;
+    position: fixed;
+    z-index: 1010;
+    width: 100%;
+    top: 24px;
+    left: 0;
+    pointer-events: none;
+}
+
+.iui-message .iui-message-notice {
+    position: relative;
+    z-index: 1011;
+    padding: 8px;
+    text-align: center
+}
+
+.iui-message .iui-message-notice:first-child {
+    margin-top: -8px
+}
+
+.iui-message .iui-message-notice-content {
+    max-width: 480px;
+    padding: 8px 16px;
+    border-radius: 4px;
+    box-shadow: 0 2px 8px rgba(0, 0, 0, .2);
+    background: #fff;
+    display: inline-block;
+    pointer-events: all;
+    word-break: break-word;
+    word-break: break-all;
+}
+
+.iui-message .iui-message-notice-content .djiui-icon {
+    margin-right: 8px;
+    font-size: 18px;
+    vertical-align: -2px;
+}
+
+.iui-message .iui-message-success .djiui-icon {
+    color: #00a854;
+}
+
+.iui-message .iui-message-error .djiui-icon {
+    color: #f04134;
+}
+
+.iui-message .iui-message-warning .djiui-icon {
+    color: #ffbf00;
+}
+
+.iui-message .iui-message-loading .djiui-icon {
+    color: #108ee9;
+}
+
+
+/*提醒关闭按钮*/
+
+.iui-message-mask-layer {
+    position: fixed;
+    top: 0;
+    left: 0;
+    z-index: 1009;
+    width: 100%;
+    height: 100%;
+    background: rgba(0, 0, 0, .5);
+    filter: alpha(opacity=50);
+}
+
+.iui-message .iui-message-notice-content .closemessagebtn {
+    width: 100%;
+    padding: 4px 0;
+    overflow: hidden;
+}
+
+.iui-message .iui-message-notice-content .closemessagebtn .closemessage {
+    display: inline-block;
+    padding: 0 16px;
+    margin-top: 8px;
+    line-height: 24px;
+    font-weight: 400;
+    text-align: center;
+    white-space: nowrap;
+    font-size: 14px;
+    border-radius: 4px;
+    color: #fff;
+    background-color: #1890ff;
+    cursor: pointer;
+}
+
+.iui-message .iui-message-notice-content .closemessagebtn .closemessage:hover {
+    color: #fff;
+    background-color: #40a9ff;
+}
+
+
+/*提醒关闭icon*/
+
+.iui-message .iui-message-notice-content .djiui-icon.closemessage {
+    margin-right: 0;
+    margin-left: 4px;
+    vertical-align: -4px;
+    color: #314659;
+    cursor: pointer;
+}
+
+.iui-message .iui-message-notice-content .closemessage:hover {
+    color: #1890ff;
+}
+
+.iui-message .iui-message-loading .djiui-icon:before {
+    display: inline-block;
+    -webkit-animation: loadingCircle 1s infinite linear;
+    animation: loadingCircle 1s infinite linear;
+}
+
+.move-up-enter-active {
+    -webkit-animation-name: MessageMoveIn;
+    animation-name: MessageMoveIn;
+    overflow: hidden;
+    -webkit-animation-duration: .3s;
+    animation-duration: .3s
+}
+
+.move-up-leave-active {
+    -webkit-animation-name: MessageMoveOut;
+    animation-name: MessageMoveOut;
+    overflow: hidden;
+    -webkit-animation-duration: .3s;
+    animation-duration: .3s;
+    -webkit-animation-fill-mode: forwards;
+    animation-fill-mode: forwards;
+}
+
+@-webkit-keyframes loadingCircle {
+    0% {
+        opacity: 0;
+        -webkit-transform-origin: 50% 50%;
+        transform-origin: 50% 50%;
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg)
+    }
+    to {
+        -webkit-transform-origin: 50% 50%;
+        transform-origin: 50% 50%;
+        -webkit-transform: rotate(1turn);
+        transform: rotate(1turn)
+    }
+}
+
+@keyframes loadingCircle {
+    0% {
+        -webkit-transform-origin: 50% 50%;
+        transform-origin: 50% 50%;
+        -webkit-transform: rotate(0deg);
+        transform: rotate(0deg)
+    }
+    to {
+        -webkit-transform-origin: 50% 50%;
+        transform-origin: 50% 50%;
+        -webkit-transform: rotate(1turn);
+        transform: rotate(1turn)
+    }
+}
+
+@-webkit-keyframes MessageMoveIn {
+    0% {
+        -webkit-transform-origin: 0 0;
+        transform-origin: 0 0;
+        -webkit-transform: translateY(-100%);
+        transform: translateY(-100%);
+        opacity: 0
+    }
+    to {
+        -webkit-transform-origin: 0 0;
+        transform-origin: 0 0;
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        opacity: 1
+    }
+}
+
+@keyframes MessageMoveIn {
+    0% {
+        -webkit-transform-origin: 0 0;
+        transform-origin: 0 0;
+        -webkit-transform: translateY(-100%);
+        transform: translateY(-100%);
+        opacity: 0
+    }
+    to {
+        -webkit-transform-origin: 0 0;
+        transform-origin: 0 0;
+        -webkit-transform: translateY(0);
+        transform: translateY(0);
+        opacity: 1
+    }
+}
+
+@-webkit-keyframes MessageMoveOut {
+    0% {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+        max-height: 0;
+        padding: 0
+    }
+}
+
+@keyframes MessageMoveOut {
+    0% {
+        opacity: 1;
+    }
+    to {
+        opacity: 0;
+        max-height: 0;
+        padding: 0
+    }
+}
