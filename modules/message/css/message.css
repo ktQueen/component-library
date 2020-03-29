@@ -33,25 +33,25 @@
     word-break: break-all;
 }
 
-.iui-message .iui-message-notice-content .djiui-icon {
+.iui-message .iui-message-notice-content{
     margin-right: 8px;
-    font-size: 18px;
+    font-size: 14px;
     vertical-align: -2px;
 }
 
-.iui-message .iui-message-success .djiui-icon {
+.iui-message .iui-message-success{
     color: #00a854;
 }
 
-.iui-message .iui-message-error .djiui-icon {
-    color: #f04134;
+.iui-message .iui-message-error{
+    color: #d9534f;
 }
 
-.iui-message .iui-message-warning .djiui-icon {
+.iui-message .iui-message-warning{
     color: #ffbf00;
 }
 
-.iui-message .iui-message-loading .djiui-icon {
+.iui-message .iui-message-loading{
     color: #108ee9;
 }
 
@@ -98,7 +98,7 @@
 
 /*提醒关闭icon*/
 
-.iui-message .iui-message-notice-content .djiui-icon.closemessage {
+.iui-message .iui-message-notice-content .closemessage {
     margin-right: 0;
     margin-left: 4px;
     vertical-align: -4px;
@@ -110,7 +110,7 @@
     color: #1890ff;
 }
 
-.iui-message .iui-message-loading .djiui-icon:before {
+.iui-message .iui-message-loading:before {
     display: inline-block;
     -webkit-animation: loadingCircle 1s infinite linear;
     animation: loadingCircle 1s infinite linear;
