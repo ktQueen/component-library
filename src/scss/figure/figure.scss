@@ -1,0 +1,123 @@
+@charset "utf-8";
+//------------绘制常用图形-----------
+//绘制三角形
+//$size：三角形的大小
+//$color：三角形的颜色
+//$direction：三角形的朝向
+@mixin triangle($size:12px, $color:#999, $direction:'bottom') {
+  &:before{
+    display: inline-block;
+    content: '';
+    width: 0px;
+    height: 0px;
+    border-color: transparent;
+    border-style: solid;
+    border-width: $size / 2;
+    vertical-align: middle;
+  }
+  @if($direction==top){
+    &:before {
+      border-top-width: 0px;
+      border-bottom-color: $color;
+    }
+  }@else if ($direction==bottom) {
+    &:before {
+      border-bottom-width: 0px;
+      border-top-color: $color;
+    }
+  }@else if ($direction==left) {
+    &:before {
+      border-left-width: 0px;
+      border-right-color: $color;
+    }
+  }@else if ($direction==right) {
+    &:before {
+      border-right-width: 0px;
+      border-left-color: $color;
+    }
+  }
+}
+
+//绘制箭头
+//$size：箭头的大小
+//$color：箭头的颜色
+//$direction：箭头的朝向
+//$fillColor箭头里面的填充颜色
+@mixin arrows($size:10px, $color:#999, $direction:"bottom",$fillColor:#fff) {
+  &:before,&:after{
+    display: inline-block;
+    content: '';
+    width: 0px;
+    height: 0px;
+    border-color: transparent;
+    border-style: solid;
+    vertical-align: middle;
+  }
+  &:before{
+    border-width: $size/2 + 1;
+  }
+  &:after{
+    border-width: $size/2;
+  }
+  @if($direction == top) {
+    &:before {
+      border-bottom-color: $color;
+      border-top-width: 0;
+    }
+    &:after {
+      margin-left: -($size + 1);
+      margin-top: 1px;
+      border-bottom-color: $fillColor;
+      border-top-width: 0;
+    }
+  }
+  @else if($direction == bottom) {
+    &:before {
+      border-top-color: $color;
+      border-bottom-width: 0;
+    }
+    &:after {
+      margin-left: -($size + 1);
+      margin-top: -1px;
+      border-top-color: $fillColor;
+      border-bottom-width: 0;
+    }
+  }
+  @else if($direction == left) {
+    &:before{
+      border-right-color: $color;
+      border-left-width: 0;
+    }
+    &:after{
+      margin-left: -($size/2);
+      border-right-color: $fillColor;
+      border-left-width: 0;
+    }
+  }
+  @else if($direction == right) {
+    &:before {
+       border-left-color: $color;
+       border-right-width: 0;
+     }
+    &:after {
+      margin-left: -($size/2+1);
+      border-left-color: $fillColor;
+      border-right-width: 0;
+    }
+  }
+}
+
+//绘制移动端常用的菜单图标--3条线
+//$size：图标大小
+//$color：图标颜色
+@mixin three-line($size:12px,$color:#999){
+	&:before{
+		content:'';
+		display: inline-block;
+		width:$size;
+		padding-top: $size/6;
+		border-top:$size/2 double;
+		border-bottom: $size/6 solid;
+		color: $color;
+	}
+}

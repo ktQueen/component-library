@@ -1,0 +1,152 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>scss的API文档</title>
+    <link rel="stylesheet" href="index.css"/>
+    <script src="index.js"></script>
+</head>
+<body>
+<!--头部-->
+<header class="header">
+    <h1 class="title">scss-mini库</h1>
+    <p class="explain">scss-mini库是一个基于scss的小框架，其提供了很多简洁的CSS写法</p>
+</header>
+<!--内容主题:scss库-->
+<section class="scss-library">
+    <dl>
+        <dt>
+            <p class="head-title">scss语法</p>
+            <p class="head-con">描述（详解/例子）</p>
+            <span class="head-btn"></span>
+        </dt>
+        <dd class="reset">
+            <h3 class="item-title">reset重置</h3>
+            <ul class="item-con">
+                <li>
+                    <div class="list-title"><span>@import 'src/scss/reset/reset.scss';</span></div>
+                    <div class="list-con">
+                        <h4>重置</h4>
+                        <p>各浏览器的基础样式统一。直接在scss文件引入即可。</p>
+                    </div>
+                </li>
+            </ul>
+        </dd>
+        <dd class="layout">
+            <h3 class="item-title">layout布局</h3>
+            <ul class="item-con">
+                <li>
+                    <div class="list-title"><span>@extend %left;</span></div>
+                    <div class="list-con">
+                        <h4>左浮动</h4>
+                    </div>
+                </li>
+                <li>
+                    <div class="list-title"><span>@extend %right;</span></div>
+                    <div class="list-con">
+                        <h4>右浮动</h4>
+                    </div>
+                </li>
+                <li>
+                    <div class="list-title"><span>@extend %clearfix;</span></div>
+                    <div class="list-con">
+                        <h4>清除浮动</h4>
+                    </div>
+                </li>
+                <li>
+                    <div class="list-title"><span>@extend %box-sizing;</span></div>
+                    <div class="list-con">
+                        <h4>盒模型</h4>
+                    </div>
+                </li>
+                <li>
+                    <div class="list-title"><span>@extend %ellipsis;</span></div>
+                    <div class="list-con">
+                        <h4>单行省略号</h4>
+                    </div>
+                </li>
+            </ul>
+        </dd>
+        <dd class="css3">
+            <h3 class="item-title">css3</h3>
+            <ul class="item-con">
+                <li>
+                    <div class="list-title"><span>@include calc($property,$expression);</span></div>
+                    <div class="list-con">
+                        <h4>calc</h4>
+                        <div class="explain">
+                            <p>@include calc(width, '100% - 10px')</p>
+                            <p><span>$property</span>设置值的属性</p>
+                            <p><span>$expression</span>设置的值</p>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </dd>
+        <dd class="figure">
+            <h3 class="item-title">figure图形</h3>
+            <ul class="item-con">
+                <li>
+                    <div class="list-title"><span>@include triangle($size, $color, $direction)</span></div>
+                    <div class="list-con">
+                        <h4>三角形</h4>
+                        <div class="explain">
+                            <p>@include triangle($size:10px, $color:#999, $direction:bottom)</p>
+                            <p><span>$size</span>三角形的大小</p>
+                            <p><span>$color</span>三角形的颜色</p>
+                            <p><span>$direction</span>三角形的方向(top/bottom/left/right)</p>
+                        </div>
+                        <div class="example example-triangle">
+                            上：<span></span>
+                            下：<span></span>
+                            左：<span></span>
+                            右：<span></span>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="list-title"><span>@include arrows($size, $color, $direction)</span></div>
+                    <div class="list-con">
+                        <h4>箭头</h4>
+                        <div class="explain">
+                            <p>@include arrows($size:10px, $color:#999, $direction:bottom)</p>
+                            <p>实际过程中箭头是相对于你的元素居中的。</p>
+                            <p><span>$size</span>箭头的大小</p>
+                            <p><span>$color</span>箭头的颜色</p>
+                            <p><span>$direction</span>箭头的方向(top/bottom/left/right)</p>
+                        </div>
+                        <div class="example example-arrows">
+                            上：<span></span>
+                            下：<span></span>
+                            左：<span></span>
+                            右：<span></span>
+                        </div>
+                    </div>
+                </li>
+                <li>
+                    <div class="list-title"><span>@include three-line($size, $color)</span></div>
+                    <div class="list-con">
+                        <h4>3条线组成的图标（常用于移动端的菜单图标）</h4>
+                        <div class="explain">
+                            <p>@include three-line($size:12px, $color:#999)</p>
+                            <p><span>$size</span>图标的大小</p>
+                            <p><span>$color</span>图标的颜色</p>
+                        </div>
+                        <div class="example example-three-line">
+                            <span></span>
+                        </div>
+                    </div>
+                </li>
+            </ul>
+        </dd>
+    </dl>
+</section>
+<!--其他知识:安装，用法，函数-->
+<section class="main-content2"></section>
+<!--对比less-->
+<section class="main-content3"></section>
+<!--底部-->
+<footer class="footer"></footer>
+</body>
+
+</html>

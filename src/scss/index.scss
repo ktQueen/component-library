@@ -1,0 +1,187 @@
+@charset "utf-8";
+@import 'reset/reset.scss';
+@import 'common/common.scss';
+$titleWidth: 25%;//布局左侧标题的宽度
+$blackGray: #484848;//页面主题颜色1-黑灰
+$deepBlue: #009bd4;//页面主题颜色2-深蓝
+//设置成盒模型
+html {
+  @extend %box-sizing;
+}
+
+//头部
+.header {
+  padding: 30px 0px 40px 0px;
+  text-align: center;
+  background: $blackGray;
+  //标题
+  .title {
+    font-size: 40px;
+    text-shadow: 0 0 5px #656565;
+    color: $deepBlue;
+  }
+  //描述
+  .explain {
+    padding: 10px;
+    font-size: 16px;
+    line-height: 28px;
+    color: #fff;
+  }
+}
+
+//scss库
+.scss-library {
+  padding: 10px 5px;
+  dl {
+  }
+  //scss语法标题
+  dt {
+    height: 35px;
+    border-color: #02567e;
+    line-height: 25px;
+    color: #fff;
+    background-color: #484848;
+    @extend %clearfix;
+    //标题
+    .head-title {
+      float: left;
+      width: $titleWidth;
+      padding: 5px 10px;
+    }
+    //内容
+    .head-con {
+      float: left;
+      padding: 5px 10px;
+      border-left: 1px solid #ccc;
+    }
+    //按钮
+    .head-btn {
+      float: right;
+      padding: 5px 10px;
+      cursor: pointer;
+      &:hover {
+        text-decoration: underline;
+      }
+    }
+  }
+  //scss语法内容
+  dd {
+    //每个模块标题
+    .item-title {
+      position: relative;
+      padding: 8px 10px;
+      margin: -1px 0;
+      border: solid 1px #ccc;
+      font-size: 14px;
+      font-weight: bold;
+      background-color: #E4E4E4;
+    }
+    //每个模块内容
+    .item-con {
+      //单个方法列表
+      li {
+        margin: -1px 0;
+        border: 1px solid #ccc;
+        line-height: 22px;
+        @extend %clearfix;
+        //列表标题
+        .list-title {
+          width: $titleWidth;
+          float: left;
+          padding: 5px 10px;
+          span {
+            display: inline-block;
+            padding: 2px 10px;
+            border-radius: 5px;
+            background: #666;
+            color: #fff;
+          }
+        }
+        //列表内容
+        .list-con {
+          float: left;
+          padding: 5px 10px;
+          border-left: 1px solid #ccc;
+          //当前方法的主题
+          h4 {
+            font-size: 14px;
+            font-weight: bold;
+            line-height: 30px;
+          }
+          //当前方法的详解
+          .explain p {
+            padding-bottom: 4px;
+            span{
+              display: inline-block;
+              padding: 2px 6px;
+              margin-right: 4px;
+              border-radius: 4px;
+              line-height: 16px;
+              background:$deepBlue ;
+              color: #fff;
+              &:after{
+                content: " :";
+              }
+            }
+          }
+          //当前方法的示例
+          .example{
+            padding-left: 2em;
+            &:before{
+              content: '示例：';
+              font-weight: bold;
+            }
+          }
+        }
+      }
+    }
+  }
+  //重置
+  .reset{}
+  //图形
+  .figure{
+      //三角形示例
+      .example-triangle{
+        span{
+          margin: 0 10px;
+        }
+        span:nth-child(1){
+          @include triangle(10px, red, top);
+        }
+        span:nth-child(2){
+          @include triangle(10px, red, bottom);
+        }
+        span:nth-child(3){
+          @include triangle(10px, red, left);
+        }
+        span:nth-child(4){
+          @include triangle(10px, red, right);
+        }
+      }
+      //箭头示例
+      .example-arrows{
+      span{
+        margin: 0 10px;
+      }
+      span:nth-child(1){
+        @include arrows(10px, red, top);
+      }
+      span:nth-child(2){
+        @include arrows(10px, red, bottom);
+      }
+      span:nth-child(3){
+        @include arrows(10px, red, left)
+      }
+      span:nth-child(4){
+        @include arrows(10px, red, right)
+      }
+    }
+	  //3条线图形
+	  .example-three-line{
+		  span{
+			  margin: 0 10px;
+			  @include three-line(12px,red);
+		  }
+	  }
+  }
+}

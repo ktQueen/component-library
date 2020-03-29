@@ -1,0 +1,16 @@
+@charset "utf-8";
+//@import '../reset/reset.scss';//不引用的原因是因为每个人定制的重置样式不一致，如果要用这个，自己再单独引用
+@import '../css3/css3.scss';
+@import '../figure/figure.scss';
+@import '../layout/layout.scss';
+
+$borderColor: rgb(169,169,169)!default;//边框颜色
+$mainColor:#e6454a!default;//主色调
+//没有宽度和高度声明实现的全屏自适应半透明效果
+%overlay {
+	position: absolute;
+	left: 0; top: 0; right: 0; bottom: 0;
+	background-color: #000;
+	opacity: .5;
+	filter: alpha(opacity=50);
+}

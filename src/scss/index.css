@@ -1,0 +1,307 @@
+@charset "UTF-8";
+html, body,
+h1, h2, h3, h4, h5, h6,
+p, div, dl, dt, dd, ul, ol, li,
+form, button, input, select, textarea,
+table, caption, th, td,
+blockquote, pre, hr, xmp {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  font-family: 'Microsoft YaHei', sans-serif; }
+
+header, footer, section, nav,
+article, aside, hgroup,
+address, figure, figcaption,
+menu, details,
+summary, time, mark, audio, video {
+  display: block;
+  margin: 0;
+  padding: 0; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+ul, ol {
+  list-style: none; }
+
+textarea {
+  overflow: auto;
+  resize: none;
+  outline: none; }
+
+a:focus,
+button:focus {
+  outline: none; }
+
+a,
+a:hover {
+  text-decoration: none;
+  border: none; }
+
+img {
+  border: none;
+  vertical-align: top; }
+
+pre {
+  background: none;
+  border: none; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal; }
+
+i, em, label {
+  font-style: normal; }
+
+strong, b {
+  font-weight: bold; }
+
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px white inset;
+  -webkit-text-fill-color: #666; }
+
+.scss-library dt, .scss-library dd .item-con li {
+  *zoom: 1; }
+  .scss-library dt:after, .scss-library dd .item-con li:after {
+    content: '\0020';
+    display: block;
+    height: 0;
+    clear: both; }
+
+html {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+  html *,
+  html *:before,
+  html *:after {
+    -moz-box-sizing: inherit;
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit; }
+
+.header {
+  padding: 30px 0px 40px 0px;
+  text-align: center;
+  background: #484848; }
+  .header .title {
+    font-size: 40px;
+    text-shadow: 0 0 5px #656565;
+    color: #009bd4; }
+  .header .explain {
+    padding: 10px;
+    font-size: 16px;
+    line-height: 28px;
+    color: #fff; }
+
+.scss-library {
+  padding: 10px 5px; }
+  .scss-library dt {
+    height: 35px;
+    border-color: #02567e;
+    line-height: 25px;
+    color: #fff;
+    background-color: #484848; }
+    .scss-library dt .head-title {
+      float: left;
+      width: 25%;
+      padding: 5px 10px; }
+    .scss-library dt .head-con {
+      float: left;
+      padding: 5px 10px;
+      border-left: 1px solid #ccc; }
+    .scss-library dt .head-btn {
+      float: right;
+      padding: 5px 10px;
+      cursor: pointer; }
+      .scss-library dt .head-btn:hover {
+        text-decoration: underline; }
+  .scss-library dd .item-title {
+    position: relative;
+    padding: 8px 10px;
+    margin: -1px 0;
+    border: solid 1px #ccc;
+    font-size: 14px;
+    font-weight: bold;
+    background-color: #E4E4E4; }
+  .scss-library dd .item-con li {
+    margin: -1px 0;
+    border: 1px solid #ccc;
+    line-height: 22px; }
+    .scss-library dd .item-con li .list-title {
+      width: 25%;
+      float: left;
+      padding: 5px 10px; }
+      .scss-library dd .item-con li .list-title span {
+        display: inline-block;
+        padding: 2px 10px;
+        border-radius: 5px;
+        background: #666;
+        color: #fff; }
+    .scss-library dd .item-con li .list-con {
+      float: left;
+      padding: 5px 10px;
+      border-left: 1px solid #ccc; }
+      .scss-library dd .item-con li .list-con h4 {
+        font-size: 14px;
+        font-weight: bold;
+        line-height: 30px; }
+      .scss-library dd .item-con li .list-con .explain p {
+        padding-bottom: 4px; }
+        .scss-library dd .item-con li .list-con .explain p span {
+          display: inline-block;
+          padding: 2px 6px;
+          margin-right: 4px;
+          border-radius: 4px;
+          line-height: 16px;
+          background: #009bd4;
+          color: #fff; }
+          .scss-library dd .item-con li .list-con .explain p span:after {
+            content: " :"; }
+      .scss-library dd .item-con li .list-con .example {
+        padding-left: 2em; }
+        .scss-library dd .item-con li .list-con .example:before {
+          content: '示例：';
+          font-weight: bold; }
+  .scss-library .figure .example-triangle span {
+    margin: 0 10px; }
+  .scss-library .figure .example-triangle span:nth-child(1):before {
+    display: inline-block;
+    content: '';
+    width: 0px;
+    height: 0px;
+    border-color: transparent;
+    border-style: solid;
+    border-width: 5px;
+    vertical-align: middle; }
+  .scss-library .figure .example-triangle span:nth-child(1):before {
+    border-top-width: 0px;
+    border-bottom-color: red; }
+  .scss-library .figure .example-triangle span:nth-child(2):before {
+    display: inline-block;
+    content: '';
+    width: 0px;
+    height: 0px;
+    border-color: transparent;
+    border-style: solid;
+    border-width: 5px;
+    vertical-align: middle; }
+  .scss-library .figure .example-triangle span:nth-child(2):before {
+    border-bottom-width: 0px;
+    border-top-color: red; }
+  .scss-library .figure .example-triangle span:nth-child(3):before {
+    display: inline-block;
+    content: '';
+    width: 0px;
+    height: 0px;
+    border-color: transparent;
+    border-style: solid;
+    border-width: 5px;
+    vertical-align: middle; }
+  .scss-library .figure .example-triangle span:nth-child(3):before {
+    border-left-width: 0px;
+    border-right-color: red; }
+  .scss-library .figure .example-triangle span:nth-child(4):before {
+    display: inline-block;
+    content: '';
+    width: 0px;
+    height: 0px;
+    border-color: transparent;
+    border-style: solid;
+    border-width: 5px;
+    vertical-align: middle; }
+  .scss-library .figure .example-triangle span:nth-child(4):before {
+    border-right-width: 0px;
+    border-left-color: red; }
+  .scss-library .figure .example-arrows span {
+    margin: 0 10px; }
+  .scss-library .figure .example-arrows span:nth-child(1):before, .scss-library .figure .example-arrows span:nth-child(1):after {
+    display: inline-block;
+    content: '';
+    width: 0px;
+    height: 0px;
+    border-color: transparent;
+    border-style: solid;
+    vertical-align: middle; }
+  .scss-library .figure .example-arrows span:nth-child(1):before {
+    border-width: 6px; }
+  .scss-library .figure .example-arrows span:nth-child(1):after {
+    border-width: 5px; }
+  .scss-library .figure .example-arrows span:nth-child(1):before {
+    border-bottom-color: red;
+    border-top-width: 0; }
+  .scss-library .figure .example-arrows span:nth-child(1):after {
+    margin-left: -11px;
+    margin-top: 1px;
+    border-bottom-color: #fff;
+    border-top-width: 0; }
+  .scss-library .figure .example-arrows span:nth-child(2):before, .scss-library .figure .example-arrows span:nth-child(2):after {
+    display: inline-block;
+    content: '';
+    width: 0px;
+    height: 0px;
+    border-color: transparent;
+    border-style: solid;
+    vertical-align: middle; }
+  .scss-library .figure .example-arrows span:nth-child(2):before {
+    border-width: 6px; }
+  .scss-library .figure .example-arrows span:nth-child(2):after {
+    border-width: 5px; }
+  .scss-library .figure .example-arrows span:nth-child(2):before {
+    border-top-color: red;
+    border-bottom-width: 0; }
+  .scss-library .figure .example-arrows span:nth-child(2):after {
+    margin-left: -11px;
+    margin-top: -1px;
+    border-top-color: #fff;
+    border-bottom-width: 0; }
+  .scss-library .figure .example-arrows span:nth-child(3):before, .scss-library .figure .example-arrows span:nth-child(3):after {
+    display: inline-block;
+    content: '';
+    width: 0px;
+    height: 0px;
+    border-color: transparent;
+    border-style: solid;
+    vertical-align: middle; }
+  .scss-library .figure .example-arrows span:nth-child(3):before {
+    border-width: 6px; }
+  .scss-library .figure .example-arrows span:nth-child(3):after {
+    border-width: 5px; }
+  .scss-library .figure .example-arrows span:nth-child(3):before {
+    border-right-color: red;
+    border-left-width: 0; }
+  .scss-library .figure .example-arrows span:nth-child(3):after {
+    margin-left: -5px;
+    border-right-color: #fff;
+    border-left-width: 0; }
+  .scss-library .figure .example-arrows span:nth-child(4):before, .scss-library .figure .example-arrows span:nth-child(4):after {
+    display: inline-block;
+    content: '';
+    width: 0px;
+    height: 0px;
+    border-color: transparent;
+    border-style: solid;
+    vertical-align: middle; }
+  .scss-library .figure .example-arrows span:nth-child(4):before {
+    border-width: 6px; }
+  .scss-library .figure .example-arrows span:nth-child(4):after {
+    border-width: 5px; }
+  .scss-library .figure .example-arrows span:nth-child(4):before {
+    border-left-color: red;
+    border-right-width: 0; }
+  .scss-library .figure .example-arrows span:nth-child(4):after {
+    margin-left: -6px;
+    border-left-color: #fff;
+    border-right-width: 0; }
+  .scss-library .figure .example-three-line span {
+    margin: 0 10px; }
+    .scss-library .figure .example-three-line span:before {
+      content: '';
+      display: inline-block;
+      width: 12px;
+      padding-top: 2px;
+      border-top: 6px double;
+      border-bottom: 2px solid;
+      color: red; }
+
+/*# sourceMappingURL=index.css.map */
