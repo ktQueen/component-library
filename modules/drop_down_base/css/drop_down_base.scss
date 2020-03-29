@@ -1,0 +1,53 @@
+@charset "utf-8";
+@import '../../../src/scss/common/common.scss';
+//组件用盒模型，避免打乱使用者结构
+.dropdown-btn {
+    @extend %box-sizing;
+}
+
+//三角形triangle
+.triangle:before {
+    position: absolute;
+    top: 50%;
+    margin-top: -3px;
+    right: 8px;
+}
+
+.triangle-up {
+    @include triangle(12px, #666, top);
+}
+
+.triangle-down {
+    @include triangle(12px, #666, bottom);
+}
+
+//下拉按钮
+.dropdown-btn {
+    position: relative;
+    padding-right: 20px;
+    height: 30px;
+    text-align: center;
+    line-height: 30px;
+    cursor: pointer;
+    overflow: hidden;
+	background: #fff;
+    .showtext {
+        display: inline-block;
+        width: 100%;
+        height: 100%;
+        padding: 0 4px 0 0;
+        white-space: nowrap;
+        text-overflow: ellipsis;
+        -o-text-overflow: ellipsis;
+        overflow: hidden;
+        font-size: 15px;
+        cursor: inherit;
+        text-align: inherit;
+        background: #fff;
+        border: none;
+        vertical-align: top;
+		&.placeholder{
+			color: #757575;
+		}
+    }
+}

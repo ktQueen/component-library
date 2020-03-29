@@ -1,0 +1,32 @@
+body {
+    padding: 20px;
+    h1 {
+        font-size: 24px;
+        font-weight: bold;
+    }
+    h2 {
+        font-size: 20px;
+    }
+    .form {
+        padding: 20px;
+    }
+    button {
+        padding: 4px 20px;
+        border: none;
+        background: #00adee;
+        color: #fff;
+        margin-right: 10px;
+        margin-top: 10px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    input {
+        border: none;
+    }
+    .dropdown-btn {
+        width: 200px;
+        margin-top: 20px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+    }
+}

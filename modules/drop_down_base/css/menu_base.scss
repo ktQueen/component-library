@@ -1,0 +1,153 @@
+@charset "utf-8";
+@import '../../../src/scss/common/common.scss';
+//组件用盒模型，避免打乱使用者结构
+.dropdown-menu {
+    @extend %box-sizing;
+}
+//下拉框
+.dropdown-menu {
+    z-index: 4;
+    max-height: 280px;
+    border: 1px solid #ddd;
+    border-radius: 5px;
+    line-height: 30px;
+    background: #fff;
+    overflow: auto;
+	margin: 0px;
+	ol{
+		margin: 0px;
+		padding: 0px;
+	}
+	ul{
+		margin: 0px;
+		padding: 0px;
+		list-style: none;
+	}
+    li {
+        padding: 4px 6px;
+		font-size: 14px;
+		line-height: 20px;
+        cursor: pointer;
+        color: #666;
+        position: relative;
+        &:hover {
+            background: #f7f7f7;
+        }
+        &.seled {
+            background: #f7f7f7;
+        }
+    }
+    input[type="text"] {
+        width: 100%;
+        height: 26px;
+        padding: 2px 4px;
+        border: 1px solid #ddd;
+        border-radius: 5px;
+        font-size: 12px;
+    }
+}
+
+//下拉框有模糊搜索的情况
+.menu-search {
+    .search-input-box {
+        padding: 4px;
+    }
+    .fe-menu-title {
+        padding: 0px 4px;
+        font-size: 14px;
+        button {
+            float: right;
+            padding: 6px 10px;
+            border: none;
+            border-radius: 5px;
+            text-align: center;
+            background: #eee;
+            cursor: pointer;
+        }
+    }
+    li {
+        overflow: hidden;
+        padding: 2px 16px;
+        line-height: 24px;
+        span {
+            float: left;
+        }
+        em {
+            float: right;
+            font-size: 22px;
+        }
+    }
+}
+
+.menu-search-select li em {
+    font-size: 30px;
+}
+
+.menu-tip {
+    padding: 0 6px;
+    color: #f00;
+}
+
+//单选私有
+.single-select li.active:after {
+    position: absolute;
+    right: 8px;
+    top: 50%;
+    margin-top: -16px;
+    line-height: 30px;
+    content: '\2714';
+}
+
+//单选模糊私有
+.single-search ol li:after {
+    position: absolute;
+    right: 8px;
+    top: 50%;
+    margin-top: -15px;
+    line-height: 30px;
+    //content: '\2714';//把对勾改成了减号
+	content: "\2013";
+}
+.single-search .no-icon-menu{
+	cursor: text;
+	&:after{
+		content: '';
+
+	}
+}
+
+//多选私有
+.multiple-select li.active:after {
+    float: right;
+    content: '\2714';
+}
+
+//多选模糊私有
+.multiple-search {
+    ol li {
+        cursor: pointer;
+        &:after {
+            position: absolute;
+            right: 10px;
+            top: 50%;
+            margin-top: -12px;
+            content: '-';
+        }
+    }
+    ul li {
+        &:after {
+            position: absolute;
+            right: 8px;
+            top: 50%;
+            margin-top: -12px;
+            content: '+';
+        }
+    }
+}
+
+//溢出.
+.text-over {
+    @extend %ellipsis;
+    margin: 0 0;
+    width: 100%; //这个方法在table中不成功，始终都是跟着内容宽度在变化，只能手工设置宽度
+}
