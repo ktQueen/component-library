@@ -1,0 +1,18 @@
+//@import '../../src/scss/reset/reset.scss';
+body{
+  h1 {
+    font-size: 20px;
+    font-weight: bolder;
+	  margin: 0px;
+	  padding: 0px;
+  }
+
+  h2 {
+    font-size: 16px;
+    font-weight: bolder;
+  }
+
+  .tab-head .tab-title.active {
+    color: #00adee;
+  }
+}

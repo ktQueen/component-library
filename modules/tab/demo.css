@@ -1,0 +1,12 @@
+body h1 {
+  font-size: 20px;
+  font-weight: bolder;
+  margin: 0px;
+  padding: 0px; }
+body h2 {
+  font-size: 16px;
+  font-weight: bolder; }
+body .tab-head .tab-title.active {
+  color: #00adee; }
+
+/*# sourceMappingURL=demo.css.map */
