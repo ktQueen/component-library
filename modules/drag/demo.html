@@ -1,0 +1,59 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>拖拽</title>
+    <link rel="stylesheet" href="demo.css" />
+    <script data-main="demo.js" src="../libs/rq/require.js"></script>
+</head>
+
+<body>
+    <div class="box box1">
+        <div class="header header1"></div>
+    </div>
+    <div class="box box2">
+        <div class="header header2"></div>
+    </div>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <h1>使用方法：</h1>
+    <pre>
+        <h2>html</h2>
+            &lt;div class="box box1">
+                &lt;div class="header header1"></div>
+            &lt;/div>
+        <h2>js调用</h2>
+        require([
+            'jquery',
+            'modules/drag/js/drag'
+        ], function($, drag) {
+            //第一个参数是触发拖拽的元素，第二个参数是被拖拽的元素
+            drag($('.header1'),$('.box1'));
+        });
+    </pre>
+</body>
+
+</html>

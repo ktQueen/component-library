@@ -1,0 +1,23 @@
+@import '../../src/scss/reset/reset.scss';
+body {
+    padding: 20px;
+    h1 {
+        font-size: 24px;
+        font-weight: bold;
+    }
+    h2 {
+        font-size: 20px;
+    }
+    .box{
+		width: 400px;
+		height: 400px;
+		border: 2px solid #006400;
+		position: absolute;
+		top: 0px;
+		left: 0px;
+	}
+	.header{
+		height: 30px;
+		background: #006400;
+	}
+}
