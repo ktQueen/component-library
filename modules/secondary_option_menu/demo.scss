@@ -1,0 +1,23 @@
+@charset "utf-8";
+@import '../../src/scss/reset/reset.scss';
+body {
+    padding: 20px;
+    h1 {
+        font-size: 24px;
+        font-weight: bold;
+    }
+    h2 {
+        font-size: 20px;
+    }
+    /* 按钮 */
+    .demo-btn{
+      cursor: pointer;
+      width: 100px;
+      height: 40px;
+      background: green;
+      color: #fff;
+      text-align: center;
+      line-height: 40px;
+      border-radius: 5px;
+    }
+}

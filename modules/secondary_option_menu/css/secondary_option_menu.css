@@ -1,0 +1,196 @@
+@charset "UTF-8";
+.clear {
+  *zoom: 1; }
+  .clear:after {
+    content: '\0020';
+    display: block;
+    height: 0;
+    clear: both; }
+
+.list-select-box {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+  .list-select-box *,
+  .list-select-box *:before,
+  .list-select-box *:after {
+    -moz-box-sizing: inherit;
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit; }
+
+.left {
+  float: left; }
+
+.right {
+  float: right; }
+
+/*  根据类型选择城市*/
+.list-select-box {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  height: 100%; }
+
+.list-select-bg {
+  width: 100%;
+  height: 100%;
+  position: absolute;
+  top: 0;
+  left: 0;
+  background: rgba(0, 0, 0, 0.3); }
+
+.list-select {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-left: -275px;
+  margin-top: -165px;
+  width: 550px;
+  height: 330px;
+  padding: 10px 5px 0;
+  border: 1px solid #4A4A4A;
+  font-size: 14px;
+  background: #fff; }
+
+.list-select label {
+  display: inline-block;
+  cursor: pointer; }
+
+.list-select input[type="checkbox"] {
+  width: 16px;
+  height: 16px;
+  vertical-align: top;
+  margin-right: 4px; }
+
+.list-select button {
+  padding: 0 12px;
+  line-height: 26px;
+  border: none;
+  border-radius: 4px;
+  background: #eee;
+  cursor: pointer; }
+
+.list-select button:hover {
+  background: #ddd; }
+
+/* 已选数据 */
+.list-select .selected {
+  height: 60px;
+  padding: 5px 10px;
+  margin-bottom: 2px;
+  border: 1px solid #4a4a4a;
+  font-size: 14px;
+  overflow: auto; }
+
+.list-select .selected li {
+  float: left;
+  position: relative;
+  padding: 4px 6px;
+  cursor: pointer; }
+
+.list-select .selected li:hover {
+  background: #eee; }
+
+.list-select .selected li:hover:after {
+  content: '\2716 ';
+  position: absolute;
+  top: -4px;
+  right: -2px;
+  font-size: 12px; }
+
+/* 主要部分 */
+/* 列表部门 */
+.list-select .list-box {
+  float: left;
+  width: 30%;
+  padding-right: 6px; }
+
+.list-select .list-box dl {
+  overflow: auto;
+  width: 100%;
+  height: 220px;
+  padding: 5px 0;
+  border: 1px solid #4a4a4a;
+  cursor: pointer; }
+
+.list-select .list-box dt {
+  padding: 5px 5px 5px 10px;
+  font-size: 16px; }
+
+.list-select .list-box dd {
+  padding: 5px 5px 5px 30px;
+  font-size: 14px;
+  overflow: hidden;
+  /*自动隐藏文字*/
+  text-overflow: ellipsis;
+  /*文字隐藏后添加省略号*/
+  white-space: nowrap;
+  /*强制不换行*/ }
+
+.list-select .list-box dt.active,
+.list-select .list-box dd.active {
+  background: #eee; }
+
+.list-select .list-box dt:hover,
+.list-select .list-box dd:hover {
+  background: #eee; }
+
+/* 可选择数据部分 */
+.list-select .select-box {
+  float: right;
+  width: 70%;
+  height: 220px;
+  padding: 10px 20px;
+  border: 1px solid #4a4a4a; }
+
+.list-select .select-search {
+  height: 30px;
+  line-height: 30px; }
+
+.list-select .select-search .select-all {
+  float: left;
+  padding-right: 30px; }
+
+.list-select .select-search .select-all input[type="checkbox"] {
+  margin-top: 7px; }
+
+.list-select .select-search .search {
+  float: left; }
+
+.list-select .select-search .search input {
+  width: 200px;
+  padding: 0 4px;
+  margin-right: 5px;
+  line-height: 22px; }
+
+.list-select .select-data {
+  height: calc(100% - 50px);
+  padding: 0px 20px;
+  margin-top: 10px;
+  margin-bottom: 10px;
+  overflow: auto; }
+
+.list-select .select-data li {
+  float: left;
+  width: 50%;
+  line-height: 24px; }
+
+.list-select .select-data li:hover {
+  background: #eee; }
+
+.list-select .select-data label {
+  width: 100%; }
+
+.list-select .select-data input {
+  margin-top: 5px; }
+
+/* 按钮部门 */
+.list-select .btns {
+  padding: 5px;
+  text-align: right; }
+
+.list-select .btns button {
+  margin-left: 6px; }
+
+/*# sourceMappingURL=secondary_option_menu.css.map */
