@@ -1,0 +1,308 @@
+@charset "utf-8";
+@import '../../../src/scss/reset/reset.scss';
+@import '../../../src/scss/common/common.scss';
+$mainColor:#000;//主色调
+$bgColor:#f5f5f5;//背景色调
+$borderColor:#ddd;//边框色调
+$radiusWidth:4px;//圆角宽度
+$moduleWidth:275px;//组件区域宽度
+$spaceWidth:5px;//间距宽度
+$controls: form block row
+		text textarea textareaAuto password hidden plainText
+		single singleSearch multiple multipleSearch
+		date date2 radio checkbox manifest upload
+		paraConfig tableParaConfig blockParaConfig index actions umEditor city;//$controls 控件类型
+@mixin config-content {//控件对应配置得到显示内容,如果是字段的则显示filed,否则就显示本身
+	@each $config in $controls {
+		.config-#{$config} .config-title:before{
+			@if( $config=='form' or $config=='block' or $config=='row'){
+				content:'#{$config}';
+			}@else{
+				content:'filed-#{$config}';
+			}
+		}
+		.config-paraConfig .config-#{$config} .config-title:before{
+			content:'filed-paraConfig-#{$config}';
+		}
+		.config-tableParaConfig .config-#{$config} .config-title:before{
+			content:'filed-tableParaConfig-#{$config}';
+		}
+		.config-blockParaConfig .config-#{$config} .config-title:before{
+			content:'filed-blockParaConfig-#{$config}';
+		}
+	}
+}
+@include config-content;
+body{
+	background: $bgColor;
+	min-width: 1300px;
+}
+.hide{
+	display: none;
+}
+//头部
+.form-visual-header{
+	@extend %box-sizing;
+	height: 50px;
+	padding: 10px 20px;
+	background: #fff;
+	//标题
+	.title{
+		float: left;
+		font-size: 24px;
+		font-weight:bold;
+		line-height: 30px;
+		color: #fff;
+		text-shadow: 0px 1px 2px $mainColor;
+		letter-spacing: 6px;
+	}
+	//按钮区域
+	.form-visual-btns{
+		float: right;
+		button{
+			padding: 4px 10px;
+			border-radius: $radiusWidth;
+			border:1px solid  $mainColor;
+			background: #fff;
+			line-height: 20px;
+			color: $mainColor;
+			cursor: pointer;
+			&:hover{
+				background: $mainColor;
+				color: #fff;
+				opacity: 0.7;
+			}
+		}
+	}
+}
+//注意点
+.attention{
+	@extend %box-sizing;
+	height: 24px;
+	padding: 2px (2*$spaceWidth);
+	color: #e6454a;
+}
+//内容区域
+.form-visual-content{
+	@extend %box-sizing;
+	@extend %clearfix;
+	display: flex;
+	//配置区域
+	.configs-box{
+		@include calc(width,'100% - '$moduleWidth);
+		background: #fff;
+		margin-right: 2*$spaceWidth;
+		.configs{}
+		//配置元素
+		@at-root .config-ele{
+			position: relative;
+			margin: 2*$spaceWidth ;
+			padding: 24px (3*$spaceWidth) 5px ;
+			border: 1px solid $borderColor;
+			border-radius: $radiusWidth;
+			background: #fff;
+			.config-header{
+				@extend %clearfix;
+				margin-left: (-3*$spaceWidth - 1);
+				margin-top: -25px;
+			}
+			//配置的标题
+			.config-title{
+				float: left;
+				padding: 2px 10px;
+				margin-right: 10px;
+				border: 1px solid $borderColor;
+				border-radius: $radiusWidth 0 $radiusWidth 0;
+				font-size: 12px;
+				font-weight: bold;
+				color: $mainColor;
+				background-color: $bgColor;
+			}
+			//配置的操作按钮
+			.form-visual-btns{
+				float: left;
+				button{
+					padding: 1px 8px;
+					margin-right: 4px;
+					border-radius:$radiusWidth ;
+					border: 1px solid $borderColor;
+					font-size: 12px;
+					line-height: 20px;
+					cursor: pointer;
+					color: $mainColor;
+					background: $bgColor;
+					&:hover{
+						background: $mainColor;
+						color: #fff;
+						opacity: 0.7;
+					}
+				}
+			}
+			//配置文本
+			.config-ele-txt{
+				background: #fff;
+				border-radius: $radiusWidth;
+			}
+			//表单
+			.openAll{
+				display: none;
+			}
+			&.config-form> .config-header .form-visual-btns{//表单不显示上移，下移和删除按钮
+				.up,.down,.remove{
+					display: none;
+				}
+			}
+			//块/行/字段的按钮处理
+			&:last-child> .config-header .form-visual-btns{//最后一个块或行或字段不显示下移按钮
+				.down{
+					display: none;
+				}
+			}
+			//第一个块和行的索引是从2开始的，前面有一个按钮区域和配置区域
+			&:nth-child(3)> .config-header .form-visual-btns{//第一个块或行或字段不显示上移按钮
+				.up{
+					display: none;
+				}
+			}
+			//行
+			&.config-row{
+				background-color: $bgColor;
+				-webkit-box-shadow: inset 0 1px 13px rgba(0, 0, 0, 0.1);
+				-moz-box-shadow: inset 0 1px 13px rgba(0, 0, 0, 0.1);
+				box-shadow: inset 0 1px 13px rgba(0, 0, 0, 0.1);
+			}
+			//选中当前配置
+			&.active{
+				background: #eee;
+				.config-ele-txt{
+					background: transparent;
+				}
+			}
+			//收起状态
+			&.config-close{
+				>.config-ele-txt{
+					height: 0px;
+					overflow: hidden;
+				}
+				padding-bottom: 0px;
+				overflow: hidden;
+				&> .config-header .form-visual-btns{//收起状态不显示收起按钮
+					.close{
+						display: none;
+					}
+				}
+			}
+			//打开状态
+			&.config-open{
+				>.config-ele-txt{
+					height: auto;
+				}
+				&> .config-header .form-visual-btns{//展开状态不显示展开按钮
+					.open{
+						display: none;
+					}
+				}
+			}
+		}
+	}
+	//组件控件区域
+	.controls-box{
+		width:$moduleWidth ;
+		padding: (2*$spaceWidth) 0;
+		background: #fff;
+		position: relative;
+		.controls{
+			padding:0 (2*$spaceWidth);
+			position: absolute;
+			overflow: hidden;
+		}
+		li{
+			position: relative;
+			padding: 4px 32px 4px 10px;
+			margin-bottom: $spaceWidth;
+			border: 1px solid $borderColor;
+			line-height: 20px;
+			color: $mainColor;
+			cursor: pointer;
+			background: $bgColor;
+			//+元素
+			&:after{
+				position: absolute;
+				top: 50%;
+				margin-top: -10px;
+				right: 6px;
+				content: "+";
+				display: inline-block;
+				width: 20px;
+				height: 20px;
+				border-radius: 50%;
+				background: $mainColor;
+				font-size: 14px;
+				font-weight: bolder;
+				text-align: center;
+				line-height: 20px;
+				color: #fff;
+				opacity: 0.7;
+			}
+			&:hover{
+				box-shadow: 0px 0px 5px $borderColor;
+				&:after{
+					opacity: 1;
+				}
+			}
+		}
+	}
+	//表单样式改造
+	.form-block{
+		padding: 2px;
+		@extend %clearfix;
+		.form-field-content{
+			height: 24px;
+		}
+		.form-row{
+			width: 50%;
+			float: left;
+			padding: 1px;
+			.form-required{
+				padding: 4px 6px;
+			}
+			.form-row-head{
+				height: 22px;
+			}
+			.form-row-title{
+				padding: 2px 0px;
+				line-height: 18px;
+			}
+			.form-field-title{
+				padding: 2px 0px;
+			}
+			.form-field-element{
+				min-height: 22px;
+				height: 22px;
+				padding: 2px 6px;
+				border-radius: 0px;
+				line-height: 18px;
+				background: #fff;
+				overflow: hidden;
+			}
+		}
+		[name="handlerEventRow"],[name='validatorsRow']{
+			width: 100%;
+		}
+	}
+	.form-complex-blockParaConfig .form-complex-content>table>tbody>tr:last-child{//最后一个不要边框
+		>td{
+			border: none;
+		}
+	}
+}
+//配置生成JSON弹窗表单
+.processKeyForm{
+	.form-block{
+		padding: 0px;
+		padding-top: 15px;
+	}
+	.form-row{
+		padding: 0px;
+	}
+}

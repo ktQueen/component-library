@@ -1,0 +1,315 @@
+{
+    "type": "form",
+    "children": [{
+        "type": "block",
+        "children": [{
+                "type": "row",
+                "children": [{
+                    "type": "text",
+                    "name": "deptName",
+                    "title": "",
+                    "isShowRequired": false,
+                    "tip": "",
+                    "className": "",
+                    "style": {
+
+                    },
+                    "layout": "left-right",
+                    "requiredLocation": "before",
+                    "titleStyle": {
+
+                    },
+                    "contentStyle": {
+
+                    },
+                    "maxlength": "",
+                    "value": "",
+                    "initDone": {
+                        "dataType": "function",
+                        "value": null
+                    },
+                    "change": {
+                        "dataType": "function",
+                        "value": null
+                    },
+                    "readOnly": true,
+                    "disabled": false,
+                    "placeholder": "",
+                    "validators": [{
+                        "method": "",
+                        "param": "",
+                        "message": ""
+                    }]
+                }],
+                "name": "",
+                "title": "部门名称：",
+                "isShowRequired": true,
+                "className": "half-width",
+                "layout": "left-right",
+                "requiredLocation": "before",
+                "tip": ""
+            },
+            {
+                "type": "row",
+                "children": [{
+                    "type": "single",
+                    "name": "orderType",
+                    "title": "",
+                    "isShowRequired": false,
+                    "tip": "",
+                    "className": "",
+                    "style": {
+
+                    },
+                    "layout": "left-right",
+                    "requiredLocation": "before",
+                    "titleStyle": {
+
+                    },
+                    "contentStyle": {
+
+                    },
+                    "idFlag": "id",
+                    "nameFlag": "name",
+                    "data": {
+                        "dataType": "function",
+                        "value": null
+                    },
+                    "menuStyle": {
+
+                    },
+                    "beforeClick": {
+                        "dataType": "function",
+                        "value": null
+                    },
+                    "value": {
+                        "dataType": "function",
+                        "value": null
+                    },
+                    "initDone": {
+                        "dataType": "function",
+                        "value": null
+                    },
+                    "change": {
+                        "dataType": "function",
+                        "value": null
+                    },
+                    "readOnly": false,
+                    "disabled": false,
+                    "placeholder": "",
+                    "validators": [{
+                        "method": "",
+                        "param": "",
+                        "message": ""
+                    }],
+                    "menuListShowWay": "one",
+                    "menuAddClass": "",
+                    "getValueKey": "",
+                    "getValueType": "",
+                    "isIcon": true
+                }],
+                "name": "",
+                "title": "申请类型：",
+                "isShowRequired": true,
+                "className": "half-width",
+                "layout": "left-right",
+                "requiredLocation": "before",
+                "tip": ""
+            },
+            {
+                "type": "row",
+                "children": [{
+                    "type": "text",
+                    "name": "ipList",
+                    "title": "",
+                    "isShowRequired": false,
+                    "tip": "IP地址，请用英文\"，\"分开",
+                    "className": "",
+                    "style": {
+
+                    },
+                    "layout": "left-right",
+                    "requiredLocation": "before",
+                    "titleStyle": {
+
+                    },
+                    "contentStyle": {
+
+                    },
+                    "maxlength": "",
+                    "value": "",
+                    "initDone": {
+                        "dataType": "function",
+                        "value": null
+                    },
+                    "change": {
+                        "dataType": "function",
+                        "value": null
+                    },
+                    "readOnly": false,
+                    "disabled": false,
+                    "placeholder": "请输入IP地址",
+                    "validators": [{
+                        "method": "",
+                        "param": "",
+                        "message": ""
+                    }]
+                }],
+                "name": "",
+                "title": "服务器IP：",
+                "isShowRequired": true,
+                "className": "",
+                "layout": "left-right",
+                "requiredLocation": "before",
+                "tip": ""
+            },
+            {
+                "type": "row",
+                "children": [{
+                    "type": "textarea",
+                    "name": "applyReason",
+                    "title": "",
+                    "isShowRequired": false,
+                    "tip": "",
+                    "className": "",
+                    "style": {
+
+                    },
+                    "layout": "left-right",
+                    "requiredLocation": "before",
+                    "titleStyle": {
+
+                    },
+                    "contentStyle": {
+
+                    },
+                    "maxlength": "",
+                    "value": "",
+                    "initDone": {
+                        "dataType": "function",
+                        "value": null
+                    },
+                    "change": {
+                        "dataType": "function",
+                        "value": null
+                    },
+                    "readOnly": false,
+                    "disabled": false,
+                    "placeholder": "请输入申请原因",
+                    "validators": [{
+                        "method": "",
+                        "param": "",
+                        "message": ""
+                    }]
+                }],
+                "name": "",
+                "title": "申请原因：",
+                "isShowRequired": true,
+                "className": "",
+                "layout": "left-right",
+                "requiredLocation": "before",
+                "tip": ""
+            },
+            {
+                "type": "row",
+                "children": [{
+                    "type": "hidden",
+                    "name": "id",
+                    "title": "",
+                    "isShowRequired": false,
+                    "tip": "",
+                    "className": "",
+                    "style": {
+
+                    },
+                    "layout": "left-right",
+                    "requiredLocation": "before",
+                    "titleStyle": {
+
+                    },
+                    "contentStyle": {
+
+                    },
+                    "value": "",
+                    "initDone": {
+                        "dataType": "function",
+                        "value": null
+                    },
+                    "change": {
+                        "dataType": "function",
+                        "value": null
+                    }
+                }],
+                "name": "",
+                "title": "",
+                "isShowRequired": false,
+                "className": "",
+                "layout": "left-right",
+                "requiredLocation": "before",
+                "tip": ""
+            }
+        ],
+        "name": "",
+        "title": "",
+        "className": "",
+        "layout": "up-down"
+    }],
+    "name": "",
+    "title": "运维工单",
+    "className": "",
+    "style": {
+        "width": "800px",
+        "height": "450px"
+    },
+    "titleStyle": {
+
+    },
+    "contentStyle": {
+
+    },
+    "idFlag": "id",
+    "nameFlag": "name",
+    "btn": {
+        "layout": "bottom-center",
+        "children": null
+    },
+    "byteChinese": "2",
+    "checkType": "all",
+    "isChangeCheck": true,
+    "checkTipType": "tooltip",
+    "isTipBorder": true,
+    "isSetRowLineHeight": false,
+    "checkTipShape": "hollow",
+    "checkTipDirection": "top",
+    "checkTipLocation": "left",
+    "checkTipTime": "",
+    "handlerEvent": [{
+        "name": "",
+        "event": "",
+        "condition": {
+            "dataType": "function",
+            "value": null
+        },
+        "toDo": [{
+            "index": "被改的操作",
+            "name": "",
+            "way": "",
+            "condition": {
+                "dataType": "function",
+                "value": null
+            },
+            "param": {
+                "dataType": "function",
+                "value": null
+            }
+        }]
+    }],
+    "infoDataConvert": {
+        "dataType": "function",
+        "value": "function(data){\n                return {\n                    deptName: data.userDepart,\n                    orderType: data.orderType ? data.orderType : {\n                        id: data.orderTypeId,\n                        name: data.orderTypeName\n                    }\n                }\n            }"
+    },
+    "saveDataConvert": {
+        "dataType": "function",
+        "value": "function(data, info) {\n                data.orderTypeId = data.orderType.id;\n                data.orderTypeName = data.orderType.name;\n                data.userDepart = data.deptName;\n                return data;\n            }"
+    }
+}

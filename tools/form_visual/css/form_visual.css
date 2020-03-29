@@ -1,0 +1,587 @@
+html, body,
+h1, h2, h3, h4, h5, h6,
+p, div, dl, dt, dd, ul, ol, li,
+form, button, input, select, textarea,
+table, caption, th, td,
+blockquote, pre, hr, xmp {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  font-family: 'Microsoft YaHei', sans-serif; }
+
+header, footer, section, nav,
+article, aside, hgroup,
+address, figure, figcaption,
+menu, details,
+summary, time, mark, audio, video {
+  display: block;
+  margin: 0;
+  padding: 0; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+ul, ol {
+  list-style: none; }
+
+textarea {
+  overflow: auto;
+  resize: none;
+  outline: none; }
+
+a:focus,
+button:focus {
+  outline: none; }
+
+a,
+a:hover {
+  text-decoration: none;
+  border: none; }
+
+img {
+  border: none;
+  vertical-align: top; }
+
+pre {
+  background: none;
+  border: none; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal; }
+
+i, em, label {
+  font-style: normal; }
+
+strong, b {
+  font-weight: bold; }
+
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px white inset;
+  -webkit-text-fill-color: #666; }
+
+.form-visual-content, .form-visual-content .form-block, .config-ele .config-header {
+  *zoom: 1; }
+  .form-visual-content:after, .form-visual-content .form-block:after, .config-ele .config-header:after {
+    content: '\0020';
+    display: block;
+    height: 0;
+    clear: both; }
+
+.form-visual-header, .attention, .form-visual-content {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+  .form-visual-header *, .attention *, .form-visual-content *,
+  .form-visual-header *:before,
+  .attention *:before,
+  .form-visual-content *:before,
+  .form-visual-header *:after,
+  .attention *:after,
+  .form-visual-content *:after {
+    -moz-box-sizing: inherit;
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit; }
+
+.config-form .config-title:before {
+  content: "form"; }
+
+.config-paraConfig .config-form .config-title:before {
+  content: "filed-paraConfig-form"; }
+
+.config-tableParaConfig .config-form .config-title:before {
+  content: "filed-tableParaConfig-form"; }
+
+.config-blockParaConfig .config-form .config-title:before {
+  content: "filed-blockParaConfig-form"; }
+
+.config-block .config-title:before {
+  content: "block"; }
+
+.config-paraConfig .config-block .config-title:before {
+  content: "filed-paraConfig-block"; }
+
+.config-tableParaConfig .config-block .config-title:before {
+  content: "filed-tableParaConfig-block"; }
+
+.config-blockParaConfig .config-block .config-title:before {
+  content: "filed-blockParaConfig-block"; }
+
+.config-row .config-title:before {
+  content: "row"; }
+
+.config-paraConfig .config-row .config-title:before {
+  content: "filed-paraConfig-row"; }
+
+.config-tableParaConfig .config-row .config-title:before {
+  content: "filed-tableParaConfig-row"; }
+
+.config-blockParaConfig .config-row .config-title:before {
+  content: "filed-blockParaConfig-row"; }
+
+.config-text .config-title:before {
+  content: "filed-text"; }
+
+.config-paraConfig .config-text .config-title:before {
+  content: "filed-paraConfig-text"; }
+
+.config-tableParaConfig .config-text .config-title:before {
+  content: "filed-tableParaConfig-text"; }
+
+.config-blockParaConfig .config-text .config-title:before {
+  content: "filed-blockParaConfig-text"; }
+
+.config-textarea .config-title:before {
+  content: "filed-textarea"; }
+
+.config-paraConfig .config-textarea .config-title:before {
+  content: "filed-paraConfig-textarea"; }
+
+.config-tableParaConfig .config-textarea .config-title:before {
+  content: "filed-tableParaConfig-textarea"; }
+
+.config-blockParaConfig .config-textarea .config-title:before {
+  content: "filed-blockParaConfig-textarea"; }
+
+.config-textareaAuto .config-title:before {
+  content: "filed-textareaAuto"; }
+
+.config-paraConfig .config-textareaAuto .config-title:before {
+  content: "filed-paraConfig-textareaAuto"; }
+
+.config-tableParaConfig .config-textareaAuto .config-title:before {
+  content: "filed-tableParaConfig-textareaAuto"; }
+
+.config-blockParaConfig .config-textareaAuto .config-title:before {
+  content: "filed-blockParaConfig-textareaAuto"; }
+
+.config-password .config-title:before {
+  content: "filed-password"; }
+
+.config-paraConfig .config-password .config-title:before {
+  content: "filed-paraConfig-password"; }
+
+.config-tableParaConfig .config-password .config-title:before {
+  content: "filed-tableParaConfig-password"; }
+
+.config-blockParaConfig .config-password .config-title:before {
+  content: "filed-blockParaConfig-password"; }
+
+.config-hidden .config-title:before {
+  content: "filed-hidden"; }
+
+.config-paraConfig .config-hidden .config-title:before {
+  content: "filed-paraConfig-hidden"; }
+
+.config-tableParaConfig .config-hidden .config-title:before {
+  content: "filed-tableParaConfig-hidden"; }
+
+.config-blockParaConfig .config-hidden .config-title:before {
+  content: "filed-blockParaConfig-hidden"; }
+
+.config-plainText .config-title:before {
+  content: "filed-plainText"; }
+
+.config-paraConfig .config-plainText .config-title:before {
+  content: "filed-paraConfig-plainText"; }
+
+.config-tableParaConfig .config-plainText .config-title:before {
+  content: "filed-tableParaConfig-plainText"; }
+
+.config-blockParaConfig .config-plainText .config-title:before {
+  content: "filed-blockParaConfig-plainText"; }
+
+.config-single .config-title:before {
+  content: "filed-single"; }
+
+.config-paraConfig .config-single .config-title:before {
+  content: "filed-paraConfig-single"; }
+
+.config-tableParaConfig .config-single .config-title:before {
+  content: "filed-tableParaConfig-single"; }
+
+.config-blockParaConfig .config-single .config-title:before {
+  content: "filed-blockParaConfig-single"; }
+
+.config-singleSearch .config-title:before {
+  content: "filed-singleSearch"; }
+
+.config-paraConfig .config-singleSearch .config-title:before {
+  content: "filed-paraConfig-singleSearch"; }
+
+.config-tableParaConfig .config-singleSearch .config-title:before {
+  content: "filed-tableParaConfig-singleSearch"; }
+
+.config-blockParaConfig .config-singleSearch .config-title:before {
+  content: "filed-blockParaConfig-singleSearch"; }
+
+.config-multiple .config-title:before {
+  content: "filed-multiple"; }
+
+.config-paraConfig .config-multiple .config-title:before {
+  content: "filed-paraConfig-multiple"; }
+
+.config-tableParaConfig .config-multiple .config-title:before {
+  content: "filed-tableParaConfig-multiple"; }
+
+.config-blockParaConfig .config-multiple .config-title:before {
+  content: "filed-blockParaConfig-multiple"; }
+
+.config-multipleSearch .config-title:before {
+  content: "filed-multipleSearch"; }
+
+.config-paraConfig .config-multipleSearch .config-title:before {
+  content: "filed-paraConfig-multipleSearch"; }
+
+.config-tableParaConfig .config-multipleSearch .config-title:before {
+  content: "filed-tableParaConfig-multipleSearch"; }
+
+.config-blockParaConfig .config-multipleSearch .config-title:before {
+  content: "filed-blockParaConfig-multipleSearch"; }
+
+.config-date .config-title:before {
+  content: "filed-date"; }
+
+.config-paraConfig .config-date .config-title:before {
+  content: "filed-paraConfig-date"; }
+
+.config-tableParaConfig .config-date .config-title:before {
+  content: "filed-tableParaConfig-date"; }
+
+.config-blockParaConfig .config-date .config-title:before {
+  content: "filed-blockParaConfig-date"; }
+
+.config-date2 .config-title:before {
+  content: "filed-date2"; }
+
+.config-paraConfig .config-date2 .config-title:before {
+  content: "filed-paraConfig-date2"; }
+
+.config-tableParaConfig .config-date2 .config-title:before {
+  content: "filed-tableParaConfig-date2"; }
+
+.config-blockParaConfig .config-date2 .config-title:before {
+  content: "filed-blockParaConfig-date2"; }
+
+.config-radio .config-title:before {
+  content: "filed-radio"; }
+
+.config-paraConfig .config-radio .config-title:before {
+  content: "filed-paraConfig-radio"; }
+
+.config-tableParaConfig .config-radio .config-title:before {
+  content: "filed-tableParaConfig-radio"; }
+
+.config-blockParaConfig .config-radio .config-title:before {
+  content: "filed-blockParaConfig-radio"; }
+
+.config-checkbox .config-title:before {
+  content: "filed-checkbox"; }
+
+.config-paraConfig .config-checkbox .config-title:before {
+  content: "filed-paraConfig-checkbox"; }
+
+.config-tableParaConfig .config-checkbox .config-title:before {
+  content: "filed-tableParaConfig-checkbox"; }
+
+.config-blockParaConfig .config-checkbox .config-title:before {
+  content: "filed-blockParaConfig-checkbox"; }
+
+.config-manifest .config-title:before {
+  content: "filed-manifest"; }
+
+.config-paraConfig .config-manifest .config-title:before {
+  content: "filed-paraConfig-manifest"; }
+
+.config-tableParaConfig .config-manifest .config-title:before {
+  content: "filed-tableParaConfig-manifest"; }
+
+.config-blockParaConfig .config-manifest .config-title:before {
+  content: "filed-blockParaConfig-manifest"; }
+
+.config-upload .config-title:before {
+  content: "filed-upload"; }
+
+.config-paraConfig .config-upload .config-title:before {
+  content: "filed-paraConfig-upload"; }
+
+.config-tableParaConfig .config-upload .config-title:before {
+  content: "filed-tableParaConfig-upload"; }
+
+.config-blockParaConfig .config-upload .config-title:before {
+  content: "filed-blockParaConfig-upload"; }
+
+.config-paraConfig .config-title:before {
+  content: "filed-paraConfig"; }
+
+.config-paraConfig .config-paraConfig .config-title:before {
+  content: "filed-paraConfig-paraConfig"; }
+
+.config-tableParaConfig .config-paraConfig .config-title:before {
+  content: "filed-tableParaConfig-paraConfig"; }
+
+.config-blockParaConfig .config-paraConfig .config-title:before {
+  content: "filed-blockParaConfig-paraConfig"; }
+
+.config-tableParaConfig .config-title:before {
+  content: "filed-tableParaConfig"; }
+
+.config-paraConfig .config-tableParaConfig .config-title:before {
+  content: "filed-paraConfig-tableParaConfig"; }
+
+.config-tableParaConfig .config-tableParaConfig .config-title:before {
+  content: "filed-tableParaConfig-tableParaConfig"; }
+
+.config-blockParaConfig .config-tableParaConfig .config-title:before {
+  content: "filed-blockParaConfig-tableParaConfig"; }
+
+.config-blockParaConfig .config-title:before {
+  content: "filed-blockParaConfig"; }
+
+.config-paraConfig .config-blockParaConfig .config-title:before {
+  content: "filed-paraConfig-blockParaConfig"; }
+
+.config-tableParaConfig .config-blockParaConfig .config-title:before {
+  content: "filed-tableParaConfig-blockParaConfig"; }
+
+.config-blockParaConfig .config-blockParaConfig .config-title:before {
+  content: "filed-blockParaConfig-blockParaConfig"; }
+
+.config-index .config-title:before {
+  content: "filed-index"; }
+
+.config-paraConfig .config-index .config-title:before {
+  content: "filed-paraConfig-index"; }
+
+.config-tableParaConfig .config-index .config-title:before {
+  content: "filed-tableParaConfig-index"; }
+
+.config-blockParaConfig .config-index .config-title:before {
+  content: "filed-blockParaConfig-index"; }
+
+.config-actions .config-title:before {
+  content: "filed-actions"; }
+
+.config-paraConfig .config-actions .config-title:before {
+  content: "filed-paraConfig-actions"; }
+
+.config-tableParaConfig .config-actions .config-title:before {
+  content: "filed-tableParaConfig-actions"; }
+
+.config-blockParaConfig .config-actions .config-title:before {
+  content: "filed-blockParaConfig-actions"; }
+
+.config-umEditor .config-title:before {
+  content: "filed-umEditor"; }
+
+.config-paraConfig .config-umEditor .config-title:before {
+  content: "filed-paraConfig-umEditor"; }
+
+.config-tableParaConfig .config-umEditor .config-title:before {
+  content: "filed-tableParaConfig-umEditor"; }
+
+.config-blockParaConfig .config-umEditor .config-title:before {
+  content: "filed-blockParaConfig-umEditor"; }
+
+.config-city .config-title:before {
+  content: "filed-city"; }
+
+.config-paraConfig .config-city .config-title:before {
+  content: "filed-paraConfig-city"; }
+
+.config-tableParaConfig .config-city .config-title:before {
+  content: "filed-tableParaConfig-city"; }
+
+.config-blockParaConfig .config-city .config-title:before {
+  content: "filed-blockParaConfig-city"; }
+
+body {
+  background: #f5f5f5;
+  min-width: 1300px; }
+
+.hide {
+  display: none; }
+
+.form-visual-header {
+  height: 50px;
+  padding: 10px 20px;
+  background: #fff; }
+  .form-visual-header .title {
+    float: left;
+    font-size: 24px;
+    font-weight: bold;
+    line-height: 30px;
+    color: #fff;
+    text-shadow: 0px 1px 2px #000;
+    letter-spacing: 6px; }
+  .form-visual-header .form-visual-btns {
+    float: right; }
+    .form-visual-header .form-visual-btns button {
+      padding: 4px 10px;
+      border-radius: 4px;
+      border: 1px solid #000;
+      background: #fff;
+      line-height: 20px;
+      color: #000;
+      cursor: pointer; }
+      .form-visual-header .form-visual-btns button:hover {
+        background: #000;
+        color: #fff;
+        opacity: 0.7; }
+
+.attention {
+  height: 24px;
+  padding: 2px 10px;
+  color: #e6454a; }
+
+.form-visual-content {
+  display: flex; }
+  .form-visual-content .configs-box {
+    width: -webkit-calc(100% -  275px);
+    width: calc(100% -  275px);
+    background: #fff;
+    margin-right: 10px; }
+    .config-ele {
+      position: relative;
+      margin: 10px;
+      padding: 24px 15px 5px;
+      border: 1px solid #ddd;
+      border-radius: 4px;
+      background: #fff; }
+      .config-ele .config-header {
+        margin-left: -16px;
+        margin-top: -25px; }
+      .config-ele .config-title {
+        float: left;
+        padding: 2px 10px;
+        margin-right: 10px;
+        border: 1px solid #ddd;
+        border-radius: 4px 0 4px 0;
+        font-size: 12px;
+        font-weight: bold;
+        color: #000;
+        background-color: #f5f5f5; }
+      .config-ele .form-visual-btns {
+        float: left; }
+        .config-ele .form-visual-btns button {
+          padding: 1px 8px;
+          margin-right: 4px;
+          border-radius: 4px;
+          border: 1px solid #ddd;
+          font-size: 12px;
+          line-height: 20px;
+          cursor: pointer;
+          color: #000;
+          background: #f5f5f5; }
+          .config-ele .form-visual-btns button:hover {
+            background: #000;
+            color: #fff;
+            opacity: 0.7; }
+      .config-ele .config-ele-txt {
+        background: #fff;
+        border-radius: 4px; }
+      .config-ele .openAll {
+        display: none; }
+      .config-ele.config-form > .config-header .form-visual-btns .up, .config-ele.config-form > .config-header .form-visual-btns .down, .config-ele.config-form > .config-header .form-visual-btns .remove {
+        display: none; }
+      .config-ele:last-child > .config-header .form-visual-btns .down {
+        display: none; }
+      .config-ele:nth-child(3) > .config-header .form-visual-btns .up {
+        display: none; }
+      .config-ele.config-row {
+        background-color: #f5f5f5;
+        -webkit-box-shadow: inset 0 1px 13px rgba(0, 0, 0, 0.1);
+        -moz-box-shadow: inset 0 1px 13px rgba(0, 0, 0, 0.1);
+        box-shadow: inset 0 1px 13px rgba(0, 0, 0, 0.1); }
+      .config-ele.active {
+        background: #eee; }
+        .config-ele.active .config-ele-txt {
+          background: transparent; }
+      .config-ele.config-close {
+        padding-bottom: 0px;
+        overflow: hidden; }
+        .config-ele.config-close > .config-ele-txt {
+          height: 0px;
+          overflow: hidden; }
+        .config-ele.config-close > .config-header .form-visual-btns .close {
+          display: none; }
+      .config-ele.config-open > .config-ele-txt {
+        height: auto; }
+      .config-ele.config-open > .config-header .form-visual-btns .open {
+        display: none; }
+  .form-visual-content .controls-box {
+    width: 275px;
+    padding: 10px 0;
+    background: #fff;
+    position: relative; }
+    .form-visual-content .controls-box .controls {
+      padding: 0 10px;
+      position: absolute;
+      overflow: hidden; }
+    .form-visual-content .controls-box li {
+      position: relative;
+      padding: 4px 32px 4px 10px;
+      margin-bottom: 5px;
+      border: 1px solid #ddd;
+      line-height: 20px;
+      color: #000;
+      cursor: pointer;
+      background: #f5f5f5; }
+      .form-visual-content .controls-box li:after {
+        position: absolute;
+        top: 50%;
+        margin-top: -10px;
+        right: 6px;
+        content: "+";
+        display: inline-block;
+        width: 20px;
+        height: 20px;
+        border-radius: 50%;
+        background: #000;
+        font-size: 14px;
+        font-weight: bolder;
+        text-align: center;
+        line-height: 20px;
+        color: #fff;
+        opacity: 0.7; }
+      .form-visual-content .controls-box li:hover {
+        box-shadow: 0px 0px 5px #ddd; }
+        .form-visual-content .controls-box li:hover:after {
+          opacity: 1; }
+  .form-visual-content .form-block {
+    padding: 2px; }
+    .form-visual-content .form-block .form-field-content {
+      height: 24px; }
+    .form-visual-content .form-block .form-row {
+      width: 50%;
+      float: left;
+      padding: 1px; }
+      .form-visual-content .form-block .form-row .form-required {
+        padding: 4px 6px; }
+      .form-visual-content .form-block .form-row .form-row-head {
+        height: 22px; }
+      .form-visual-content .form-block .form-row .form-row-title {
+        padding: 2px 0px;
+        line-height: 18px; }
+      .form-visual-content .form-block .form-row .form-field-title {
+        padding: 2px 0px; }
+      .form-visual-content .form-block .form-row .form-field-element {
+        min-height: 22px;
+        height: 22px;
+        padding: 2px 6px;
+        border-radius: 0px;
+        line-height: 18px;
+        background: #fff;
+        overflow: hidden; }
+    .form-visual-content .form-block [name="handlerEventRow"], .form-visual-content .form-block [name='validatorsRow'] {
+      width: 100%; }
+  .form-visual-content .form-complex-blockParaConfig .form-complex-content > table > tbody > tr:last-child > td {
+    border: none; }
+
+.processKeyForm .form-block {
+  padding: 0px;
+  padding-top: 15px; }
+.processKeyForm .form-row {
+  padding: 0px; }
+
+/*# sourceMappingURL=form_visual.css.map */
