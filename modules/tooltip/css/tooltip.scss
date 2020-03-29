@@ -1,0 +1,171 @@
+@charset "utf-8";
+@import '../../../src/scss/common/common.scss';
+//三角形
+@mixin sanjiao1($size,$color){
+  &.tooltip-top i{
+    left: 50%;
+    margin-left: -$size/2;
+    bottom: -$size/2;
+    @include triangle($size, $color, bottom);
+  }
+  &.tooltip-bottom i{
+    left: 50%;
+    margin-left: -$size/2;
+    top: -$size/2;
+    @include triangle($size, $color, top);
+  }
+  &.tooltip-left i{
+    top: 50%;
+    margin-top: -$size/2;
+    right: -$size/2;
+    @include triangle($size, $color, right);
+  }
+  &.tooltip-right i{
+    top: 50%;
+    margin-top: -$size/2;
+    left: -$size/2;
+    @include triangle($size, $color, left);
+  }
+}
+@mixin sanjiao2($size,$color){
+  &.tooltip-top i{
+    left:50%;
+    margin-left: -($size+2)/2;
+    bottom: -($size+2) /2 ;
+    @include arrows($size, $color, bottom);
+  }
+  &.tooltip-bottom i{
+    left:50%;
+    margin-left: -($size+2)/2;
+    top: -($size+2) /2 ;
+    @include arrows($size, $color, top);
+  }
+  &.tooltip-left i{
+    top:50%;
+    margin-top: -($size+2) /2;
+    right: -($size) /2;
+    @include arrows($size, $color, right);
+  }
+  &.tooltip-right i{
+    top:50%;
+    margin-top: -($size+2) /2;
+    left: -($size+2) /2;
+    @include arrows($size, $color, left);
+  }
+}
+//位置
+@mixin weizhi(){
+  &.tooltip-location- {
+    &left{
+      left:0;
+    }
+    &center {
+      left:50%;
+    }
+    &right {
+      right:0;
+    }
+    &top {
+      top:0;
+    }
+    &middle {
+      top:50%;
+    }
+    &bottom {
+      bottom:0;
+    }
+  }
+}
+//提示
+.fe-tooltip {
+  $triangleWidth:10px;
+  @extend %box-sizing;//组件用盒模型，避免打乱使用者结构
+  position: absolute;
+  max-width: 300px;
+  padding: 4px 8px;
+  border-radius: 4px;
+  font-size: 12px;
+  line-height: 1.4;
+  text-align: center;
+  opacity: 1;
+  i{
+    font-size: 0px;
+    line-height: 0px;
+    position: absolute;
+  }
+  @include weizhi();
+  &.tooltip-solid{
+    color: #fff;
+    //颜色
+    &.tooltip-default{
+      $tooltipBg:#999;
+      background: $tooltipBg;
+      @include sanjiao1($triangleWidth, $tooltipBg);
+    }
+    &.tooltip-success{
+      $tooltipBg:#5cb85c;
+      background: $tooltipBg;
+      @include sanjiao1($triangleWidth, $tooltipBg);
+    }
+    &.tooltip-error{
+      $tooltipBg:#d9534f;
+      background: $tooltipBg;
+      @include sanjiao1($triangleWidth, $tooltipBg);
+    }
+    &.tooltip-wraning{
+      $tooltipBg:#ec971f;
+      background: $tooltipBg;
+      @include sanjiao1($triangleWidth, $tooltipBg);
+    }
+    &.tooltip-primary{
+      $tooltipBg:#337ab7;
+      background: $tooltipBg;
+      @include sanjiao1($triangleWidth, $tooltipBg);
+    }
+    &.tooltip-info{
+      $tooltipBg:#5bc0de;
+      background: $tooltipBg;
+      @include sanjiao1($triangleWidth, $tooltipBg);
+    }
+  }
+  &.tooltip-hollow{
+	  background: #fff;
+    //颜色
+    &.tooltip-default{
+      $tooltipColor:#999;
+      border: 1px solid $tooltipColor;
+      color: $tooltipColor;
+      @include sanjiao2($triangleWidth, $tooltipColor);
+    }
+    &.tooltip-success{
+      $tooltipColor:#5cb85c;
+      border: 1px solid $tooltipColor;
+      color: $tooltipColor;
+      @include sanjiao2($triangleWidth, $tooltipColor);
+    }
+    &.tooltip-error{
+      $tooltipColor:#d9534f;
+      border: 1px solid $tooltipColor;
+      color: $tooltipColor;
+      @include sanjiao2($triangleWidth, $tooltipColor);
+    }
+    &.tooltip-wraning{
+      $tooltipColor:#ec971f;
+      border: 1px solid $tooltipColor;
+      color: $tooltipColor;
+      @include sanjiao2($triangleWidth, $tooltipColor);
+    }
+    &.tooltip-primary{
+      $tooltipColor:#337ab7;
+      border: 1px solid $tooltipColor;
+      color: $tooltipColor;
+      @include sanjiao2($triangleWidth, $tooltipColor);
+    }
+    &.tooltip-info{
+      $tooltipColor:#5bc0de;
+      border: 1px solid $tooltipColor;
+      color: $tooltipColor;
+      @include sanjiao2($triangleWidth, $tooltipColor);
+    }
+  }
+}
