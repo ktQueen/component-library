@@ -1,0 +1,675 @@
+<!DOCTYPE html>
+<html>
+
+<head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, maximum-scale=1, user-scalable=no">
+    <title>Date Picker Demo</title>
+    <script src="js/moment.min.js"></script>
+    <script data-main="demo.js" src="../libs/rq/require.js"></script>
+    <style type="text/css">
+        #wrapper {
+            width: 800px;
+            margin: 0 auto;
+            color: #333;
+            font-family: Tahoma, Verdana, sans-serif;
+            line-height: 1.5;
+            font-size: 14px;
+        }
+        
+        .demo {
+            margin: 30px 0;
+        }
+        
+        .date-picker-wrapper .month-wrapper table .day.lalala {
+            background-color: orange;
+        }
+        
+        .options {
+            display: none;
+            border-left: 6px solid #8ae;
+            padding: 10px;
+            font-size: 12px;
+            line-height: 1.4;
+            background-color: #eee;
+            border-radius: 4px;
+        }
+        
+        .date-picker-wrapper.date-range-picker19 .day.first-date-selected {
+            background-color: red !important;
+        }
+        
+        .date-picker-wrapper.date-range-picker19 .day.last-date-selected {
+            background-color: orange !important;
+        }
+    </style>
+
+</head>
+
+<body>
+
+    <div id="wrapper">
+        <h1>jQuery Date Range Picker</h1>
+
+        <p>
+            jQuery Date Range Picker is a jQuery plugin that allows user to select a date range.
+        </p>
+        <p>
+            Requires <a href="http://jquery.com/" target="_blank">jQuery</a> 1.3.2+ (MIT LICENSE), <a href="http://momentjs.com/" target="_blank">Moment</a> 2.2.0+ (MIT LICENSE)
+        </p>
+        <p>
+            Supports IE8+, Firefox, Chrome, Safari and other standard HTML5 browsers.
+        </p>
+        <p>
+            Supports multi-language, you can choose a defined language or set it to auto-detect mode. <br> You can also define new languages for it.
+        </p>
+        <p>
+            The HTML DOMs generated is fully CSS styled, you can change the skin by editting the CSS file easily.
+            <p>
+
+                <p>
+                    I accept further customization job if you require more functions. My personal blog is <a href="http://jszen.com" target=_blank>http://jszen.com</a>
+                </p>
+
+                <p>Fork me on Github <a href="https://github.com/longbill/jquery-date-range-picker">https://github.com/longbill/jquery-date-range-picker</a></p>
+
+
+                <h2 id="installation">Installation</h2>
+
+                <pre>&lt;link rel="stylesheet" href="dist/daterangepicker.min.css"&gt;
+&lt;script type="text/javascript" src="moment.min.js"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="jquery.min.js"&gt;&lt;/script&gt;
+&lt;script type="text/javascript" src="dist/jquery.daterangepicker.min.js"&gt;&lt;/script&gt;
+			</pre>
+
+
+                <h2 id="demonstrations">Demonstrations</h2>
+
+                <div class="demo">
+                    默认设置: <input id="date-range0" size="40" value="">
+                    <a href="#" class="show-option">Show Config</a>
+                    <pre class="options">
+{}</pre>
+                </div>
+
+                <div>
+                    自动关闭和从周一开始: <input id="date-range1" size="60" value="">
+                    <a href="#" class="show-option">Show Config</a>
+                    <pre class="options">
+{
+    "autoClose": true,
+    "startOfWeek":"1"
+}</pre>
+                </div>
+
+
+
+                <div class="demo">
+                    单日选择: <input id="date-range1-1" size="60" value="">
+                    <a href="#" class="show-option">Show Config</a>
+                    <pre class="options">
+{
+	"singleDate":true
+}</pre>
+                </div>
+
+                <div class="demo">
+                    单月模式: <input id="date-range2" size="40" value="">
+                    <a href="#" class="show-option">Show Config</a>
+                    <pre class="options">
+                        {
+                            "singleMonth":true
+                        }</pre>
+                </div>
+
+                <div class="demo">
+                    单月\单日 模式 : <input id="date-range3" size="40" value="">
+                    <a href="#" class="show-option">Show Config</a>
+                    <pre class="options">
+{
+    "singleMonth":true,
+    "autoClose":true,
+    "singleDate":true
+}</pre>
+                </div>
+
+                <div class="demo">
+                    基本功能测试:<input type="button" value="show">
+                    <input type="button" value="hide">
+                    <input type="button" value="destroy">
+                    <input type="button" value="getValue"> <input id="date-range4" size="40" value="">
+                    <a href="#" class="show-option">Show Config</a>
+                    <pre class="options">
+{
+
+}				</pre>
+                </div>
+
+                <div class="demo">
+                    日历选择模式双月份 月份范围: <input id="date-range4-1" size="40" value="">
+                    <a href="#" class="show-option">Show Config</a>
+                    <pre class="options">
+{
+    "format":"YYYY-MM",
+    "selectMonth":true
+}			</pre>
+                </div>
+
+                <div class="demo">
+                    日历选择模式单月显示 单月选择: <input id="date-range5" size="40" value="">
+                    <a href="#" class="show-option">Show Config</a>
+                    <pre class="options">
+{
+    "format":"YYYY-MM",
+    "singleDate":true,
+    "singleMonth":true,
+    "selectMonth":true
+}				</pre>
+                </div>
+
+
+                <div class="demo">
+                    选择日期范围 2018-01-10 to 2018-02-10: <input id="date-range6" size="40" value="">
+                    <a href="#" class="show-option">Show Config</a>
+                    <pre class="options">
+{
+	"startDate":"2018-01-10",
+	"endDate":"2018-02-10"
+}				</pre>
+                </div>
+
+                <div class="demo">
+                    但月历，单日期，选择日期范围 2018-01-10 to 2018-04-10:: <input id="date-range8" size="40" value="">
+                    <a href="#" class="show-option">Show Config</a>
+                    <pre class="options">
+{
+	"singleMonth":true,
+    "autoClose":true,
+    "startDate":"2018-01-10",
+	"endDate":"2018-04-10",
+    "singleDate":true
+}			</pre>
+                </div>
+
+                <div class="demo">
+                    选择最少 3天最长 7 天的一个区间: <input id="date-range7" size="40" value="">
+                    <a href="#" class="show-option">Show Config</a>
+                    <pre class="options">
+{
+	"minDays": 3,
+	"maxDays": 7
+}			</pre>
+                </div>
+                <div class="demo">
+                    选择最少 3天的一个区间: <input id="date-range7" size="40" value="">
+                    <a href="#" class="show-option">Show Config</a>
+                    <pre class="options">
+{
+	"minDays": 3
+}			</pre>
+                    <div class="demo">
+                        选择带有时间的一个区间: <input id="date-range7" size="40" value="">
+
+                        <a href="#" class="show-option">Show Config</a>
+                        <pre class="options">
+                            {
+                                "format":"YYYY-MM-DD hh:mm:ss",
+                                "time":{
+                                    "enabled":true,
+                                    "secondStep":5,
+                                    "secondShow":true
+                                }
+                            }			</pre>
+                        <br />注：带有时间的选择 必须填写对应的format格式，且需要与time属性中的秒选项匹配，因为交互问题，带有时间的范围选择必须是双联月份形式
+                    </div>
+
+                    <div class="demo">
+                        选择一格时间: <input id="date-range200" size="20" value="">
+                        <a href="#" class="show-option">Show Config</a>
+                        <pre class="options">
+                            {
+                                "format":"YYYY-MM-DD hh:mm",
+                                "singleMonth":true,
+                                "singleDate":true,
+                                "time":{
+                                    "enabled":true,
+                                    "secondStep":5,
+                                    "secondShow":false
+                                }
+                            }			</pre>
+                        <br />注：带有时间的选择 必须填写对应的format格式，且需要与time属性中的秒选项匹配，因为交互问题，时间点的选择只能是单月份形式
+                    </div>
+
+                    <div class="demo">
+                        Use another date format: <input id="date-range10" size="60" value="">
+                        <a href="#" class="show-option">Show Config</a>
+                        <pre class="options">
+{
+	"format": 'dddd MMM Do, YYYY'  //more formats at http://momentjs.com/docs/#/displaying/format/
+}				</pre>
+                    </div>
+
+                    <div class="demo">
+                        Use future date shortcuts: <input id="date-range101" size="60" value="">
+                        <a href="#" class="show-option">Show Config</a>
+                        <pre class="options">
+{
+	"showShortcuts": true,
+	"shortcuts" :
+	{
+		'next-days': [3,5,7],
+		'next': ['week','month','year']
+	}
+}				</pre>
+                    </div>
+
+                    <div class="demo">
+                        Use past date shortcuts: <input id="date-range102" size="60" value="">
+                        <a href="#" class="show-option">Show Config</a>
+                        <pre class="options">
+{
+	"showShortcuts": true,
+	"shortcuts" :
+	{
+		'prev-days': [3,5,7],
+		'prev': ['week','month','year'],
+		'next-days':null,
+		'next':null
+	}
+}				</pre>
+                    </div>
+
+                    <div class="demo">
+                        Use custom shortcuts: <input id="date-range100" size="60" value="">
+                        <a href="#" class="show-option">Show Config</a>
+                        <pre class="options">
+{
+	"showShortcuts": true,
+	"shortcuts" : null,
+	"startOfWeek": 'sunday',
+	"language":'en',
+	"customShortcuts":
+	[
+		//if return an array of two dates, it will select the date range between the two dates
+		{
+			name: 'this week',
+			dates : function()
+			{
+				var start = moment().day(0).toDate();
+				var end = moment().day(6).toDate();
+				return [start,end];
+			}
+		},
+		//if only return an array of one date, it will display the month which containing the date. and it will not select any date range
+		{
+			name: 'Oct 2014',
+			dates : function()
+			{
+				//move calendars to show this date's month and next month
+				var movetodate = moment('2014-10','YYYY-MM').toDate();
+				return [movetodate];
+			}
+		}
+	]
+}				</pre>
+                    </div>
+
+                    <div class="demo">
+                        Use custom values: <input id="date-range105" size="60" value="">
+                        <a href="#" class="show-option">Show Config</a>
+                        <pre class="options">
+{
+	"language":'en',
+	"customValueLabel": 'Dynamic Ranges',
+	"showCustomValues": true,
+	"customValues":
+		//if return an array of two dates, it will select the date range between the two dates
+		[
+			{
+				"name": 'MTD',
+				"value": 'Month To Date'
+			},
+			{
+				"name": 'YTD',
+				"value": 'Year To Date'
+			}
+		]
+}				</pre>
+                    </div>
+
+
+                    <div class="demo">
+                        Auto-close after selection: <input id="date-range103" size="60" value="">
+                        <a href="#" class="show-option">Show Config</a>
+                        <pre class="options">
+{
+	"autoClose": true
+}				</pre>
+                    </div>
+
+                    <div class="demo">
+                        In-line mode: <input id="date-range12" size="40" value="">
+                        <a href="#" class="show-option">Show Config</a>
+                        <pre class="options">
+{
+	"inline":true,
+	"container": '#date-range12-container',
+	"alwaysOpen":true
+}				</pre>
+                        <div id="date-range12-container" style="width:456px;"></div>
+                    </div>
+
+                    <div class="demo">
+                        Single Date mode: <input id="date-range13" size="40" value="2015-03-01">
+                        <a href="#" class="show-option">Show Config</a>
+                        <pre class="options">
+{
+	"autoClose": true,
+	"singleDate" : true,
+	"showShortcuts": false
+}				</pre>
+                    </div>
+
+
+                    <div class="demo">
+                        Single Date mode with single month: <input id="date-range13-2" size="40" value="2015-03-01">
+                        <a href="#" class="show-option">Show Config</a>
+                        <pre class="options">
+{
+	"autoClose": true,
+	"singleDate" : true,
+	"showShortcuts": false,
+	"singleMonth": true
+}				</pre>
+                    </div>
+
+
+                    <div class="demo">
+                        Batch mode ( week ): <input id="date-range14" size="60" value="">
+                        <a href="#" class="show-option">Show Config</a>
+                        <pre class="options">
+{
+	"batchMode": 'week',
+	"showShortcuts": false
+}				</pre>
+                    </div>
+
+                    <div class="demo">
+                        Batch mode ( week-range ): <input id="date-range14-2" size="60" value="">
+                        <a href="#" class="show-option">Show Config</a>
+                        <pre class="options">
+{
+	"batchMode": 'week-range',
+	"showShortcuts": false
+}				</pre>
+                    </div>
+
+
+                    <div class="demo">
+                        Disable some dates: <input id="date-range15" size="60" value="">
+                        <a href="#" class="show-option">Show Config</a>
+                        <pre class="options">
+{
+	"showShortcuts": false,
+	"beforeShowDay": function(t)
+	{
+		var valid = !(t.getDay() == 0 || t.getDay() == 6);  //disable saturday and sunday
+		var _class = '';
+		var _tooltip = valid ? '' : 'weekends are disabled';
+		return [valid,_class,_tooltip];
+	}
+}				</pre>
+                    </div>
+
+                    <div class="demo">
+                        Control by script:
+                        <button id="date-range16-open">Open</button>
+                        <button id="date-range16-close">Close</button>
+                        <button id="date-range16-set">Set Date Range</button>
+                        <button id="date-range16-set-silent">Set Date Range (no event / silent: true)</button>
+                        <button id="date-range16-clear">Clear Selection</button>
+                        <button id="date-range16-destroy">Destroy</button>
+                        <button id="date-range16-reset">Reset months</button>
+                        <br>
+                        <input id="date-range16" size="60" value="">
+
+                        <a href="#" class="show-option">Show Config</a>
+                        <pre class="options">
+$('#date-range16').dateRangePicker(
+{
+	"showShortcuts": false,
+	"format": 'YYYY-MM-DD'
+}).bind('datepicker-change', function(evt, obj) {
+	alert('date1: ' + obj.date1 + ' / date2: ' + obj.date2);
+});
+
+$('#date-range16-open').click(function(evt)
+{
+	evt.stopPropagation();
+	$('#date-range16').data('dateRangePicker').open();
+});
+
+$('#date-range16-close').click(function(evt)
+{
+	evt.stopPropagation();
+	$('#date-range16').data('dateRangePicker').close();
+});
+
+$('#date-range16-set').click(function(evt)
+{
+	evt.stopPropagation();
+	$('#date-range16').data('dateRangePicker').setDateRange('2013-11-20','2014-08-25');
+});
+
+$('#date-range16-set-silent').click(function(evt)
+{
+	evt.stopPropagation();
+	$('#date-range16').data('dateRangePicker').setDateRange('2014-11-03','2015-02-12', true);
+});
+
+$('#date-range16-clear').click(function(evt)
+{
+	evt.stopPropagation();
+	$('#date-range16').data('dateRangePicker').clear();
+});
+
+$('#date-range16-destroy').click(function(evt)
+{
+	evt.stopPropagation();
+	$('#date-range16').data('dateRangePicker');
+});
+
+$('#date-range16-reset').click(function(evt)
+{
+	evt.stopPropagation();
+	$('#date-range16').data('dateRangePicker').resetMonthsView();
+});
+				</pre>
+                    </div>
+
+                    <div class="demo">
+                        Sticky months: <input id="date-range17" size="60" value="">
+                        <a href="#" class="show-option">Show Config</a>
+                        <pre class="options">
+{
+	stickyMonths: true,
+	startDate: '2013-01-10',
+	endDate: '2013-05-10'
+}				</pre>
+                    </div>
+
+
+                    <div class="demo">
+                        Use custom top bar: <input id="date-range18" size="60" value="">
+                        <a href="#" class="show-option">Show Config</a>
+                        <pre class="options">
+{
+	customTopBar: 'Foo Bar'
+}</pre>
+                    </div>
+
+                    <div class="demo">
+                        Different class names of first and second selected dates: <input id="date-range19" size="60" value="">
+                        <a href="#" class="show-option">Show Config</a>
+                        <pre class="options">
+{
+	extraClass: 'date-range-picker19'
+}
+.date-picker-wrapper.date-range-picker19 .day.first-date-selected { background-color: red !important; }
+.date-picker-wrapper.date-range-picker19 .day.last-date-selected { background-color: orange !important; }</pre>
+                    </div>
+
+                    <div class="demo">
+                        Hide hovering tooltip: <input id="date-range20" size="60" value="">
+                        <a href="#" class="show-option">Show Config</a>
+                        <pre class="options">
+{
+	hoveringTooltip: false
+}</pre>
+                    </div>
+
+                    <div class="demo">
+                        Customize hovering tooltip: <input id="date-range21" size="60" value="">
+                        <a href="#" class="show-option">Show Config</a>
+                        <pre class="options">
+{
+	hoveringTooltip: function(days)
+	{
+		var D = ['One','Two', 'Three','Four','Five'];
+		return D[days] ? D[days] : days;
+	}
+}</pre>
+                    </div>
+
+                    <div class="demo">
+                        Extra content on calendar: <input id="date-range22" size="60" value="">
+                        <a href="#" class="show-option">Show Config</a>
+                        <pre class="options">
+{
+	showDateFilter: function(time, date)
+	{
+		return '&lt;div style="padding:0 5px;">\
+					&lt;span style="font-weight:bold">'+date+'&lt;/span>\
+					&lt;div style="opacity:0.3;">$'+Math.round(Math.random()*999)+'&lt;/div>\
+				&lt;/div>';
+	}
+}</pre>
+                    </div>
+
+                    <div class="demo">
+                        Single Month Mode: <input id="date-range23" size="30" value="">
+                        <a href="#" class="show-option">Show Config</a>
+                        <pre class="options">
+{
+	singleMonth: true,
+	showShortcuts: false,
+	showTopbar: false
+}</pre>
+                    </div>
+
+                    <div class="demo">
+                        Show Week Numbers: <input id="date-range24" size="30" value="">
+                        <a href="#" class="show-option">Show Config</a>
+                        <pre class="options">
+{
+	showWeekNumbers: true
+}</pre>
+                    </div>
+
+                    <div class="demo">
+                        Show Week Numbers (start from monday): <input id="date-range24-2" size="30" value="">
+                        <a href="#" class="show-option">Show Config</a>
+                        <pre class="options">
+{
+	showWeekNumbers: true,
+	startOfWeek: 'monday'
+}</pre>
+                    </div>
+
+                    <div class="demo">
+                        Show Week Numbers ( support fiscal year, start from 2015-08-16): <input id="date-range24-3" size="30" value="">
+                        <a href="#" class="show-option">Show Config</a>
+                        <pre class="options">
+{
+	showWeekNumbers: true,
+	getWeekNumber: function(day)
+	{
+		var fiscalYearStart = moment('2015-08-16','YYYY-MM-DD');
+		var daysOffset = parseInt(fiscalYearStart.format('DDD'),10);
+		return moment(day).add( -1*daysOffset, 'days').format('W');
+	}
+}</pre>
+                    </div>
+
+                    <div class="demo">
+                        Select forward: <input id="date-range25" size="30" value="">
+                        <a href="#" class="show-option">Show Config</a>
+                        <pre class="options">
+{
+	selectForward: true
+}</pre>
+                    </div>
+
+                    <div class="demo">
+                        Select backward: <input id="date-range26" size="30" value="">
+                        <a href="#" class="show-option">Show Config</a>
+                        <pre class="options">
+{
+	selectBackward: true
+}</pre>
+                    </div>
+
+                    <div class="demo">
+                        Typical usage, hotel booking: <input id="hotel-booking" size="60" value="">
+                        <a href="#" class="show-option">Show Config</a>
+                        <pre class="options">
+{
+	startDate: new Date(),
+	selectForward: true,
+	showDateFilter: function(time, date)
+	{
+		return '&lt;div style="padding:0 5px;">\
+					&lt;span style="font-weight:bold">'+date+'&lt;/span>\
+					&lt;div style="opacity:0.3;">$'+Math.round(Math.random()*999)+'&lt;/div>\
+				&lt;/div>';
+	},
+	beforeShowDay: function(t)
+	{
+		var valid = !(t.getDay() == 0 || t.getDay() == 6);  //disable saturday and sunday
+		var _class = '';
+		var _tooltip = valid ? '' : 'sold out';
+		return [valid,_class,_tooltip];
+	}
+}				</pre>
+                    </div>
+
+                    <div class="demo">
+                        选择单个月份: <input id="date-range50" size="30" value="">
+                        <a href="#" class="show-option">Show Config</a>
+                        <pre class="options">
+{
+	customOpenAnimation: function(cb)
+	{
+		$(this).fadeIn(300, cb);
+	},
+	customCloseAnimation: function(cb)
+	{
+		$(this).fadeOut(300, cb);
+	}
+}</pre>
+                    </div>
+                    <div class="demo">
+                        Custome open/close animation: <input id="date-range51" size="30" value="">
+                        <a href="#" class="show-option">Show Config</a>
+                        <pre class="options">
+{
+	selectMonth:true
+}</pre>
+                    </div>
+
+
+
+                </div>
+</body>
+
+</html>
