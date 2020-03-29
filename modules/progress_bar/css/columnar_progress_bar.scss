@@ -1,0 +1,37 @@
+@charset "utf-8";
+@import '../../../src/scss/common/common.scss';
+//组件用盒模型，避免打乱使用者结构
+.progress-bar {
+    @extend %box-sizing;
+}
+
+//柱形进度条
+.progress-columnar-bar {
+    position: relative;
+    width: 300px; //可变
+    height: 24px; //可变
+    border-radius: 15px; //可变
+    background: #eeeeee; //可变
+    color: #666; //可变
+    .progress-bar-done,
+    .progress-bar-assist {
+        position: absolute;
+        left: 3px; //根据宽高变化
+        top: 3px; //根据宽高变化
+        width: calc(100% - 6px); //根据宽高变化
+        height: calc(100% - 6px); //可变
+        line-height: 18px; //根据宽高变化
+        border-radius: 15px; //可变
+        text-align: center;
+    }
+    .progress-bar-done {
+        clip: rect(0px 140px 18px 0px); //IE<8
+        clip: rect(0px, 140px, 18px, 0px); //根据宽高变化,用right来控制进度,根据宽高变化
+        z-index: 2;
+        color: #fff; //可变
+        background: #00adee; //可变
+    }
+    .progress-bar-assist {
+        z-index: 1;
+    }
+}

@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html>
+
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>进度条</title>
+    <link rel="stylesheet" href="demo.css" />
+    <script data-main="demo.js" src="../libs/rq/require.js"></script>
+</head>
+
+<body>
+    <h2>柱形进度条</h2>
+    <!-- 它的结构 -->
+    <div class="progress-bar progress-columnar-bar">
+        <div class="progress-bar-done">50%</div>
+        <div class="progress-bar-assist">50%</div>
+    </div>
+    <br/>
+    <!-- 你要调用，应该创建的元素 -->
+    <div id="demo1"></div>
+    <!-- 它的方法 -->
+    <div>
+        <input type="text" class="input" />
+        <button class="set">设置值</button>
+        <button class="get">获取值</button>
+        <button class="reset">重置</button>
+        <button class="clear">清除</button>
+        <button class="destroy">摧毁</button>
+        <button class="show">显示</button>
+        <button class="hide">隐藏</button>
+    </div>
+    <br>
+    <hr>
+    <br>
+
+    <h2>圆形进度条</h2>
+    <!-- 它的结构 -->
+    <div class="progress-bar progress-circle-bar">
+        <div class="progress-circle-txt">50%</div>
+        <div class="circle-right">
+            <div class="circle-bar circle-right-bar"></div>
+        </div>
+        <div class="circle-left">
+            <div class="circle-bar circle-left-bar"></div>
+        </div>
+    </div>
+    <!-- 你要调用，应该创建的元素 -->
+    <div id="demo2"></div>
+</body>
+</html>

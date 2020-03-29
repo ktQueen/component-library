@@ -1,0 +1,38 @@
+.progress-bar {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+  .progress-bar *,
+  .progress-bar *:before,
+  .progress-bar *:after {
+    -moz-box-sizing: inherit;
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit; }
+
+.progress-columnar-bar {
+  position: relative;
+  width: 300px;
+  height: 24px;
+  border-radius: 15px;
+  background: #eeeeee;
+  color: #666; }
+  .progress-columnar-bar .progress-bar-done,
+  .progress-columnar-bar .progress-bar-assist {
+    position: absolute;
+    left: 3px;
+    top: 3px;
+    width: calc(100% - 6px);
+    height: calc(100% - 6px);
+    line-height: 18px;
+    border-radius: 15px;
+    text-align: center; }
+  .progress-columnar-bar .progress-bar-done {
+    clip: rect(0px 140px 18px 0px);
+    clip: rect(0px, 140px, 18px, 0px);
+    z-index: 2;
+    color: #fff;
+    background: #00adee; }
+  .progress-columnar-bar .progress-bar-assist {
+    z-index: 1; }
+
+/*# sourceMappingURL=columnar_progress_bar.css.map */

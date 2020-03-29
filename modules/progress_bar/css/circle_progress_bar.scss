@@ -1,0 +1,74 @@
+@charset "utf-8";
+@import '../../../src/scss/common/common.scss';
+//组件用盒模型，避免打乱使用者结构
+.progress-bar {
+    @extend %box-sizing;
+}
+
+//圆形进度条
+.progress-circle-bar {
+    width: 200px; //可变
+    height: 200px; //可变，但是是根据宽度变化，即使设置不一致，也会强行一直的
+    position: relative;
+    .progress-circle-txt {
+        width: 100%;
+        position: absolute;
+        top: 50%;
+        text-align: center;
+        color: #666; //可变
+        min-height: 20px;
+    }
+    .circle-right,
+    .circle-left {
+        width: 50%;
+        height: 100%;
+        position: absolute;
+        top: 0;
+        overflow: hidden;
+    }
+    .circle-right {
+        right: 0;
+    }
+    .circle-left {
+        left: 0;
+    }
+    .circle-bar {
+        width: 200%;
+        height: 100%;
+        border: 20px solid #eee; //可变
+        border-radius: 50%;
+        position: absolute;
+        top: 0;
+        -webkit-transform: rotate(-135deg);
+    }
+    .circle-right-bar {
+        border-top: 20px solid #00adee; //可变
+        border-right: 20px solid #00adee; //可变
+        right: 0;
+        -webkit-animation: circleProgressLoad_right 5s linear infinite;
+    }
+    .circle-left-bar {
+        border-bottom: 20px solid #00adee; //可变
+        border-left: 20px solid #00adee; //可变
+        left: 0;
+        -webkit-animation: circleProgressLoad_left 5s linear infinite;
+    }
+}
+
+@-webkit-keyframes circleProgressLoad_right {
+    /*0%{*/
+    /*-webkit-transform: rotate(-135deg);*/
+    /*}*/
+    /*50%,100%{*/
+    /*-webkit-transform: rotate(45deg);*/
+    /*}*/
+}
+
+@-webkit-keyframes circleProgressLoad_left {
+    /*0%,50%{*/
+    /*-webkit-transform: rotate(-135deg);*/
+    /*}*/
+    /*100%{*/
+    /*-webkit-transform: rotate(45deg);*/
+    /*}*/
+}
