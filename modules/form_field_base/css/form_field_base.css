@@ -1,0 +1,230 @@
+.form-clear {
+  *zoom: 1; }
+  .form-clear:after {
+    content: '\0020';
+    display: block;
+    height: 0;
+    clear: both; }
+
+.form-field {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+  .form-field *,
+  .form-field *:before,
+  .form-field *:after {
+    -moz-box-sizing: inherit;
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit; }
+
+.form-verify-tip {
+  border: 1px solid #e6454a !important; }
+
+.form-field {
+  position: relative;
+  width: 100%; }
+
+.form-required {
+  display: inline-block;
+  padding: 6px 2px 2px 2px;
+  line-height: 22px;
+  color: #f04134; }
+
+.form-tip {
+  margin: 0px;
+  padding: 2px;
+  font-size: 12px;
+  line-height: 16px;
+  color: #f04134;
+  text-align: left;
+  clear: both; }
+
+.form-TipWordNumber {
+  margin: 0px;
+  padding: 2px;
+  line-height: 16px;
+  text-align: left;
+  clear: both;
+  font-size: 12px; }
+  .form-TipWordNumber span {
+    color: #f04134; }
+
+.form-field-head {
+  float: left; }
+
+.form-field-title {
+  display: inline-block;
+  padding: 4px 2px;
+  vertical-align: top;
+  line-height: 20px; }
+
+[type="text"].form-field-element,
+.form-field-element {
+  display: inline-block;
+  width: 100%;
+  min-height: 30px;
+  padding: 4px 6px;
+  line-height: 20px;
+  border: 1px solid darkgray;
+  border-radius: 5px; }
+  [type="text"].form-field-element:disabled,
+  .form-field-element:disabled {
+    background: #fff;
+    cursor: no-drop; }
+  [type="text"].form-field-element:hover,
+  .form-field-element:hover {
+    border: 1px solid darkgray; }
+
+.form-field-leftRight .form-required {
+  float: left; }
+.form-field-leftRight .form-field-title {
+  float: left;
+  text-align: justify; }
+.form-field-leftRight .form-field-content {
+  float: left;
+  width: calc(100% - 58px); }
+.form-field-leftRight.form-field-required-after .form-required {
+  position: absolute;
+  top: 0px;
+  right: 0px; }
+.form-field-leftRight.form-field-required-after .form-field-content {
+  width: calc(100% - 10px); }
+
+.form-field-upDown .form-field-title {
+  display: inline-block;
+  text-align: left; }
+.form-field-upDown .form-field-content {
+  width: 100%; }
+.form-field-upDown.form-field-required-after .form-required {
+  position: absolute;
+  top: 30px;
+  right: 0px; }
+.form-field-upDown.form-field-required-after .form-field-content {
+  width: calc(100% - 10px); }
+
+.form-field-checkbox .form-field-element {
+  border-color: transparent; }
+.form-field-checkbox .single-checkbox {
+  cursor: pointer; }
+.form-field-checkbox .single-checkbox-con {
+  position: relative;
+  padding-left: 22px;
+  padding-right: 8px; }
+  .form-field-checkbox .single-checkbox-con:before {
+    content: '';
+    position: absolute;
+    top: 50%;
+    margin-top: -8px;
+    left: 2px;
+    width: 16px;
+    height: 16px;
+    border: 2px solid #ddd;
+    border-radius: 4px;
+    line-height: 12px;
+    text-align: center;
+    font-size: 12px;
+    color: #fff;
+    cursor: pointer; }
+.form-field-checkbox input[type="checkbox"] {
+  display: none; }
+  .form-field-checkbox input[type="checkbox"].checked ~ .single-checkbox-con:before, .form-field-checkbox input[type="checkbox"]:checked ~ .single-checkbox-con:before {
+    content: '\2714';
+    border-color: #00adee;
+    background: #00adee; }
+.form-field-checkbox input[readonly] ~ .single-checkbox-con, .form-field-checkbox input[readonly] ~ .single-checkbox-con:before, .form-field-checkbox input[readonly] ~ .single-checkbox-con:after {
+  cursor: default; }
+.form-field-checkbox input[disabled] ~ .single-checkbox-con, .form-field-checkbox input[disabled] ~ .single-checkbox-con:before, .form-field-checkbox input[disabled] ~ .single-checkbox-con:after {
+  cursor: no-drop; }
+
+.form-field .form-field-content .dropdown-btn {
+  line-height: 22px;
+  text-align: left;
+  overflow: visible; }
+  .form-field .form-field-content .dropdown-btn .showtext {
+    font-size: 14px; }
+
+.form-field-element[type="text"]:disabled,
+.form-field-element[type="password"]:disabled,
+textarea.form-field-element:disabled {
+  background: #fff;
+  cursor: no-drop; }
+
+.form-field-textarea textarea.form-field-element {
+  height: 100px; }
+
+.form-list .form-field.form-field-plainText {
+  width: 0px; }
+
+.form-field.form-field-plainText .form-field-element {
+  border: none;
+  float: left; }
+.form-field.form-field-plainText .form-field-con {
+  min-height: 30px; }
+
+.form-field-radio .form-field-element {
+  border-color: transparent; }
+.form-field-radio .single-radio-con:before {
+  content: '';
+  position: absolute;
+  top: 50%;
+  margin-top: -8px;
+  left: 2px;
+  width: 16px;
+  height: 16px;
+  border-radius: 50%;
+  border: 2px solid #ddd; }
+.form-field-radio .single-radio-con {
+  position: relative;
+  padding-left: 22px;
+  padding-right: 8px;
+  cursor: pointer;
+  display: inline-block; }
+.form-field-radio input[type="radio"] {
+  display: none; }
+  .form-field-radio input[type="radio"].checked ~ .single-radio-con:before, .form-field-radio input[type="radio"]:checked ~ .single-radio-con:before {
+    border-color: #00adee; }
+  .form-field-radio input[type="radio"].checked ~ .single-radio-con:after, .form-field-radio input[type="radio"]:checked ~ .single-radio-con:after {
+    content: '';
+    position: absolute;
+    top: 50%;
+    margin-top: -3px;
+    left: 7px;
+    width: 6px;
+    height: 6px;
+    border-radius: 50%;
+    background: #00adee; }
+.form-field-radio input[readonly] ~ .single-radio-con {
+  cursor: default; }
+.form-field-radio input[disabled] ~ .single-radio-con {
+  cursor: no-drop; }
+
+.form-field-manifest .form-field-element {
+  padding: 2px 6px; }
+
+.form-field-upload .form-field-element {
+  padding: 0px;
+  border: none; }
+
+.form-field-um .form-field-element {
+  padding: 0px;
+  border: none; }
+
+.form-field-city .form-field-element {
+  overflow: hidden;
+  display: block; }
+  .form-field-city .form-field-element .city-selected-list {
+    display: none; }
+  .form-field-city .form-field-element .city-selector-btn {
+    border: none; }
+  .form-field-city .form-field-element .city-search-input {
+    height: 22px;
+    line-height: 22px; }
+  .form-field-city .form-field-element .csb-item {
+    border: none; }
+  .form-field-city .form-field-element .csb-remove {
+    top: -4px;
+    right: -4px;
+    width: 12px;
+    height: 12px; }
+
+/*# sourceMappingURL=form_field_base.css.map */

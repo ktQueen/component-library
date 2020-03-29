@@ -1,0 +1,184 @@
+.form-block {
+  *zoom: 1; }
+  .form-block:after {
+    content: '\0020';
+    display: block;
+    height: 0;
+    clear: both; }
+
+.form-list {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+  .form-list *,
+  .form-list *:before,
+  .form-list *:after {
+    -moz-box-sizing: inherit;
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit; }
+
+.hide {
+  display: none; }
+
+.form-list {
+  position: relative; }
+  .form-list .form-list-title {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 18px; }
+
+.form-block {
+  padding: 10px; }
+  .form-block .form-block-title {
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 30px;
+    padding-left: 10px;
+    margin: 0px; }
+
+.form-block-leftRight {
+  display: flex; }
+  .form-block-leftRight .form-block-title {
+    width: 100px; }
+  .form-block-leftRight .form-block-content {
+    width: calc(100% - 100px); }
+
+.form-row {
+  padding: 5px 10px;
+  position: relative; }
+  .form-row .form-row-head {
+    height: 30px; }
+  .form-row .form-row-title {
+    display: inline-block;
+    font-size: 14px;
+    padding: 4px 0px;
+    line-height: 22px;
+    font-weight: normal;
+    vertical-align: top; }
+  .form-row.half-width {
+    width: 50%;
+    float: left; }
+
+.form-row-upDown .form-row-head {
+  width: 100%;
+  display: block; }
+
+.form-row-leftRight .form-row-head {
+  float: left;
+  text-align: right; }
+.form-row-leftRight .form-row-content {
+  float: left;
+  width: 100%; }
+
+.form-row-required-after .form-row-head > .form-required {
+  position: absolute;
+  bottom: 5px;
+  right: 10px; }
+
+.form-children {
+  float: left; }
+
+.btns-center {
+  text-align: center; }
+.btns-right {
+  text-align: right; }
+.btns-left {
+  text-align: left; }
+
+.form-btn {
+  padding: 6px 20px;
+  margin: 2px 4px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 14px;
+  line-height: 14px;
+  cursor: pointer;
+  opacity: 0.9; }
+  .form-btn:hover {
+    opacity: 1; }
+
+.btn-default {
+  color: #333;
+  background-color: #fff;
+  border-color: #ccc; }
+.btn-disabled {
+  color: #333;
+  background-color: #ddd;
+  border-color: #ccc;
+  cursor: no-drop; }
+.btn-primary {
+  color: #fff;
+  background-color: #337ab7;
+  border-color: #2e6da4; }
+.btn-success {
+  color: #fff;
+  background-color: #5cb85c;
+  border-color: #4cae4c; }
+.btn-info {
+  color: #fff;
+  background-color: #5bc0de;
+  border-color: #46b8da; }
+.btn-warning {
+  color: #fff;
+  background-color: #f0ad4e;
+  border-color: #eea236; }
+.btn-danger {
+  color: #fff;
+  background-color: #d9534f;
+  border-color: #d43f3a; }
+.btn-link {
+  background-color: transparent;
+  border-color: transparent;
+  font-weight: 400;
+  color: #337ab7;
+  border-radius: 0; }
+.btn-djourney-default {
+  color: #e6454a;
+  background-color: #fff;
+  border-color: #e6454a; }
+.btn-djourney-default:hover, .btn-djourney-active {
+  color: #fff;
+  background-color: #e6454a;
+  border-color: #e6454a; }
+
+.form-row-num-3 .form-row-content {
+  border: 1px solid darkgray;
+  border-radius: 5px;
+  height: 30px; }
+  .form-row-num-3 .form-row-content .form-children {
+    float: left; }
+  .form-row-num-3 .form-row-content .form-field-text {
+    width: calc(33% - 10px); }
+  .form-row-num-3 .form-row-content .form-field-plainText {
+    width: 10px; }
+  .form-row-num-3 .form-row-content input[type="text"].form-field-element {
+    border: none;
+    min-height: 28px; }
+
+.form-table .form-row-content {
+  border-bottom: 1px solid #ddd;
+  border-left: 1px solid #ddd; }
+.form-table .form-children {
+  padding: 2px;
+  border-top: 1px solid #ddd;
+  border-right: 1px solid #ddd; }
+
+.form-field-upload .form-field-element {
+  padding: 0;
+  border: none; }
+.form-field-upload .form-field-element:hover {
+  border: none; }
+
+.form-field-upload .form-verify-tip {
+  border: none !important; }
+  .form-field-upload .form-verify-tip .files-list {
+    border: 1px solid #e6454a !important; }
+  .form-field-upload .form-verify-tip .echo-style {
+    border: 1px solid #e6454a; }
+
+.form-row-verify.form-row {
+  padding: 12px 10px; }
+  .form-row-verify.form-row .tooltip {
+    padding: 2px 8px; }
+
+/*# sourceMappingURL=form.css.map */

@@ -1,0 +1,124 @@
+@charset "UTF-8";
+@import url(../../icons/daojia-icon.css);
+.form-complex {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+  .form-complex *,
+  .form-complex *:before,
+  .form-complex *:after {
+    -moz-box-sizing: inherit;
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit; }
+
+.form-complex {
+  width: 100%;
+  position: relative; }
+  .form-complex .form-complex-title {
+    display: inline-block;
+    padding: 4px 2px;
+    vertical-align: top;
+    line-height: 22px; }
+  .form-complex .form-complex-content table {
+    width: 100%;
+    border-collapse: collapse;
+    border-spacing: 0; }
+  .form-complex .form-complex-content th {
+    line-height: 30px;
+    font-size: 14px; }
+  .form-complex .form-complex-content td, .form-complex .form-complex-content th {
+    padding: 2px 2px;
+    border: 1px solid #ccc;
+    text-align: center; }
+  .form-complex .form-complex-content .form-complex-noData td {
+    padding: 10px; }
+  .form-complex.form-complex-leftRight .form-complex-head {
+    float: left; }
+  .form-complex.form-complex-leftRight .form-complex-content {
+    float: left; }
+  .form-complex.form-complex-leftRight.form-complex-required-after .formcomplex-head .form-required {
+    position: absolute;
+    top: 0px;
+    right: 0px; }
+  .form-complex.form-complex-upDown.form-complex-required-after .form-complex-content {
+    width: calc(100% - 12px); }
+  .form-complex.form-complex-upDown.form-complex-required-after .form-required {
+    position: absolute;
+    bottom: 0px;
+    right: 0px; }
+
+.form-actions {
+  display: inline-block;
+  margin: 2px 4px;
+  cursor: pointer; }
+  .form-actions.form-actions-character {
+    display: inline-block;
+    padding: 2px 6px;
+    line-height: 20px;
+    background: #F16B50;
+    border-radius: 5px;
+    color: #fff; }
+    .form-actions.form-actions-character:before {
+      content: ''; }
+  .form-actions.form-actions-icon {
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    overflow: hidden;
+    background: #F16B50;
+    border-radius: 50%;
+    color: #fff; }
+    .form-actions.form-actions-icon:before {
+      display: inline-block;
+      vertical-align: top; }
+
+.form-complex-content > table > tbody > tr:nth-child(1) > td > .form-complex-actions .djiui-icon-actions-remove,
+.form-complex-content > table > tbody > tr:nth-child(1) > td > .form-complex-actions .djiui-icon-actions-up,
+.form-complex-content > table > tbody > tr:nth-child(1) > td > .form-complex-actions .djiui-icon-actions-upToTop {
+  display: none; }
+
+.form-complex-content > table > tbody > tr:last-child > td > .form-complex-actions .djiui-icon-actions-down,
+.form-complex-content > table > tbody > tr:last-child > td > .form-complex-actions .djiui-icon-actions-downToBottom {
+  display: none; }
+
+.deleteOnlyOne > table > tbody > tr:nth-child(1) > td > .form-complex-actions .djiui-icon-actions-remove {
+  display: inline-block; }
+
+.deleteOnlyOne thead .form-actions {
+  margin: 0px 4px;
+  vertical-align: middle; }
+
+.form-complex-paraConfig .form-complex-content td, .form-complex-paraConfig .form-complex-content th {
+  border: none; }
+
+.form-complex-blockParaConfig {
+  /*块索引*/
+  /*块操作*/
+  /*内容样式*/ }
+  .form-complex-blockParaConfig > .form-complex-content td, .form-complex-blockParaConfig > .form-complex-content th {
+    border: none;
+    position: relative; }
+  .form-complex-blockParaConfig > .form-complex-content > table > tbody > tr > td {
+    padding: 10px 0;
+    border-bottom: 2px solid #ddd; }
+  .form-complex-blockParaConfig .form-complex-index {
+    padding: 10px 0;
+    font-size: 16px;
+    line-height: 20px;
+    font-weight: bolder;
+    text-align: left; }
+  .form-complex-blockParaConfig .form-complex-actions {
+    position: absolute;
+    top: 11px;
+    right: 0px; }
+  .form-complex-blockParaConfig .form-field {
+    padding: 5px 0px; }
+  .form-complex-blockParaConfig .form-field-head {
+    text-align: right; }
+  .form-complex-blockParaConfig .form-field-leftRight .form-required {
+    float: none; }
+  .form-complex-blockParaConfig .form-field-leftRight .form-field-title {
+    float: none; }
+
+/*# sourceMappingURL=form_complex_base.css.map */

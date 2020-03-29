@@ -1,0 +1,255 @@
+@charset "utf-8";
+//表单
+@import '../../../src/scss/common/common.scss';
+
+//组件用盒模型，避免打乱使用者结构
+.form-list {
+  @extend %box-sizing;
+}
+
+//隐藏
+.hide{
+	display: none;
+}
+
+//表单
+.form-list {
+  position: relative;
+  .form-list-title {
+    font-size: 18px;
+    font-weight: bold;
+    line-height: 18px;
+  }
+  .form-list-content {
+  }
+}
+
+//---------------------块区域-----------
+.form-block {
+  padding: 10px;
+  @extend %clearfix;
+  .form-block-title {
+    font-size: 16px;
+    font-weight: bold;
+    line-height: 30px;
+	padding-left: 10px;
+	  margin: 0px;
+  }
+  .form-block-content {
+  }
+}
+
+.form-block-leftRight {
+  display: flex;
+  .form-block-title {
+    width: 100px;
+  }
+  .form-block-content {
+    width: calc(100% - 100px);
+  }
+}
+
+//-----------------行区域-------------------
+.form-row {
+  padding: 5px 10px;
+  position: relative;
+  .form-row-head {
+    height: 30px;
+  }
+  .form-row-title {
+    display: inline-block;
+    font-size: 14px;
+    padding: 4px 0px;
+    line-height: 22px;
+    font-weight: normal;
+    vertical-align: top;
+  }
+	//只有一半宽度
+	&.half-width{
+		width: 50%;
+		float: left;
+	}
+
+	//.form-row-content{
+  //display: flex;
+  //}
+}
+
+.form-row-upDown {
+  .form-row-head {
+    width: 100%;
+    display: block;
+  }
+}
+
+.form-row-leftRight {
+  .form-row-head {
+    float: left;
+    text-align: right;
+  }
+  .form-row-title {
+  }
+  .form-row-content {
+    float: left;
+    width: 100%;
+  }
+}
+
+.form-row-required-after .form-row-head > .form-required {
+  position: absolute;
+  bottom: 5px;
+  right: 10px;
+}
+
+//------------------------------孩子区域----------------
+.form-children {
+  float: left;
+}
+//---------------------按钮区域-------------------
+.btns {
+  &-center {
+    text-align: center;
+  }
+  &-right {
+    text-align: right;
+  }
+  &-left {
+    text-align: left;
+  }
+}
+
+.form-btn {
+  padding: 6px 20px;
+  margin: 2px 4px;
+  border: 1px solid #ddd;
+  border-radius: 5px;
+  font-size: 14px;
+  line-height: 14px;
+  cursor: pointer;
+  opacity: 0.9;
+  &:hover {
+    opacity: 1;
+  }
+}
+
+.btn {
+  &-default {
+    color: #333;
+    background-color: #fff;
+    border-color: #ccc;
+  }
+  &-disabled {
+    color: #333;
+    background-color: #ddd;
+    border-color: #ccc;
+    cursor: no-drop;
+  }
+  &-primary {
+    color: #fff;
+    background-color: #337ab7;
+    border-color: #2e6da4;
+  }
+  &-success {
+    color: #fff;
+    background-color: #5cb85c;
+    border-color: #4cae4c;
+  }
+  &-info {
+    color: #fff;
+    background-color: #5bc0de;
+    border-color: #46b8da;
+  }
+  &-warning {
+    color: #fff;
+    background-color: #f0ad4e;
+    border-color: #eea236;
+  }
+  &-danger {
+    color: #fff;
+    background-color: #d9534f;
+    border-color: #d43f3a;
+  }
+  &-link {
+    background-color: transparent;
+    border-color: transparent;
+    font-weight: 400;
+    color: #337ab7;
+    border-radius: 0;
+  }
+  &-djourney-default {
+    color: #e6454a;
+    background-color: #fff;
+    border-color: #e6454a;
+  }
+  &-djourney-default:hover,
+  &-djourney-active {
+    color: #fff;
+    background-color: #e6454a;
+    border-color: #e6454a;
+  }
+}
+
+//个别特例
+//一行3列输入框布局：表现为填3个数字
+.form-row-num-3 .form-row-content {
+  border: 1px solid rgb(169, 169, 169);
+  border-radius: 5px;
+  height: 30px;
+  .form-children {
+    float: left;
+  }
+  .form-field-text {
+    width: calc(33% - 10px);
+  }
+  .form-field-plainText {
+    width: 10px;
+  }
+  input[type="text"].form-field-element {
+    border: none;
+    min-height: 28px;
+  }
+}
+
+//表格式布局
+.form-table {
+  .form-row-content {
+    border-bottom: 1px solid #ddd;
+    border-left: 1px solid #ddd;
+  }
+  .form-children {
+    padding: 2px;
+    border-top: 1px solid #ddd;
+    border-right: 1px solid #ddd;
+  }
+
+}
+//  文件上传的样式
+.form-field-upload {
+  .form-field-element{
+    padding :0;
+    border: none;
+  }
+  .form-field-element:hover{
+    border: none;
+  }
+}
+
+.form-field-upload {
+	.form-verify-tip{
+		border:none!important;
+		.files-list{
+			border:1px solid #e6454a!important;
+		}
+		.echo-style{
+			border: 1px solid #e6454a;
+		}
+	}
+}
+.form-row-verify{
+	&.form-row{
+		padding: 12px 10px;
+		.tooltip{
+			padding: 2px 8px;
+		}
+	}
+  }

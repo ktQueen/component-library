@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>Manifest多值输入</title>
+    <link rel="stylesheet" href="demo.css" />
+    <script data-main="demo.js" src="../libs/rq/require.js"></script>
+</head>
+<body>
+    <h1>Manifest是一个可以为多值输入并支持模糊搜索的插件。</h1>
+    <h2>输入字符，按回车查看效果</h2>
+    <h3>默认的模板，没法操作的给你看张什么样子的</h3>
+    <div class="mf-container">
+        <ol class="mf-list">
+            <li class="mf-item mf-item-error" title="标签出错">
+                <span class="mf-text">标签1</span>
+                <em class="mf-remove" title="删除">×</em>
+                <input type="hidden" class="mf-value" name="mf-values[0]" value="标签1" />
+            </li>
+            <li class="mf-item">
+                <span class="mf-text">标签2</span>
+                <em class="mf-remove" title="删除">×</em>
+                <input type="hidden" class="mf-value" name="mf-values[1]" value="" />
+            </li>
+        </ol>
+        <ul class="mf-search-list">
+            <li class="mf-search-item">21312321</li>
+            <li class="mf-search-item">21312321</li>
+            <li class="mf-search-item">21312321</li>
+        </ul>
+        <span class="mf_measure"></span>
+        <input type="text" value="" class="my-input" />
+    </div>
+    <br/>
+    <br/>
+    <br/>
+    <h3>当传入的是div元素的情况</h3>
+    <div id="demo2"></div>
+    <!-- 一些方法 -->
+    <button id="des">摧毁</button>
+    <button id="clear">清空</button>
+    <button id="reset">重置</button>
+    <button id="dis">不可用</button>
+    <button id="dis2">可用</button>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <h3>当传入的是其他元素的情况,强制转为div,并删除你传入的元素</h3>
+    <div id="demo3" class="demo3" data-is="1" alt></div>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <br/>
+    <h3>没有模糊搜索的情况</h3>
+    <div id="demo4" class="demo3" data-is="1" alt></div>
+</body>
+
+</html>

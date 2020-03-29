@@ -1,0 +1,325 @@
+@charset "utf-8";
+@import '../../../src/scss/common/common.scss';
+//组件用盒模型，避免打乱使用者结构
+.form-field {
+    @extend %box-sizing;
+}
+//校验红框提示
+.form-verify-tip{
+	border:1px solid #e6454a!important;
+}
+//清除浮动
+.form-clear {
+    @extend %clearfix;
+}
+
+//form表单字段
+.form-field {
+    position: relative;
+    width: 100%;
+}
+//form表单字段必填标志
+.form-required {
+    display: inline-block;
+    padding: 6px 2px 2px 2px;
+    line-height: 22px;
+    color: #f04134;
+}
+//form表单字段提示
+.form-tip {
+	margin: 0px;
+	padding: 2px;
+	font-size: 12px;
+	line-height: 16px;
+	color: #f04134;
+	text-align: left;
+	clear: both;
+}
+//字数限制提示
+.form-TipWordNumber{
+	margin: 0px;
+	padding: 2px;
+	line-height: 16px;
+	text-align: left;
+	clear: both;
+	font-size: 12px;
+	span{
+		color: #f04134;
+	}
+}
+.form-field-head{
+	float: left;
+}
+//form表单字段标题
+.form-field-title {
+    display: inline-block;
+    padding: 4px 2px;
+    vertical-align: top;
+    line-height: 20px;
+}
+
+//form表单字段元素
+[type="text"].form-field-element,
+.form-field-element {
+    display: inline-block;
+    width: 100%;
+    min-height: 30px;
+    padding: 4px 6px;
+    line-height: 20px;
+    border: 1px solid $borderColor;
+    border-radius: 5px;
+    //禁用字段
+    &:disabled {
+        background: #fff;
+        cursor: no-drop;
+    }
+    &:hover{
+      border: 1px solid $borderColor;
+    }
+}
+
+//------------------------字段为左右结构-----------
+.form-field-leftRight {
+    .form-required {
+        float: left;
+    }
+    .form-field-title {
+        float: left;
+        text-align: justify;
+    }
+    .form-field-content {
+        float: left;
+        width: calc(100% - 58px);
+    }
+    //必填标志前后的设置,默认在前面
+    &.form-field-required-after {
+        .form-required {
+            position: absolute;
+            top: 0px;
+            right: 0px;
+        }
+        .form-field-content {
+            width: calc(100% - 10px);
+        }
+    }
+}
+
+//------------------------字段为上下结构---------
+.form-field-upDown {
+    .form-field-title {
+        display: inline-block;
+        text-align: left;
+    }
+    .form-field-content {
+        width: 100%;
+    }
+    //必填标志前后的设置,默认在前面
+    &.form-field-required-after {
+        .form-required {
+            position: absolute;
+            top: 30px;
+            right: 0px;
+        }
+        .form-field-content {
+            width: calc(100% - 10px);
+        }
+    }
+}
+
+//------------1.复选框---------
+.form-field-checkbox {
+    //字段没有边框
+    .form-field-element {
+		border-color: transparent;
+    }
+    //单个复选框
+    .single-checkbox {
+        cursor: pointer;
+    }
+    //单个复选框内容
+    .single-checkbox-con {
+        position: relative;
+        padding-left: 22px;
+        padding-right: 8px;
+        &:before {
+            content: '';
+            position: absolute;
+            top: 50%;
+            margin-top: -8px;
+            left: 2px;
+            width: 16px;
+            height: 16px;
+            border: 2px solid #ddd;
+            border-radius: 4px;
+            line-height: 12px;
+            text-align: center;
+            font-size: 12px;
+            color: #fff;
+            cursor: pointer;
+        }
+    }
+    //复选框模拟
+    input[type="checkbox"] {
+        display: none;
+		&.checked~.single-checkbox-con:before,
+		&:checked~.single-checkbox-con:before {
+            content: '\2714';
+            border-color: #00adee;
+            background: #00adee;
+        }
+    }
+    //只读情况
+    input[readonly]~.single-checkbox-con {
+        &,
+        &:before,
+        &:after {
+            cursor: default;
+        }
+    }
+    //禁用情况
+    input[disabled]~.single-checkbox-con {
+        &,
+        &:before,
+        &:after {
+            cursor: no-drop;
+        }
+    }
+}
+
+//------------2.下拉框，针对选择和时间---------
+.form-field .form-field-content .dropdown-btn {
+    line-height: 22px;
+    text-align: left;
+    overflow: visible;
+    .showtext {
+        font-size: 14px;
+    }
+}
+
+//--------------3.文本类-------------------
+.form-field-element[type="text"],
+.form-field-element[type="password"],
+textarea.form-field-element {
+    &:disabled {
+        background: #fff;
+        cursor: no-drop;
+    }
+}
+
+.form-field-textarea {
+    textarea.form-field-element {
+        height: 100px;
+    }
+}
+
+//------------------4.纯文本类型--------
+.form-list .form-field.form-field-plainText {
+  width:0px;
+}
+.form-field.form-field-plainText {
+    .form-field-element {
+        border: none;
+        float: left;
+    }
+    .form-field-con {
+        min-height: 30px;
+    }
+}
+
+//------------------5.单选--------
+.form-field-radio {
+    .form-field-element {
+        border-color: transparent;
+    }
+    .single-radio-con:before {
+        content: '';
+        position: absolute;
+        top: 50%;
+        margin-top: -8px;
+        left: 2px;
+        width: 16px;
+        height: 16px;
+        border-radius: 50%;
+        border: 2px solid #ddd;
+    }
+    .single-radio-con {
+        position: relative;
+        padding-left: 22px;
+        padding-right: 8px;
+        cursor: pointer;
+		display: inline-block;
+    }
+    input[type="radio"] {
+        display: none;
+		&.checked~.single-radio-con:before,
+        &:checked~.single-radio-con:before {
+            border-color: #00adee;
+        }
+		&.checked~.single-radio-con:after,
+        &:checked~.single-radio-con:after {
+            content: '';
+            position: absolute;
+            top: 50%;
+            margin-top: -3px;
+            left: 7px;
+            width: 6px;
+            height: 6px;
+            border-radius: 50%;
+            background: #00adee;
+        }
+    }
+    input[readonly]~.single-radio-con {
+        cursor: default;
+    }
+    input[disabled]~.single-radio-con {
+        cursor: no-drop;
+    }
+}
+
+
+//------------------标签----
+.form-field-manifest{
+  .form-field-element{
+    padding: 2px 6px;
+  }
+}
+//------------------文件----
+.form-field-upload{
+  .form-field-element{
+    padding: 0px;
+    border: none;
+  }
+}
+//----------------富文本---
+.form-field-um{
+	.form-field-element{
+		padding: 0px;
+		border: none;
+	}
+}
+//----------------城市选择---
+.form-field-city{
+	.form-field-element{
+		overflow: hidden;
+		display: block;
+		.city-selected-list{
+			display: none;
+		}
+		.city-selector-btn{
+			border: none;
+		}
+		.city-search-input{
+			height: 22px;
+			line-height: 22px;
+		}
+		.csb-item{
+			border: none;
+		}
+		.csb-remove{
+			top: -4px;
+			right: -4px;
+			width: 12px;
+			height: 12px;
+		}
+	}
+}

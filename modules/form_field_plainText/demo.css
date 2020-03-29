@@ -1,0 +1,20 @@
+body {
+  padding: 20px; }
+  body h1 {
+    font-size: 24px;
+    font-weight: bold; }
+  body h2 {
+    font-size: 20px; }
+  body .form {
+    padding: 20px; }
+  body button {
+    padding: 4px 20px;
+    border: none;
+    background: #00adee;
+    color: #fff;
+    margin-right: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    cursor: pointer; }
+
+/*# sourceMappingURL=demo.css.map */

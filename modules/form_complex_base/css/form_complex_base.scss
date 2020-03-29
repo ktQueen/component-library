@@ -1,0 +1,174 @@
+@charset "utf-8";
+@import '../../../src/scss/common/common.scss';
+@import "../../icons/daojia-icon.css";
+//复合布局
+.form-complex {
+  @extend %box-sizing;//组件用盒模型，避免打乱使用者结构
+  width: 100%;
+  position: relative;
+  .form-complex-title {
+    display: inline-block;
+    padding: 4px 2px;
+    vertical-align: top;
+    line-height: 22px;
+  }
+  .form-complex-content{
+    table{
+      width: 100%;
+		border-collapse: collapse;
+		border-spacing: 0;
+    }
+    th{
+      line-height: 30px;
+		font-size: 14px;
+    }
+    td,th{
+      padding: 2px 2px;
+      border: 1px solid #ccc;
+      text-align: center;
+    }
+	  //删除完后没有数据的情况
+	  .form-complex-noData{
+		  td{
+			  padding: 10px;
+		  }
+	  }
+  }
+  //左右结构
+  &.form-complex-leftRight {
+    .form-complex-head {
+      float: left;
+    }
+    .form-complex-content {
+      float: left;
+    }
+    //必填标志前后的设置,默认在前面
+    &.form-complex-required-after {
+      .formcomplex-head .form-required {
+        position: absolute;
+        top: 0px;
+        right: 0px;
+      }
+    }
+  }
+  //上下结构
+  &.form-complex-upDown {
+    //必填标志前后的设置,默认在前面
+    &.form-complex-required-after {
+      .form-complex-content {
+        width:calc(100% - 12px);
+      }
+      .form-required {
+        position: absolute;
+        bottom: 0px;
+        right: 0px;
+      }
+    }
+  }
+}
+//按钮
+.form-actions{
+  display: inline-block;
+  margin: 2px 4px;
+  cursor: pointer;
+  &.form-actions-character{
+	  display: inline-block;
+	  padding: 2px 6px;
+	  line-height: 20px;
+	  background:#F16B50 ;
+	  border-radius: 5px;
+	  color: #fff;
+    &:before{
+      content: '';
+    }
+  }
+  &.form-actions-icon{
+    display: inline-block;
+    width: 20px;
+    height: 20px;
+    line-height: 20px;
+    overflow: hidden;
+    background:#F16B50 ;
+    border-radius: 50%;
+    color: #fff;
+    &:before{
+      display: inline-block;
+      vertical-align: top;
+    }
+  }
+}
+.form-complex-content>table>tbody>tr:nth-child(1)>td>.form-complex-actions {
+	.djiui-icon-actions-remove,
+	.djiui-icon-actions-up,
+	.djiui-icon-actions-upToTop{//第一行的删除，上移,上移到顶部图标不显示
+		display: none;
+	}
+}
+.form-complex-content>table>tbody>tr:last-child>td>.form-complex-actions {
+	.djiui-icon-actions-down,
+	.djiui-icon-actions-downToBottom{//最后一行的下移,下移到底部图标不显示
+		display: none;
+	}
+}
+//可以删除最后一行
+.deleteOnlyOne>table>tbody>tr:nth-child(1)>td>.form-complex-actions {
+	.djiui-icon-actions-remove{//第一行的删除，上移,上移到顶部图标不显示
+		display: inline-block;
+	}
+}
+.deleteOnlyOne{
+	thead{
+		.form-actions{
+			margin: 0px 4px;
+			vertical-align: middle;
+		}
+	}
+}
+//添加行样式
+.form-complex-paraConfig{
+  .form-complex-content{
+    td,th{
+      border: none;
+    }
+  }
+}
+//添加模拟块样式
+.form-complex-blockParaConfig{
+	>.form-complex-content{
+		td,th{
+			border: none;
+			position: relative;
+		}
+		>table>tbody>tr>td{
+			padding:10px 0;
+			border-bottom: 2px solid #ddd;
+		}
+	}
+	/*块索引*/
+	.form-complex-index{
+		padding: 10px 0;
+		font-size: 16px;
+		line-height: 20px;
+		font-weight: bolder;
+		text-align: left;
+	}
+	/*块操作*/
+	.form-complex-actions{
+		position: absolute;
+		top: 11px;
+		right: 0px;
+	}
+	/*内容样式*/
+	.form-field{
+		padding: 5px 0px;
+	}
+	.form-field-head{
+		text-align: right;
+	}
+	.form-field-leftRight .form-required{
+		float: none;
+	}
+	.form-field-leftRight .form-field-title{
+		float: none;
+	}
+}
