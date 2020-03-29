@@ -1,5 +1,5 @@
 require.config({
-    baseUrl: '',
+    baseUrl: 'http://localhost:63342/github/component-library/',
     paths: {
         'daterangepicker': 'modules/calendar/js/jquery.daterangepicker.min',
         'cssFile': 'modules/libs/rq/css.min'

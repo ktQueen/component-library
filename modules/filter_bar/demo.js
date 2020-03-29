@@ -38,7 +38,7 @@ require([
                             $.each(data, function(i, v) {
                                 result.push({
                                     'id': v.id,
-                                    'name': v.name + v.email.replace("@daojia.com", "")
+                                    'name': v.name + v.email.replace(".com", "")
                                 });
                             })
                             callback && callback(result);

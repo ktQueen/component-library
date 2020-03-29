@@ -1,6 +1,5 @@
 @charset "utf-8";
 @import '../../../src/scss/common/common.scss';
-@import "../../icons/daojia-icon.css";
 //复合布局
 .form-complex {
   @extend %box-sizing;//组件用盒模型，避免打乱使用者结构

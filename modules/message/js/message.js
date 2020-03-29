@@ -20,7 +20,6 @@ require.config({
 define([
     'jquery',
     'cssFile!modules/message/css/message',
-    'cssFile!modules/icons/daojia-icon'
 ], function($) {
     function Message(paras) {
         this.config(paras);
