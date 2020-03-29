@@ -1,0 +1,145 @@
+html, body,
+h1, h2, h3, h4, h5, h6,
+p, div, dl, dt, dd, ul, ol, li,
+form, button, input, select, textarea,
+table, caption, th, td,
+blockquote, pre, hr, xmp {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  font-family: 'Microsoft YaHei', sans-serif; }
+
+header, footer, section, nav,
+article, aside, hgroup,
+address, figure, figcaption,
+menu, details,
+summary, time, mark, audio, video {
+  display: block;
+  margin: 0;
+  padding: 0; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+ul, ol {
+  list-style: none; }
+
+textarea {
+  overflow: auto;
+  resize: none;
+  outline: none; }
+
+a:focus,
+button:focus {
+  outline: none; }
+
+a,
+a:hover {
+  text-decoration: none;
+  border: none; }
+
+img {
+  border: none;
+  vertical-align: top; }
+
+pre {
+  background: none;
+  border: none; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal; }
+
+i, em, label {
+  font-style: normal; }
+
+strong, b {
+  font-weight: bold; }
+
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px white inset;
+  -webkit-text-fill-color: #666; }
+
+html, body {
+  width: 100%;
+  height: 100%;
+  background: #eee; }
+
+.example-box .example {
+  display: none; }
+
+.example1 h1, .example2 h1, .example3 h1 {
+  width: 100%;
+  padding: 10px;
+  font-size: 18px;
+  font-weight: normal;
+  text-align: center;
+  line-height: 26px;
+  background: #fff; }
+.example1 ul, .example2 ul, .example3 ul {
+  display: flex;
+  justify-content: flex-start;
+  flex-wrap: wrap;
+  padding: 10px; }
+.example1 .img-box, .example2 .img-box, .example3 .img-box {
+  width: calc(33.3% - 22px);
+  height: 400px;
+  margin: 10px;
+  border: 1px solid #ddd;
+  text-align: center;
+  background: #fff; }
+.example1 .img-box img, .example2 .img-box img, .example3 .img-box img {
+  border: none;
+  vertical-align: middle;
+  width: 100%;
+  height: 400px; }
+
+.example4, .example5, .example6 {
+  width: calc(100% - 60px);
+  margin: 10px;
+  padding: 10px 20px;
+  background: #fff; }
+  .example4:hover, .example5:hover, .example6:hover {
+    box-shadow: 0px 0px 15px #666; }
+  .example4 h1, .example5 h1, .example6 h1 {
+    padding-bottom: 10px;
+    font-size: 18px;
+    font-weight: normal;
+    text-align: center;
+    line-height: 26px;
+    position: relative;
+    z-index: 2; }
+  .example4 .box, .example5 .box, .example6 .box {
+    text-align: center; }
+    .example4 .box img, .example5 .box img, .example6 .box img {
+      width: 100%;
+      max-height: 600px; }
+    .example4 .box .btn-box, .example5 .box .btn-box, .example6 .box .btn-box {
+      padding-top: 10px; }
+    .example4 .box .btn, .example5 .box .btn, .example6 .box .btn {
+      display: inline-block;
+      height: 30px;
+      line-height: 30px;
+      border: 1px solid #ccc;
+      background-color: #fff;
+      padding: 0 20px;
+      margin-right: 50px;
+      color: #333; }
+      .example4 .box .btn:hover, .example5 .box .btn:hover, .example6 .box .btn:hover {
+        background: #eee; }
+
+.example5 ul,
+.example6 ul {
+  position: relative;
+  height: 600px;
+  overflow: hidden; }
+  .example5 ul li,
+  .example6 ul li {
+    width: 100%;
+    position: absolute;
+    z-index: 0; }
+    .example5 ul li img,
+    .example6 ul li img {
+      height: 600px; }
+
+/*# sourceMappingURL=demo.css.map */
