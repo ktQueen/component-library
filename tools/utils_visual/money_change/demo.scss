@@ -1,0 +1,53 @@
+@charset "utf-8";
+@import '../../../src/scss/reset/reset';
+@import '../../../src/scss/common/common';
+.money-change {
+	@extend %box-sizing;
+	padding: 20px;
+	.title{
+		line-height: 50px;
+		font-size: 24px;
+		font-weight: bold;
+	}
+	.explain{
+		padding: 15px;
+		border-radius: 4px;
+		color: #31708f;
+		background-color: #d9edf7;
+		border-color: #bce8f1;
+	}
+	.usage-box{
+		display: flex;
+		justify-content:space-between;
+		margin-top: 20px;
+	}
+	.usage{
+		width: 48%;
+		padding: 15px;
+		border-radius: 4px;
+		border: 1px solid #ddd;
+		p{
+			line-height: 30px;
+		}
+		input{
+			width: 100%;
+			padding: 2px 6px;
+			line-height: 22px;
+		}
+		button{
+			margin-top: 10px;
+			padding: 6px 14px;
+			line-height: 22px;
+			background: #5FA924;
+			color: #fff;
+			border: none;
+			border-radius: 4px;
+			cursor: pointer;
+		}
+		textarea{
+			width: 100%;
+			padding: 2px 6px;
+			line-height: 22px;
+		}
+	}
+}

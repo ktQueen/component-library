@@ -1,0 +1,115 @@
+html, body,
+h1, h2, h3, h4, h5, h6,
+p, div, dl, dt, dd, ul, ol, li,
+form, button, input, select, textarea,
+table, caption, th, td,
+blockquote, pre, hr, xmp {
+  margin: 0;
+  padding: 0;
+  font-size: 14px;
+  font-family: 'Microsoft YaHei', sans-serif; }
+
+header, footer, section, nav,
+article, aside, hgroup,
+address, figure, figcaption,
+menu, details,
+summary, time, mark, audio, video {
+  display: block;
+  margin: 0;
+  padding: 0; }
+
+table {
+  border-collapse: collapse;
+  border-spacing: 0; }
+
+ul, ol {
+  list-style: none; }
+
+textarea {
+  overflow: auto;
+  resize: none;
+  outline: none; }
+
+a:focus,
+button:focus {
+  outline: none; }
+
+a,
+a:hover {
+  text-decoration: none;
+  border: none; }
+
+img {
+  border: none;
+  vertical-align: top; }
+
+pre {
+  background: none;
+  border: none; }
+
+h1, h2, h3, h4, h5, h6 {
+  font-weight: normal; }
+
+i, em, label {
+  font-style: normal; }
+
+strong, b {
+  font-weight: bold; }
+
+input:-webkit-autofill {
+  -webkit-box-shadow: 0 0 0px 1000px white inset;
+  -webkit-text-fill-color: #666; }
+
+.money-change {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+  .money-change *,
+  .money-change *:before,
+  .money-change *:after {
+    -moz-box-sizing: inherit;
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit; }
+
+.money-change {
+  padding: 20px; }
+  .money-change .title {
+    line-height: 50px;
+    font-size: 24px;
+    font-weight: bold; }
+  .money-change .explain {
+    padding: 15px;
+    border-radius: 4px;
+    color: #31708f;
+    background-color: #d9edf7;
+    border-color: #bce8f1; }
+  .money-change .usage-box {
+    display: flex;
+    justify-content: space-between;
+    margin-top: 20px; }
+  .money-change .usage {
+    width: 48%;
+    padding: 15px;
+    border-radius: 4px;
+    border: 1px solid #ddd; }
+    .money-change .usage p {
+      line-height: 30px; }
+    .money-change .usage input {
+      width: 100%;
+      padding: 2px 6px;
+      line-height: 22px; }
+    .money-change .usage button {
+      margin-top: 10px;
+      padding: 6px 14px;
+      line-height: 22px;
+      background: #5FA924;
+      color: #fff;
+      border: none;
+      border-radius: 4px;
+      cursor: pointer; }
+    .money-change .usage textarea {
+      width: 100%;
+      padding: 2px 6px;
+      line-height: 22px; }
+
+/*# sourceMappingURL=demo.css.map */
