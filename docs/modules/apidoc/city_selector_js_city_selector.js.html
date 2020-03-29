@@ -1,0 +1,2763 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Source: city_selector/js/city_selector.js</title>
+    
+    
+    <script src="scripts/prettify/prettify.js"></script>
+    <script src="scripts/prettify/lang-css.js"></script>
+    <script src="scripts/jquery.min.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/bootstrap.min.css">
+    <link type="text/css" rel="stylesheet" href="styles/jaguar.css">
+    
+    
+    <script>
+    var config = {"monospaceLinks":false,"cleverLinks":false,"default":{"outputSourceFiles":true}};
+    </script>
+    
+
+    
+</head>
+<body>
+<div id="wrap" class="clearfix">
+    
+<div class="navigation">
+    <h3 class="applicationName"><a href="index.html"></a></h3>
+
+    <div class="search">
+        <input id="search" type="text" class="form-control input-sm" placeholder="Search Documentations">
+    </div>
+    <ul class="list">
+    
+        <li class="item" data-name="citySelector">
+            <span class="title">
+                <a href="citySelector.html">citySelector</a>
+                
+            </span>
+            <ul class="members itemMembers">
+            
+            </ul>
+            <ul class="typedefs itemMembers">
+            
+            </ul>
+            <ul class="methods itemMembers">
+            
+            <span class="subtitle">Methods</span>
+            
+                <li data-name="citySelector#change"><a href="citySelector.html#change">change</a></li>
+            
+                <li data-name="citySelector#clear"><a href="citySelector.html#clear">clear</a></li>
+            
+                <li data-name="citySelector#destroy"><a href="citySelector.html#destroy">destroy</a></li>
+            
+                <li data-name="citySelector#disable"><a href="citySelector.html#disable">disable</a></li>
+            
+                <li data-name="citySelector#enable"><a href="citySelector.html#enable">enable</a></li>
+            
+                <li data-name="citySelector#getValue"><a href="citySelector.html#getValue">getValue</a></li>
+            
+                <li data-name="citySelector#getValueId"><a href="citySelector.html#getValueId">getValueId</a></li>
+            
+                <li data-name="citySelector#getValueName"><a href="citySelector.html#getValueName">getValueName</a></li>
+            
+                <li data-name="citySelector#hide"><a href="citySelector.html#hide">hide</a></li>
+            
+                <li data-name="citySelector#reset"><a href="citySelector.html#reset">reset</a></li>
+            
+                <li data-name="citySelector#setData"><a href="citySelector.html#setData">setData</a></li>
+            
+                <li data-name="citySelector#setValue"><a href="citySelector.html#setValue">setValue</a></li>
+            
+                <li data-name="citySelector#show"><a href="citySelector.html#show">show</a></li>
+            
+            </ul>
+            <ul class="events itemMembers">
+            
+            </ul>
+        </li>
+    
+        <li class="item" data-name="custom_mark">
+            <span class="title">
+                <a href="custom_mark.html">custom_mark</a>
+                
+            </span>
+            <ul class="members itemMembers">
+            
+            </ul>
+            <ul class="typedefs itemMembers">
+            
+            </ul>
+            <ul class="methods itemMembers">
+            
+            <span class="subtitle">Methods</span>
+            
+                <li data-name="custom_mark#clear"><a href="custom_mark.html#clear">clear</a></li>
+            
+                <li data-name="custom_mark#destroy"><a href="custom_mark.html#destroy">destroy</a></li>
+            
+                <li data-name="custom_mark#disable"><a href="custom_mark.html#disable">disable</a></li>
+            
+                <li data-name="custom_mark#enable"><a href="custom_mark.html#enable">enable</a></li>
+            
+                <li data-name="custom_mark#getValue"><a href="custom_mark.html#getValue">getValue</a></li>
+            
+                <li data-name="custom_mark#hide"><a href="custom_mark.html#hide">hide</a></li>
+            
+                <li data-name="custom_mark#reset"><a href="custom_mark.html#reset">reset</a></li>
+            
+                <li data-name="custom_mark#setData"><a href="custom_mark.html#setData">setData</a></li>
+            
+                <li data-name="custom_mark#setValue"><a href="custom_mark.html#setValue">setValue</a></li>
+            
+                <li data-name="custom_mark#show"><a href="custom_mark.html#show">show</a></li>
+            
+            </ul>
+            <ul class="events itemMembers">
+            
+            </ul>
+        </li>
+    
+        <li class="item" data-name="DropDown">
+            <span class="title">
+                <a href="DropDown.html">DropDown</a>
+                
+            </span>
+            <ul class="members itemMembers">
+            
+            </ul>
+            <ul class="typedefs itemMembers">
+            
+            </ul>
+            <ul class="methods itemMembers">
+            
+            <span class="subtitle">Methods</span>
+            
+                <li data-name="DropDown#change"><a href="DropDown.html#change">change</a></li>
+            
+                <li data-name="DropDown#clear"><a href="DropDown.html#clear">clear</a></li>
+            
+                <li data-name="DropDown#destroy"><a href="DropDown.html#destroy">destroy</a></li>
+            
+                <li data-name="DropDown#disable"><a href="DropDown.html#disable">disable</a></li>
+            
+                <li data-name="DropDown#enable"><a href="DropDown.html#enable">enable</a></li>
+            
+                <li data-name="DropDown#getValue"><a href="DropDown.html#getValue">getValue</a></li>
+            
+                <li data-name="DropDown#hide"><a href="DropDown.html#hide">hide</a></li>
+            
+                <li data-name="DropDown#required"><a href="DropDown.html#required">required</a></li>
+            
+                <li data-name="DropDown#reset"><a href="DropDown.html#reset">reset</a></li>
+            
+                <li data-name="DropDown#setData"><a href="DropDown.html#setData">setData</a></li>
+            
+                <li data-name="DropDown#setValue"><a href="DropDown.html#setValue">setValue</a></li>
+            
+                <li data-name="DropDown#show"><a href="DropDown.html#show">show</a></li>
+            
+            </ul>
+            <ul class="events itemMembers">
+            
+            </ul>
+        </li>
+    
+        <li class="item" data-name="DropDownCalendar">
+            <span class="title">
+                <a href="DropDownCalendar.html">DropDownCalendar</a>
+                
+            </span>
+            <ul class="members itemMembers">
+            
+            </ul>
+            <ul class="typedefs itemMembers">
+            
+            </ul>
+            <ul class="methods itemMembers">
+            
+            <span class="subtitle">Methods</span>
+            
+                <li data-name="DropDownCalendar#change"><a href="DropDownCalendar.html#change">change</a></li>
+            
+                <li data-name="DropDownCalendar#change"><a href="DropDownCalendar.html#change">change</a></li>
+            
+                <li data-name="DropDownCalendar#clear"><a href="DropDownCalendar.html#clear">clear</a></li>
+            
+                <li data-name="DropDownCalendar#clear"><a href="DropDownCalendar.html#clear">clear</a></li>
+            
+                <li data-name="DropDownCalendar#close"><a href="DropDownCalendar.html#close">close</a></li>
+            
+                <li data-name="DropDownCalendar#destroy"><a href="DropDownCalendar.html#destroy">destroy</a></li>
+            
+                <li data-name="DropDownCalendar#destroy"><a href="DropDownCalendar.html#destroy">destroy</a></li>
+            
+                <li data-name="DropDownCalendar#disable"><a href="DropDownCalendar.html#disable">disable</a></li>
+            
+                <li data-name="DropDownCalendar#disable"><a href="DropDownCalendar.html#disable">disable</a></li>
+            
+                <li data-name="DropDownCalendar#enable"><a href="DropDownCalendar.html#enable">enable</a></li>
+            
+                <li data-name="DropDownCalendar#enable"><a href="DropDownCalendar.html#enable">enable</a></li>
+            
+                <li data-name="DropDownCalendar#getValue"><a href="DropDownCalendar.html#getValue">getValue</a></li>
+            
+                <li data-name="DropDownCalendar#getValue"><a href="DropDownCalendar.html#getValue">getValue</a></li>
+            
+                <li data-name="DropDownCalendar#hide"><a href="DropDownCalendar.html#hide">hide</a></li>
+            
+                <li data-name="DropDownCalendar#hide"><a href="DropDownCalendar.html#hide">hide</a></li>
+            
+                <li data-name="DropDownCalendar#open"><a href="DropDownCalendar.html#open">open</a></li>
+            
+                <li data-name="DropDownCalendar#reset"><a href="DropDownCalendar.html#reset">reset</a></li>
+            
+                <li data-name="DropDownCalendar#reset"><a href="DropDownCalendar.html#reset">reset</a></li>
+            
+                <li data-name="DropDownCalendar#setValue"><a href="DropDownCalendar.html#setValue">setValue</a></li>
+            
+                <li data-name="DropDownCalendar#setValue"><a href="DropDownCalendar.html#setValue">setValue</a></li>
+            
+                <li data-name="DropDownCalendar#show"><a href="DropDownCalendar.html#show">show</a></li>
+            
+                <li data-name="DropDownCalendar#show"><a href="DropDownCalendar.html#show">show</a></li>
+            
+            </ul>
+            <ul class="events itemMembers">
+            
+            </ul>
+        </li>
+    
+        <li class="item" data-name="DropDownCalendar">
+            <span class="title">
+                <a href="DropDownCalendar.html">DropDownCalendar</a>
+                
+            </span>
+            <ul class="members itemMembers">
+            
+            </ul>
+            <ul class="typedefs itemMembers">
+            
+            </ul>
+            <ul class="methods itemMembers">
+            
+            <span class="subtitle">Methods</span>
+            
+                <li data-name="DropDownCalendar#change"><a href="DropDownCalendar.html#change">change</a></li>
+            
+                <li data-name="DropDownCalendar#change"><a href="DropDownCalendar.html#change">change</a></li>
+            
+                <li data-name="DropDownCalendar#clear"><a href="DropDownCalendar.html#clear">clear</a></li>
+            
+                <li data-name="DropDownCalendar#clear"><a href="DropDownCalendar.html#clear">clear</a></li>
+            
+                <li data-name="DropDownCalendar#close"><a href="DropDownCalendar.html#close">close</a></li>
+            
+                <li data-name="DropDownCalendar#destroy"><a href="DropDownCalendar.html#destroy">destroy</a></li>
+            
+                <li data-name="DropDownCalendar#destroy"><a href="DropDownCalendar.html#destroy">destroy</a></li>
+            
+                <li data-name="DropDownCalendar#disable"><a href="DropDownCalendar.html#disable">disable</a></li>
+            
+                <li data-name="DropDownCalendar#disable"><a href="DropDownCalendar.html#disable">disable</a></li>
+            
+                <li data-name="DropDownCalendar#enable"><a href="DropDownCalendar.html#enable">enable</a></li>
+            
+                <li data-name="DropDownCalendar#enable"><a href="DropDownCalendar.html#enable">enable</a></li>
+            
+                <li data-name="DropDownCalendar#getValue"><a href="DropDownCalendar.html#getValue">getValue</a></li>
+            
+                <li data-name="DropDownCalendar#getValue"><a href="DropDownCalendar.html#getValue">getValue</a></li>
+            
+                <li data-name="DropDownCalendar#hide"><a href="DropDownCalendar.html#hide">hide</a></li>
+            
+                <li data-name="DropDownCalendar#hide"><a href="DropDownCalendar.html#hide">hide</a></li>
+            
+                <li data-name="DropDownCalendar#open"><a href="DropDownCalendar.html#open">open</a></li>
+            
+                <li data-name="DropDownCalendar#reset"><a href="DropDownCalendar.html#reset">reset</a></li>
+            
+                <li data-name="DropDownCalendar#reset"><a href="DropDownCalendar.html#reset">reset</a></li>
+            
+                <li data-name="DropDownCalendar#setValue"><a href="DropDownCalendar.html#setValue">setValue</a></li>
+            
+                <li data-name="DropDownCalendar#setValue"><a href="DropDownCalendar.html#setValue">setValue</a></li>
+            
+                <li data-name="DropDownCalendar#show"><a href="DropDownCalendar.html#show">show</a></li>
+            
+                <li data-name="DropDownCalendar#show"><a href="DropDownCalendar.html#show">show</a></li>
+            
+            </ul>
+            <ul class="events itemMembers">
+            
+            </ul>
+        </li>
+    
+        <li class="item" data-name="DropDownMultiple">
+            <span class="title">
+                <a href="DropDownMultiple.html">DropDownMultiple</a>
+                
+            </span>
+            <ul class="members itemMembers">
+            
+            </ul>
+            <ul class="typedefs itemMembers">
+            
+            </ul>
+            <ul class="methods itemMembers">
+            
+            <span class="subtitle">Methods</span>
+            
+                <li data-name="DropDownMultiple#change"><a href="DropDownMultiple.html#change">change</a></li>
+            
+                <li data-name="DropDownMultiple#clear"><a href="DropDownMultiple.html#clear">clear</a></li>
+            
+                <li data-name="DropDownMultiple#destroy"><a href="DropDownMultiple.html#destroy">destroy</a></li>
+            
+                <li data-name="DropDownMultiple#disable"><a href="DropDownMultiple.html#disable">disable</a></li>
+            
+                <li data-name="DropDownMultiple#enable"><a href="DropDownMultiple.html#enable">enable</a></li>
+            
+                <li data-name="DropDownMultiple#getValue"><a href="DropDownMultiple.html#getValue">getValue</a></li>
+            
+                <li data-name="DropDownMultiple#getValueId"><a href="DropDownMultiple.html#getValueId">getValueId</a></li>
+            
+                <li data-name="DropDownMultiple#getValueName"><a href="DropDownMultiple.html#getValueName">getValueName</a></li>
+            
+                <li data-name="DropDownMultiple#hide"><a href="DropDownMultiple.html#hide">hide</a></li>
+            
+                <li data-name="DropDownMultiple#required"><a href="DropDownMultiple.html#required">required</a></li>
+            
+                <li data-name="DropDownMultiple#reset"><a href="DropDownMultiple.html#reset">reset</a></li>
+            
+                <li data-name="DropDownMultiple#setData"><a href="DropDownMultiple.html#setData">setData</a></li>
+            
+                <li data-name="DropDownMultiple#setValue"><a href="DropDownMultiple.html#setValue">setValue</a></li>
+            
+                <li data-name="DropDownMultiple#show"><a href="DropDownMultiple.html#show">show</a></li>
+            
+            </ul>
+            <ul class="events itemMembers">
+            
+            </ul>
+        </li>
+    
+        <li class="item" data-name="DropDownMultipleSearch">
+            <span class="title">
+                <a href="DropDownMultipleSearch.html">DropDownMultipleSearch</a>
+                
+            </span>
+            <ul class="members itemMembers">
+            
+            </ul>
+            <ul class="typedefs itemMembers">
+            
+            </ul>
+            <ul class="methods itemMembers">
+            
+            <span class="subtitle">Methods</span>
+            
+                <li data-name="DropDownMultipleSearch#change"><a href="DropDownMultipleSearch.html#change">change</a></li>
+            
+                <li data-name="DropDownMultipleSearch#clear"><a href="DropDownMultipleSearch.html#clear">clear</a></li>
+            
+                <li data-name="DropDownMultipleSearch#destroy"><a href="DropDownMultipleSearch.html#destroy">destroy</a></li>
+            
+                <li data-name="DropDownMultipleSearch#disable"><a href="DropDownMultipleSearch.html#disable">disable</a></li>
+            
+                <li data-name="DropDownMultipleSearch#enable"><a href="DropDownMultipleSearch.html#enable">enable</a></li>
+            
+                <li data-name="DropDownMultipleSearch#getValue"><a href="DropDownMultipleSearch.html#getValue">getValue</a></li>
+            
+                <li data-name="DropDownMultipleSearch#getValueId"><a href="DropDownMultipleSearch.html#getValueId">getValueId</a></li>
+            
+                <li data-name="DropDownMultipleSearch#getValueName"><a href="DropDownMultipleSearch.html#getValueName">getValueName</a></li>
+            
+                <li data-name="DropDownMultipleSearch#hide"><a href="DropDownMultipleSearch.html#hide">hide</a></li>
+            
+                <li data-name="DropDownMultipleSearch#required"><a href="DropDownMultipleSearch.html#required">required</a></li>
+            
+                <li data-name="DropDownMultipleSearch#reset"><a href="DropDownMultipleSearch.html#reset">reset</a></li>
+            
+                <li data-name="DropDownMultipleSearch#setData"><a href="DropDownMultipleSearch.html#setData">setData</a></li>
+            
+                <li data-name="DropDownMultipleSearch#setValue"><a href="DropDownMultipleSearch.html#setValue">setValue</a></li>
+            
+                <li data-name="DropDownMultipleSearch#show"><a href="DropDownMultipleSearch.html#show">show</a></li>
+            
+            </ul>
+            <ul class="events itemMembers">
+            
+            </ul>
+        </li>
+    
+        <li class="item" data-name="DropDownSingle">
+            <span class="title">
+                <a href="DropDownSingle.html">DropDownSingle</a>
+                
+            </span>
+            <ul class="members itemMembers">
+            
+            </ul>
+            <ul class="typedefs itemMembers">
+            
+            </ul>
+            <ul class="methods itemMembers">
+            
+            <span class="subtitle">Methods</span>
+            
+                <li data-name="DropDownSingle#change"><a href="DropDownSingle.html#change">change</a></li>
+            
+                <li data-name="DropDownSingle#clear"><a href="DropDownSingle.html#clear">clear</a></li>
+            
+                <li data-name="DropDownSingle#destroy"><a href="DropDownSingle.html#destroy">destroy</a></li>
+            
+                <li data-name="DropDownSingle#disable"><a href="DropDownSingle.html#disable">disable</a></li>
+            
+                <li data-name="DropDownSingle#enable"><a href="DropDownSingle.html#enable">enable</a></li>
+            
+                <li data-name="DropDownSingle#getValue"><a href="DropDownSingle.html#getValue">getValue</a></li>
+            
+                <li data-name="DropDownSingle#getValueId"><a href="DropDownSingle.html#getValueId">getValueId</a></li>
+            
+                <li data-name="DropDownSingle#getValueName"><a href="DropDownSingle.html#getValueName">getValueName</a></li>
+            
+                <li data-name="DropDownSingle#hide"><a href="DropDownSingle.html#hide">hide</a></li>
+            
+                <li data-name="DropDownSingle#required"><a href="DropDownSingle.html#required">required</a></li>
+            
+                <li data-name="DropDownSingle#reset"><a href="DropDownSingle.html#reset">reset</a></li>
+            
+                <li data-name="DropDownSingle#setData"><a href="DropDownSingle.html#setData">setData</a></li>
+            
+                <li data-name="DropDownSingle#setValue"><a href="DropDownSingle.html#setValue">setValue</a></li>
+            
+                <li data-name="DropDownSingle#show"><a href="DropDownSingle.html#show">show</a></li>
+            
+            </ul>
+            <ul class="events itemMembers">
+            
+            </ul>
+        </li>
+    
+        <li class="item" data-name="DropDownSingleSearch">
+            <span class="title">
+                <a href="DropDownSingleSearch.html">DropDownSingleSearch</a>
+                
+            </span>
+            <ul class="members itemMembers">
+            
+            </ul>
+            <ul class="typedefs itemMembers">
+            
+            </ul>
+            <ul class="methods itemMembers">
+            
+            <span class="subtitle">Methods</span>
+            
+                <li data-name="DropDownSingleSearch#change"><a href="DropDownSingleSearch.html#change">change</a></li>
+            
+                <li data-name="DropDownSingleSearch#clear"><a href="DropDownSingleSearch.html#clear">clear</a></li>
+            
+                <li data-name="DropDownSingleSearch#destroy"><a href="DropDownSingleSearch.html#destroy">destroy</a></li>
+            
+                <li data-name="DropDownSingleSearch#disable"><a href="DropDownSingleSearch.html#disable">disable</a></li>
+            
+                <li data-name="DropDownSingleSearch#enable"><a href="DropDownSingleSearch.html#enable">enable</a></li>
+            
+                <li data-name="DropDownSingleSearch#getValue"><a href="DropDownSingleSearch.html#getValue">getValue</a></li>
+            
+                <li data-name="DropDownSingleSearch#getValueId"><a href="DropDownSingleSearch.html#getValueId">getValueId</a></li>
+            
+                <li data-name="DropDownSingleSearch#getValueName"><a href="DropDownSingleSearch.html#getValueName">getValueName</a></li>
+            
+                <li data-name="DropDownSingleSearch#hide"><a href="DropDownSingleSearch.html#hide">hide</a></li>
+            
+                <li data-name="DropDownSingleSearch#required"><a href="DropDownSingleSearch.html#required">required</a></li>
+            
+                <li data-name="DropDownSingleSearch#reset"><a href="DropDownSingleSearch.html#reset">reset</a></li>
+            
+                <li data-name="DropDownSingleSearch#setData"><a href="DropDownSingleSearch.html#setData">setData</a></li>
+            
+                <li data-name="DropDownSingleSearch#setValue"><a href="DropDownSingleSearch.html#setValue">setValue</a></li>
+            
+                <li data-name="DropDownSingleSearch#show"><a href="DropDownSingleSearch.html#show">show</a></li>
+            
+            </ul>
+            <ul class="events itemMembers">
+            
+            </ul>
+        </li>
+    
+        <li class="item" data-name="FilterBar">
+            <span class="title">
+                <a href="FilterBar.html">FilterBar</a>
+                
+            </span>
+            <ul class="members itemMembers">
+            
+            </ul>
+            <ul class="typedefs itemMembers">
+            
+            </ul>
+            <ul class="methods itemMembers">
+            
+            <span class="subtitle">Methods</span>
+            
+                <li data-name="FilterBar#change"><a href="FilterBar.html#change">change</a></li>
+            
+                <li data-name="FilterBar#clear"><a href="FilterBar.html#clear">clear</a></li>
+            
+                <li data-name="FilterBar#destroy"><a href="FilterBar.html#destroy">destroy</a></li>
+            
+                <li data-name="FilterBar#disable"><a href="FilterBar.html#disable">disable</a></li>
+            
+                <li data-name="FilterBar#enable"><a href="FilterBar.html#enable">enable</a></li>
+            
+                <li data-name="FilterBar#getValue"><a href="FilterBar.html#getValue">getValue</a></li>
+            
+                <li data-name="FilterBar#hide"><a href="FilterBar.html#hide">hide</a></li>
+            
+                <li data-name="FilterBar#reset"><a href="FilterBar.html#reset">reset</a></li>
+            
+                <li data-name="FilterBar#setData"><a href="FilterBar.html#setData">setData</a></li>
+            
+                <li data-name="FilterBar#setValue"><a href="FilterBar.html#setValue">setValue</a></li>
+            
+                <li data-name="FilterBar#show"><a href="FilterBar.html#show">show</a></li>
+            
+            </ul>
+            <ul class="events itemMembers">
+            
+            </ul>
+        </li>
+    
+        <li class="item" data-name="Form">
+            <span class="title">
+                <a href="Form.html">Form</a>
+                
+            </span>
+            <ul class="members itemMembers">
+            
+            </ul>
+            <ul class="typedefs itemMembers">
+            
+            </ul>
+            <ul class="methods itemMembers">
+            
+            <span class="subtitle">Methods</span>
+            
+                <li data-name="Form#add"><a href="Form.html#add">add</a></li>
+            
+                <li data-name="Form#clear"><a href="Form.html#clear">clear</a></li>
+            
+                <li data-name="Form#destroy"><a href="Form.html#destroy">destroy</a></li>
+            
+                <li data-name="Form#disable"><a href="Form.html#disable">disable</a></li>
+            
+                <li data-name="Form#enable"><a href="Form.html#enable">enable</a></li>
+            
+                <li data-name="Form#getDom"><a href="Form.html#getDom">getDom</a></li>
+            
+                <li data-name="Form#getValue"><a href="Form.html#getValue">getValue</a></li>
+            
+                <li data-name="Form#hide"><a href="Form.html#hide">hide</a></li>
+            
+                <li data-name="Form#required"><a href="Form.html#required">required</a></li>
+            
+                <li data-name="Form#reset"><a href="Form.html#reset">reset</a></li>
+            
+                <li data-name="Form#setData"><a href="Form.html#setData">setData</a></li>
+            
+                <li data-name="Form#setValue"><a href="Form.html#setValue">setValue</a></li>
+            
+                <li data-name="Form#show"><a href="Form.html#show">show</a></li>
+            
+                <li data-name="Form#verify"><a href="Form.html#verify">verify</a></li>
+            
+            </ul>
+            <ul class="events itemMembers">
+            
+            </ul>
+        </li>
+    
+        <li class="item" data-name="FormComplexBlockParaConfig">
+            <span class="title">
+                <a href="FormComplexBlockParaConfig.html">FormComplexBlockParaConfig</a>
+                
+            </span>
+            <ul class="members itemMembers">
+            
+            </ul>
+            <ul class="typedefs itemMembers">
+            
+            </ul>
+            <ul class="methods itemMembers">
+            
+            <span class="subtitle">Methods</span>
+            
+                <li data-name="FormComplexBlockParaConfig#clear"><a href="FormComplexBlockParaConfig.html#clear">clear</a></li>
+            
+                <li data-name="FormComplexBlockParaConfig#destroy"><a href="FormComplexBlockParaConfig.html#destroy">destroy</a></li>
+            
+                <li data-name="FormComplexBlockParaConfig#disable"><a href="FormComplexBlockParaConfig.html#disable">disable</a></li>
+            
+                <li data-name="FormComplexBlockParaConfig#enable"><a href="FormComplexBlockParaConfig.html#enable">enable</a></li>
+            
+                <li data-name="FormComplexBlockParaConfig#getValue"><a href="FormComplexBlockParaConfig.html#getValue">getValue</a></li>
+            
+                <li data-name="FormComplexBlockParaConfig#hide"><a href="FormComplexBlockParaConfig.html#hide">hide</a></li>
+            
+                <li data-name="FormComplexBlockParaConfig#required"><a href="FormComplexBlockParaConfig.html#required">required</a></li>
+            
+                <li data-name="FormComplexBlockParaConfig#reset"><a href="FormComplexBlockParaConfig.html#reset">reset</a></li>
+            
+                <li data-name="FormComplexBlockParaConfig#setData"><a href="FormComplexBlockParaConfig.html#setData">setData</a></li>
+            
+                <li data-name="FormComplexBlockParaConfig#setValue"><a href="FormComplexBlockParaConfig.html#setValue">setValue</a></li>
+            
+                <li data-name="FormComplexBlockParaConfig#show"><a href="FormComplexBlockParaConfig.html#show">show</a></li>
+            
+            </ul>
+            <ul class="events itemMembers">
+            
+            </ul>
+        </li>
+    
+        <li class="item" data-name="FormComplexParaConfig">
+            <span class="title">
+                <a href="FormComplexParaConfig.html">FormComplexParaConfig</a>
+                
+            </span>
+            <ul class="members itemMembers">
+            
+            </ul>
+            <ul class="typedefs itemMembers">
+            
+            </ul>
+            <ul class="methods itemMembers">
+            
+            <span class="subtitle">Methods</span>
+            
+                <li data-name="FormComplexParaConfig#clear"><a href="FormComplexParaConfig.html#clear">clear</a></li>
+            
+                <li data-name="FormComplexParaConfig#destroy"><a href="FormComplexParaConfig.html#destroy">destroy</a></li>
+            
+                <li data-name="FormComplexParaConfig#disable"><a href="FormComplexParaConfig.html#disable">disable</a></li>
+            
+                <li data-name="FormComplexParaConfig#enable"><a href="FormComplexParaConfig.html#enable">enable</a></li>
+            
+                <li data-name="FormComplexParaConfig#getValue"><a href="FormComplexParaConfig.html#getValue">getValue</a></li>
+            
+                <li data-name="FormComplexParaConfig#hide"><a href="FormComplexParaConfig.html#hide">hide</a></li>
+            
+                <li data-name="FormComplexParaConfig#required"><a href="FormComplexParaConfig.html#required">required</a></li>
+            
+                <li data-name="FormComplexParaConfig#reset"><a href="FormComplexParaConfig.html#reset">reset</a></li>
+            
+                <li data-name="FormComplexParaConfig#setData"><a href="FormComplexParaConfig.html#setData">setData</a></li>
+            
+                <li data-name="FormComplexParaConfig#setValue"><a href="FormComplexParaConfig.html#setValue">setValue</a></li>
+            
+                <li data-name="FormComplexParaConfig#show"><a href="FormComplexParaConfig.html#show">show</a></li>
+            
+            </ul>
+            <ul class="events itemMembers">
+            
+            </ul>
+        </li>
+    
+        <li class="item" data-name="FormComplexTableParaConfig">
+            <span class="title">
+                <a href="FormComplexTableParaConfig.html">FormComplexTableParaConfig</a>
+                
+            </span>
+            <ul class="members itemMembers">
+            
+            </ul>
+            <ul class="typedefs itemMembers">
+            
+            </ul>
+            <ul class="methods itemMembers">
+            
+            <span class="subtitle">Methods</span>
+            
+                <li data-name="FormComplexTableParaConfig#clear"><a href="FormComplexTableParaConfig.html#clear">clear</a></li>
+            
+                <li data-name="FormComplexTableParaConfig#destroy"><a href="FormComplexTableParaConfig.html#destroy">destroy</a></li>
+            
+                <li data-name="FormComplexTableParaConfig#disable"><a href="FormComplexTableParaConfig.html#disable">disable</a></li>
+            
+                <li data-name="FormComplexTableParaConfig#enable"><a href="FormComplexTableParaConfig.html#enable">enable</a></li>
+            
+                <li data-name="FormComplexTableParaConfig#getValue"><a href="FormComplexTableParaConfig.html#getValue">getValue</a></li>
+            
+                <li data-name="FormComplexTableParaConfig#hide"><a href="FormComplexTableParaConfig.html#hide">hide</a></li>
+            
+                <li data-name="FormComplexTableParaConfig#required"><a href="FormComplexTableParaConfig.html#required">required</a></li>
+            
+                <li data-name="FormComplexTableParaConfig#reset"><a href="FormComplexTableParaConfig.html#reset">reset</a></li>
+            
+                <li data-name="FormComplexTableParaConfig#setData"><a href="FormComplexTableParaConfig.html#setData">setData</a></li>
+            
+                <li data-name="FormComplexTableParaConfig#setValue"><a href="FormComplexTableParaConfig.html#setValue">setValue</a></li>
+            
+                <li data-name="FormComplexTableParaConfig#show"><a href="FormComplexTableParaConfig.html#show">show</a></li>
+            
+            </ul>
+            <ul class="events itemMembers">
+            
+            </ul>
+        </li>
+    
+        <li class="item" data-name="FormFieldCheckbox">
+            <span class="title">
+                <a href="FormFieldCheckbox.html">FormFieldCheckbox</a>
+                
+            </span>
+            <ul class="members itemMembers">
+            
+            </ul>
+            <ul class="typedefs itemMembers">
+            
+            </ul>
+            <ul class="methods itemMembers">
+            
+            <span class="subtitle">Methods</span>
+            
+                <li data-name="FormFieldCheckbox#change"><a href="FormFieldCheckbox.html#change">change</a></li>
+            
+                <li data-name="FormFieldCheckbox#clear"><a href="FormFieldCheckbox.html#clear">clear</a></li>
+            
+                <li data-name="FormFieldCheckbox#destroy"><a href="FormFieldCheckbox.html#destroy">destroy</a></li>
+            
+                <li data-name="FormFieldCheckbox#disable"><a href="FormFieldCheckbox.html#disable">disable</a></li>
+            
+                <li data-name="FormFieldCheckbox#enable"><a href="FormFieldCheckbox.html#enable">enable</a></li>
+            
+                <li data-name="FormFieldCheckbox#getValue"><a href="FormFieldCheckbox.html#getValue">getValue</a></li>
+            
+                <li data-name="FormFieldCheckbox#getValueId"><a href="FormFieldCheckbox.html#getValueId">getValueId</a></li>
+            
+                <li data-name="FormFieldCheckbox#getValueName"><a href="FormFieldCheckbox.html#getValueName">getValueName</a></li>
+            
+                <li data-name="FormFieldCheckbox#hide"><a href="FormFieldCheckbox.html#hide">hide</a></li>
+            
+                <li data-name="FormFieldCheckbox#required"><a href="FormFieldCheckbox.html#required">required</a></li>
+            
+                <li data-name="FormFieldCheckbox#reset"><a href="FormFieldCheckbox.html#reset">reset</a></li>
+            
+                <li data-name="FormFieldCheckbox#setData"><a href="FormFieldCheckbox.html#setData">setData</a></li>
+            
+                <li data-name="FormFieldCheckbox#setValue"><a href="FormFieldCheckbox.html#setValue">setValue</a></li>
+            
+                <li data-name="FormFieldCheckbox#show"><a href="FormFieldCheckbox.html#show">show</a></li>
+            
+            </ul>
+            <ul class="events itemMembers">
+            
+            </ul>
+        </li>
+    
+        <li class="item" data-name="FormFieldCity">
+            <span class="title">
+                <a href="FormFieldCity.html">FormFieldCity</a>
+                
+            </span>
+            <ul class="members itemMembers">
+            
+            </ul>
+            <ul class="typedefs itemMembers">
+            
+            </ul>
+            <ul class="methods itemMembers">
+            
+            <span class="subtitle">Methods</span>
+            
+                <li data-name="FormFieldCity#change"><a href="FormFieldCity.html#change">change</a></li>
+            
+                <li data-name="FormFieldCity#clear"><a href="FormFieldCity.html#clear">clear</a></li>
+            
+                <li data-name="FormFieldCity#destroy"><a href="FormFieldCity.html#destroy">destroy</a></li>
+            
+                <li data-name="FormFieldCity#disable"><a href="FormFieldCity.html#disable">disable</a></li>
+            
+                <li data-name="FormFieldCity#enable"><a href="FormFieldCity.html#enable">enable</a></li>
+            
+                <li data-name="FormFieldCity#getValue"><a href="FormFieldCity.html#getValue">getValue</a></li>
+            
+                <li data-name="FormFieldCity#hide"><a href="FormFieldCity.html#hide">hide</a></li>
+            
+                <li data-name="FormFieldCity#required"><a href="FormFieldCity.html#required">required</a></li>
+            
+                <li data-name="FormFieldCity#reset"><a href="FormFieldCity.html#reset">reset</a></li>
+            
+                <li data-name="FormFieldCity#setData"><a href="FormFieldCity.html#setData">setData</a></li>
+            
+                <li data-name="FormFieldCity#setValue"><a href="FormFieldCity.html#setValue">setValue</a></li>
+            
+                <li data-name="FormFieldCity#show"><a href="FormFieldCity.html#show">show</a></li>
+            
+            </ul>
+            <ul class="events itemMembers">
+            
+            </ul>
+        </li>
+    
+        <li class="item" data-name="FormFieldDate">
+            <span class="title">
+                <a href="FormFieldDate.html">FormFieldDate</a>
+                
+            </span>
+            <ul class="members itemMembers">
+            
+            </ul>
+            <ul class="typedefs itemMembers">
+            
+            </ul>
+            <ul class="methods itemMembers">
+            
+            <span class="subtitle">Methods</span>
+            
+                <li data-name="FormFieldDate#change"><a href="FormFieldDate.html#change">change</a></li>
+            
+                <li data-name="FormFieldDate#clear"><a href="FormFieldDate.html#clear">clear</a></li>
+            
+                <li data-name="FormFieldDate#destroy"><a href="FormFieldDate.html#destroy">destroy</a></li>
+            
+                <li data-name="FormFieldDate#disable"><a href="FormFieldDate.html#disable">disable</a></li>
+            
+                <li data-name="FormFieldDate#enable"><a href="FormFieldDate.html#enable">enable</a></li>
+            
+                <li data-name="FormFieldDate#getValue"><a href="FormFieldDate.html#getValue">getValue</a></li>
+            
+                <li data-name="FormFieldDate#hide"><a href="FormFieldDate.html#hide">hide</a></li>
+            
+                <li data-name="FormFieldDate#required"><a href="FormFieldDate.html#required">required</a></li>
+            
+                <li data-name="FormFieldDate#reset"><a href="FormFieldDate.html#reset">reset</a></li>
+            
+                <li data-name="FormFieldDate#setValue"><a href="FormFieldDate.html#setValue">setValue</a></li>
+            
+                <li data-name="FormFieldDate#show"><a href="FormFieldDate.html#show">show</a></li>
+            
+            </ul>
+            <ul class="events itemMembers">
+            
+            </ul>
+        </li>
+    
+        <li class="item" data-name="FormFieldManifest">
+            <span class="title">
+                <a href="FormFieldManifest.html">FormFieldManifest</a>
+                
+            </span>
+            <ul class="members itemMembers">
+            
+            </ul>
+            <ul class="typedefs itemMembers">
+            
+            </ul>
+            <ul class="methods itemMembers">
+            
+            <span class="subtitle">Methods</span>
+            
+                <li data-name="FormFieldManifest#change"><a href="FormFieldManifest.html#change">change</a></li>
+            
+                <li data-name="FormFieldManifest#clear"><a href="FormFieldManifest.html#clear">clear</a></li>
+            
+                <li data-name="FormFieldManifest#destroy"><a href="FormFieldManifest.html#destroy">destroy</a></li>
+            
+                <li data-name="FormFieldManifest#disable"><a href="FormFieldManifest.html#disable">disable</a></li>
+            
+                <li data-name="FormFieldManifest#enable"><a href="FormFieldManifest.html#enable">enable</a></li>
+            
+                <li data-name="FormFieldManifest#getValue"><a href="FormFieldManifest.html#getValue">getValue</a></li>
+            
+                <li data-name="FormFieldManifest#hide"><a href="FormFieldManifest.html#hide">hide</a></li>
+            
+                <li data-name="FormFieldManifest#required"><a href="FormFieldManifest.html#required">required</a></li>
+            
+                <li data-name="FormFieldManifest#reset"><a href="FormFieldManifest.html#reset">reset</a></li>
+            
+                <li data-name="FormFieldManifest#setData"><a href="FormFieldManifest.html#setData">setData</a></li>
+            
+                <li data-name="FormFieldManifest#setValue"><a href="FormFieldManifest.html#setValue">setValue</a></li>
+            
+                <li data-name="FormFieldManifest#show"><a href="FormFieldManifest.html#show">show</a></li>
+            
+            </ul>
+            <ul class="events itemMembers">
+            
+            </ul>
+        </li>
+    
+        <li class="item" data-name="FormFieldPlainText">
+            <span class="title">
+                <a href="FormFieldPlainText.html">FormFieldPlainText</a>
+                
+            </span>
+            <ul class="members itemMembers">
+            
+            </ul>
+            <ul class="typedefs itemMembers">
+            
+            </ul>
+            <ul class="methods itemMembers">
+            
+            <span class="subtitle">Methods</span>
+            
+                <li data-name="FormFieldPlainText#change"><a href="FormFieldPlainText.html#change">change</a></li>
+            
+                <li data-name="FormFieldPlainText#clear"><a href="FormFieldPlainText.html#clear">clear</a></li>
+            
+                <li data-name="FormFieldPlainText#destroy"><a href="FormFieldPlainText.html#destroy">destroy</a></li>
+            
+                <li data-name="FormFieldPlainText#disable"><a href="FormFieldPlainText.html#disable">disable</a></li>
+            
+                <li data-name="FormFieldPlainText#enable"><a href="FormFieldPlainText.html#enable">enable</a></li>
+            
+                <li data-name="FormFieldPlainText#getValue"><a href="FormFieldPlainText.html#getValue">getValue</a></li>
+            
+                <li data-name="FormFieldPlainText#hide"><a href="FormFieldPlainText.html#hide">hide</a></li>
+            
+                <li data-name="FormFieldPlainText#required"><a href="FormFieldPlainText.html#required">required</a></li>
+            
+                <li data-name="FormFieldPlainText#reset"><a href="FormFieldPlainText.html#reset">reset</a></li>
+            
+                <li data-name="FormFieldPlainText#setValue"><a href="FormFieldPlainText.html#setValue">setValue</a></li>
+            
+                <li data-name="FormFieldPlainText#show"><a href="FormFieldPlainText.html#show">show</a></li>
+            
+            </ul>
+            <ul class="events itemMembers">
+            
+            </ul>
+        </li>
+    
+        <li class="item" data-name="FormFieldRadio">
+            <span class="title">
+                <a href="FormFieldRadio.html">FormFieldRadio</a>
+                
+            </span>
+            <ul class="members itemMembers">
+            
+            </ul>
+            <ul class="typedefs itemMembers">
+            
+            </ul>
+            <ul class="methods itemMembers">
+            
+            <span class="subtitle">Methods</span>
+            
+                <li data-name="FormFieldRadio#change"><a href="FormFieldRadio.html#change">change</a></li>
+            
+                <li data-name="FormFieldRadio#clear"><a href="FormFieldRadio.html#clear">clear</a></li>
+            
+                <li data-name="FormFieldRadio#destroy"><a href="FormFieldRadio.html#destroy">destroy</a></li>
+            
+                <li data-name="FormFieldRadio#disable"><a href="FormFieldRadio.html#disable">disable</a></li>
+            
+                <li data-name="FormFieldRadio#enable"><a href="FormFieldRadio.html#enable">enable</a></li>
+            
+                <li data-name="FormFieldRadio#getValue"><a href="FormFieldRadio.html#getValue">getValue</a></li>
+            
+                <li data-name="FormFieldRadio#getValueId"><a href="FormFieldRadio.html#getValueId">getValueId</a></li>
+            
+                <li data-name="FormFieldRadio#getValueName"><a href="FormFieldRadio.html#getValueName">getValueName</a></li>
+            
+                <li data-name="FormFieldRadio#hide"><a href="FormFieldRadio.html#hide">hide</a></li>
+            
+                <li data-name="FormFieldRadio#required"><a href="FormFieldRadio.html#required">required</a></li>
+            
+                <li data-name="FormFieldRadio#reset"><a href="FormFieldRadio.html#reset">reset</a></li>
+            
+                <li data-name="FormFieldRadio#setData"><a href="FormFieldRadio.html#setData">setData</a></li>
+            
+                <li data-name="FormFieldRadio#setValue"><a href="FormFieldRadio.html#setValue">setValue</a></li>
+            
+                <li data-name="FormFieldRadio#show"><a href="FormFieldRadio.html#show">show</a></li>
+            
+            </ul>
+            <ul class="events itemMembers">
+            
+            </ul>
+        </li>
+    
+        <li class="item" data-name="FormFieldSelect">
+            <span class="title">
+                <a href="FormFieldSelect.html">FormFieldSelect</a>
+                
+            </span>
+            <ul class="members itemMembers">
+            
+            </ul>
+            <ul class="typedefs itemMembers">
+            
+            </ul>
+            <ul class="methods itemMembers">
+            
+            <span class="subtitle">Methods</span>
+            
+                <li data-name="FormFieldSelect#change"><a href="FormFieldSelect.html#change">change</a></li>
+            
+                <li data-name="FormFieldSelect#clear"><a href="FormFieldSelect.html#clear">clear</a></li>
+            
+                <li data-name="FormFieldSelect#destroy"><a href="FormFieldSelect.html#destroy">destroy</a></li>
+            
+                <li data-name="FormFieldSelect#disable"><a href="FormFieldSelect.html#disable">disable</a></li>
+            
+                <li data-name="FormFieldSelect#enable"><a href="FormFieldSelect.html#enable">enable</a></li>
+            
+                <li data-name="FormFieldSelect#getValue"><a href="FormFieldSelect.html#getValue">getValue</a></li>
+            
+                <li data-name="FormFieldSelect#getValueId"><a href="FormFieldSelect.html#getValueId">getValueId</a></li>
+            
+                <li data-name="FormFieldSelect#getValueName"><a href="FormFieldSelect.html#getValueName">getValueName</a></li>
+            
+                <li data-name="FormFieldSelect#hide"><a href="FormFieldSelect.html#hide">hide</a></li>
+            
+                <li data-name="FormFieldSelect#required"><a href="FormFieldSelect.html#required">required</a></li>
+            
+                <li data-name="FormFieldSelect#reset"><a href="FormFieldSelect.html#reset">reset</a></li>
+            
+                <li data-name="FormFieldSelect#setData"><a href="FormFieldSelect.html#setData">setData</a></li>
+            
+                <li data-name="FormFieldSelect#setValue"><a href="FormFieldSelect.html#setValue">setValue</a></li>
+            
+                <li data-name="FormFieldSelect#show"><a href="FormFieldSelect.html#show">show</a></li>
+            
+            </ul>
+            <ul class="events itemMembers">
+            
+            </ul>
+        </li>
+    
+        <li class="item" data-name="FormFieldUm">
+            <span class="title">
+                <a href="FormFieldUm.html">FormFieldUm</a>
+                
+            </span>
+            <ul class="members itemMembers">
+            
+            </ul>
+            <ul class="typedefs itemMembers">
+            
+            </ul>
+            <ul class="methods itemMembers">
+            
+            <span class="subtitle">Methods</span>
+            
+                <li data-name="FormFieldUm#change"><a href="FormFieldUm.html#change">change</a></li>
+            
+                <li data-name="FormFieldUm#clear"><a href="FormFieldUm.html#clear">clear</a></li>
+            
+                <li data-name="FormFieldUm#destroy"><a href="FormFieldUm.html#destroy">destroy</a></li>
+            
+                <li data-name="FormFieldUm#disable"><a href="FormFieldUm.html#disable">disable</a></li>
+            
+                <li data-name="FormFieldUm#enable"><a href="FormFieldUm.html#enable">enable</a></li>
+            
+                <li data-name="FormFieldUm#getValue"><a href="FormFieldUm.html#getValue">getValue</a></li>
+            
+                <li data-name="FormFieldUm#hide"><a href="FormFieldUm.html#hide">hide</a></li>
+            
+                <li data-name="FormFieldUm#required"><a href="FormFieldUm.html#required">required</a></li>
+            
+                <li data-name="FormFieldUm#reset"><a href="FormFieldUm.html#reset">reset</a></li>
+            
+                <li data-name="FormFieldUm#setValue"><a href="FormFieldUm.html#setValue">setValue</a></li>
+            
+                <li data-name="FormFieldUm#show"><a href="FormFieldUm.html#show">show</a></li>
+            
+            </ul>
+            <ul class="events itemMembers">
+            
+            </ul>
+        </li>
+    
+        <li class="item" data-name="FormFieldUpload">
+            <span class="title">
+                <a href="FormFieldUpload.html">FormFieldUpload</a>
+                
+            </span>
+            <ul class="members itemMembers">
+            
+            </ul>
+            <ul class="typedefs itemMembers">
+            
+            </ul>
+            <ul class="methods itemMembers">
+            
+            <span class="subtitle">Methods</span>
+            
+                <li data-name="FormFieldUpload#change"><a href="FormFieldUpload.html#change">change</a></li>
+            
+                <li data-name="FormFieldUpload#clear"><a href="FormFieldUpload.html#clear">clear</a></li>
+            
+                <li data-name="FormFieldUpload#destroy"><a href="FormFieldUpload.html#destroy">destroy</a></li>
+            
+                <li data-name="FormFieldUpload#disable"><a href="FormFieldUpload.html#disable">disable</a></li>
+            
+                <li data-name="FormFieldUpload#enable"><a href="FormFieldUpload.html#enable">enable</a></li>
+            
+                <li data-name="FormFieldUpload#getValue"><a href="FormFieldUpload.html#getValue">getValue</a></li>
+            
+                <li data-name="FormFieldUpload#hide"><a href="FormFieldUpload.html#hide">hide</a></li>
+            
+                <li data-name="FormFieldUpload#required"><a href="FormFieldUpload.html#required">required</a></li>
+            
+                <li data-name="FormFieldUpload#reset"><a href="FormFieldUpload.html#reset">reset</a></li>
+            
+                <li data-name="FormFieldUpload#setValue"><a href="FormFieldUpload.html#setValue">setValue</a></li>
+            
+                <li data-name="FormFieldUpload#show"><a href="FormFieldUpload.html#show">show</a></li>
+            
+            </ul>
+            <ul class="events itemMembers">
+            
+            </ul>
+        </li>
+    
+        <li class="item" data-name="FormFiledText">
+            <span class="title">
+                <a href="FormFiledText.html">FormFiledText</a>
+                
+            </span>
+            <ul class="members itemMembers">
+            
+            </ul>
+            <ul class="typedefs itemMembers">
+            
+            </ul>
+            <ul class="methods itemMembers">
+            
+            <span class="subtitle">Methods</span>
+            
+                <li data-name="FormFiledText#change"><a href="FormFiledText.html#change">change</a></li>
+            
+                <li data-name="FormFiledText#clear"><a href="FormFiledText.html#clear">clear</a></li>
+            
+                <li data-name="FormFiledText#destroy"><a href="FormFiledText.html#destroy">destroy</a></li>
+            
+                <li data-name="FormFiledText#disable"><a href="FormFiledText.html#disable">disable</a></li>
+            
+                <li data-name="FormFiledText#enable"><a href="FormFiledText.html#enable">enable</a></li>
+            
+                <li data-name="FormFiledText#getValue"><a href="FormFiledText.html#getValue">getValue</a></li>
+            
+                <li data-name="FormFiledText#hide"><a href="FormFiledText.html#hide">hide</a></li>
+            
+                <li data-name="FormFiledText#required"><a href="FormFiledText.html#required">required</a></li>
+            
+                <li data-name="FormFiledText#reset"><a href="FormFiledText.html#reset">reset</a></li>
+            
+                <li data-name="FormFiledText#setValue"><a href="FormFiledText.html#setValue">setValue</a></li>
+            
+                <li data-name="FormFiledText#show"><a href="FormFiledText.html#show">show</a></li>
+            
+            </ul>
+            <ul class="events itemMembers">
+            
+            </ul>
+        </li>
+    
+        <li class="item" data-name="FormVerify">
+            <span class="title">
+                <a href="FormVerify.html">FormVerify</a>
+                
+            </span>
+            <ul class="members itemMembers">
+            
+            </ul>
+            <ul class="typedefs itemMembers">
+            
+            </ul>
+            <ul class="methods itemMembers">
+            
+            <span class="subtitle">Methods</span>
+            
+                <li data-name="FormVerify#errorNum"><a href="FormVerify.html#errorNum">errorNum</a></li>
+            
+                <li data-name="FormVerify#reset"><a href="FormVerify.html#reset">reset</a></li>
+            
+            </ul>
+            <ul class="events itemMembers">
+            
+            </ul>
+        </li>
+    
+        <li class="item" data-name="FuzzySearch">
+            <span class="title">
+                <a href="FuzzySearch.html">FuzzySearch</a>
+                
+            </span>
+            <ul class="members itemMembers">
+            
+            </ul>
+            <ul class="typedefs itemMembers">
+            
+            </ul>
+            <ul class="methods itemMembers">
+            
+            <span class="subtitle">Methods</span>
+            
+                <li data-name="FuzzySearch#change"><a href="FuzzySearch.html#change">change</a></li>
+            
+                <li data-name="FuzzySearch#clear"><a href="FuzzySearch.html#clear">clear</a></li>
+            
+                <li data-name="FuzzySearch#destroy"><a href="FuzzySearch.html#destroy">destroy</a></li>
+            
+                <li data-name="FuzzySearch#disable"><a href="FuzzySearch.html#disable">disable</a></li>
+            
+                <li data-name="FuzzySearch#enable"><a href="FuzzySearch.html#enable">enable</a></li>
+            
+                <li data-name="FuzzySearch#getValue"><a href="FuzzySearch.html#getValue">getValue</a></li>
+            
+                <li data-name="FuzzySearch#hide"><a href="FuzzySearch.html#hide">hide</a></li>
+            
+                <li data-name="FuzzySearch#reset"><a href="FuzzySearch.html#reset">reset</a></li>
+            
+                <li data-name="FuzzySearch#setData"><a href="FuzzySearch.html#setData">setData</a></li>
+            
+                <li data-name="FuzzySearch#setValue"><a href="FuzzySearch.html#setValue">setValue</a></li>
+            
+                <li data-name="FuzzySearch#show"><a href="FuzzySearch.html#show">show</a></li>
+            
+            </ul>
+            <ul class="events itemMembers">
+            
+            </ul>
+        </li>
+    
+        <li class="item" data-name="ListSelect">
+            <span class="title">
+                <a href="ListSelect.html">ListSelect</a>
+                
+            </span>
+            <ul class="members itemMembers">
+            
+            </ul>
+            <ul class="typedefs itemMembers">
+            
+            </ul>
+            <ul class="methods itemMembers">
+            
+            </ul>
+            <ul class="events itemMembers">
+            
+            </ul>
+        </li>
+    
+        <li class="item" data-name="Manifest1">
+            <span class="title">
+                <a href="Manifest1.html">Manifest1</a>
+                
+            </span>
+            <ul class="members itemMembers">
+            
+            </ul>
+            <ul class="typedefs itemMembers">
+            
+            </ul>
+            <ul class="methods itemMembers">
+            
+            <span class="subtitle">Methods</span>
+            
+                <li data-name="Manifest1#change"><a href="Manifest1.html#change">change</a></li>
+            
+                <li data-name="Manifest1#clear"><a href="Manifest1.html#clear">clear</a></li>
+            
+                <li data-name="Manifest1#destroy"><a href="Manifest1.html#destroy">destroy</a></li>
+            
+                <li data-name="Manifest1#disabled"><a href="Manifest1.html#disabled">disabled</a></li>
+            
+                <li data-name="Manifest1#enabled"><a href="Manifest1.html#enabled">enabled</a></li>
+            
+                <li data-name="Manifest1#getValue"><a href="Manifest1.html#getValue">getValue</a></li>
+            
+                <li data-name="Manifest1#hide"><a href="Manifest1.html#hide">hide</a></li>
+            
+                <li data-name="Manifest1#reset"><a href="Manifest1.html#reset">reset</a></li>
+            
+                <li data-name="Manifest1#setData"><a href="Manifest1.html#setData">setData</a></li>
+            
+                <li data-name="Manifest1#setValue"><a href="Manifest1.html#setValue">setValue</a></li>
+            
+                <li data-name="Manifest1#show"><a href="Manifest1.html#show">show</a></li>
+            
+            </ul>
+            <ul class="events itemMembers">
+            
+            </ul>
+        </li>
+    
+        <li class="item" data-name="Modal">
+            <span class="title">
+                <a href="Modal.html">Modal</a>
+                
+            </span>
+            <ul class="members itemMembers">
+            
+            </ul>
+            <ul class="typedefs itemMembers">
+            
+            </ul>
+            <ul class="methods itemMembers">
+            
+            <span class="subtitle">Methods</span>
+            
+                <li data-name="Modal#destroy"><a href="Modal.html#destroy">destroy</a></li>
+            
+                <li data-name="Modal#footer"><a href="Modal.html#footer">footer</a></li>
+            
+                <li data-name="Modal#hide"><a href="Modal.html#hide">hide</a></li>
+            
+                <li data-name="Modal#setContent"><a href="Modal.html#setContent">setContent</a></li>
+            
+                <li data-name="Modal#show"><a href="Modal.html#show">show</a></li>
+            
+            </ul>
+            <ul class="events itemMembers">
+            
+            </ul>
+        </li>
+    
+        <li class="item" data-name="ProgressBar">
+            <span class="title">
+                <a href="ProgressBar.html">ProgressBar</a>
+                
+            </span>
+            <ul class="members itemMembers">
+            
+            </ul>
+            <ul class="typedefs itemMembers">
+            
+            </ul>
+            <ul class="methods itemMembers">
+            
+            <span class="subtitle">Methods</span>
+            
+                <li data-name="ProgressBar#clear"><a href="ProgressBar.html#clear">clear</a></li>
+            
+                <li data-name="ProgressBar#destroy"><a href="ProgressBar.html#destroy">destroy</a></li>
+            
+                <li data-name="ProgressBar#getValue"><a href="ProgressBar.html#getValue">getValue</a></li>
+            
+                <li data-name="ProgressBar#hide"><a href="ProgressBar.html#hide">hide</a></li>
+            
+                <li data-name="ProgressBar#reset"><a href="ProgressBar.html#reset">reset</a></li>
+            
+                <li data-name="ProgressBar#setValue"><a href="ProgressBar.html#setValue">setValue</a></li>
+            
+                <li data-name="ProgressBar#show"><a href="ProgressBar.html#show">show</a></li>
+            
+            </ul>
+            <ul class="events itemMembers">
+            
+            </ul>
+        </li>
+    
+        <li class="item" data-name="Switch">
+            <span class="title">
+                <a href="Switch.html">Switch</a>
+                
+            </span>
+            <ul class="members itemMembers">
+            
+            </ul>
+            <ul class="typedefs itemMembers">
+            
+            </ul>
+            <ul class="methods itemMembers">
+            
+            <span class="subtitle">Methods</span>
+            
+                <li data-name="Switch#change"><a href="Switch.html#change">change</a></li>
+            
+                <li data-name="Switch#clear"><a href="Switch.html#clear">clear</a></li>
+            
+                <li data-name="Switch#destroy"><a href="Switch.html#destroy">destroy</a></li>
+            
+                <li data-name="Switch#disable"><a href="Switch.html#disable">disable</a></li>
+            
+                <li data-name="Switch#enable"><a href="Switch.html#enable">enable</a></li>
+            
+                <li data-name="Switch#getValue"><a href="Switch.html#getValue">getValue</a></li>
+            
+                <li data-name="Switch#hide"><a href="Switch.html#hide">hide</a></li>
+            
+                <li data-name="Switch#reset"><a href="Switch.html#reset">reset</a></li>
+            
+                <li data-name="Switch#setValue"><a href="Switch.html#setValue">setValue</a></li>
+            
+                <li data-name="Switch#show"><a href="Switch.html#show">show</a></li>
+            
+            </ul>
+            <ul class="events itemMembers">
+            
+            </ul>
+        </li>
+    
+        <li class="item" data-name="Tab1">
+            <span class="title">
+                <a href="Tab1.html">Tab1</a>
+                
+            </span>
+            <ul class="members itemMembers">
+            
+            </ul>
+            <ul class="typedefs itemMembers">
+            
+            </ul>
+            <ul class="methods itemMembers">
+            
+            </ul>
+            <ul class="events itemMembers">
+            
+            </ul>
+        </li>
+    
+        <li class="item" data-name="Tooltip">
+            <span class="title">
+                <a href="Tooltip.html">Tooltip</a>
+                
+            </span>
+            <ul class="members itemMembers">
+            
+            </ul>
+            <ul class="typedefs itemMembers">
+            
+            </ul>
+            <ul class="methods itemMembers">
+            
+            <span class="subtitle">Methods</span>
+            
+                <li data-name="Tooltip#destroy"><a href="Tooltip.html#destroy">destroy</a></li>
+            
+            </ul>
+            <ul class="events itemMembers">
+            
+            </ul>
+        </li>
+    
+        <li class="item" data-name="Um">
+            <span class="title">
+                <a href="Um.html">Um</a>
+                
+            </span>
+            <ul class="members itemMembers">
+            
+            </ul>
+            <ul class="typedefs itemMembers">
+            
+            </ul>
+            <ul class="methods itemMembers">
+            
+            </ul>
+            <ul class="events itemMembers">
+            
+            </ul>
+        </li>
+    
+        <li class="item" data-name="Um">
+            <span class="title">
+                <a href="Um.html">Um</a>
+                
+            </span>
+            <ul class="members itemMembers">
+            
+            </ul>
+            <ul class="typedefs itemMembers">
+            
+            </ul>
+            <ul class="methods itemMembers">
+            
+            </ul>
+            <ul class="events itemMembers">
+            
+            </ul>
+        </li>
+    
+    </ul>
+</div>
+    <div class="main">
+        <h1 class="page-title" data-filename="city_selector_js_city_selector.js.html">Source: city_selector/js/city_selector.js</h1>
+        
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source "><code>/**
+ * @name city_selector
+ * @description city_selector 城市选择器
+ * @author kt
+ * @since 2017-12-8
+ */
+require.config({
+    paths: {
+        'jquery': 'modules/libs/jq/jquery-2.1.1.min',
+        'cssFile': 'modules/libs/rq/css.min'
+    }
+});
+define([
+    'jquery',
+    'modules/tab/js/tab', //切换
+    'modules/utils/data_type', //数据判断
+    'modules/utils/menu_pop_manager', //菜单管理器
+    'cssFile!modules/city_selector/css/city_selector' //城市选择器样式
+], function ($, Tab, dataType, menuPopManager) {
+    /**
+     * @class
+     * @classdesc 城市选择器
+     * @alias citySelector
+     * @author kt
+     * @since 2017-12-8
+     *
+     * @param {(function|object|string)} [opts.data=null] - 设置数据，整体数据，拆分成数据cityData,cityLetterData,hotCityData
+     * @param {string} [opts.idFlag= 'id'] -标识字段
+     * @param {string} [opts.nameFlag= 'name'] -名字字段
+     * @param {string} [opts.pinyinFlag= 'pinyin'] -拼音字段
+     * @param {string} [opts.letterFlag= "letter"] -大写字母字段
+     * @param {string} [opts. hotFlag= "hot"] -热门城市标识
+     * @param {boolean} [opts.isOwnData= false] -是否是自己的数据，在文件里有一个默认的城市数据
+     * @param {boolean} [opts.whole= false] -false为市级数据，true为市县级数据，显示市县级数据还是只显示市级数据，如果开启这个，需引入的数据源是city_data.js数据源才可以。
+     * @param {boolean} [opts.shorthand= false] -是否使用简称，默认不使用
+     * @param {boolean} [opts.multiSelect= false] -是否多选，默认是单选
+     * @param {string} [opts.multiMaximum= ''] -最多可以选多少个//todo,这个还没处理完
+     * @param {(function|object|string)} [opts.value= null] -值，已经选中的值
+     * @param {boolean} [opts.required=true] -是否是必填
+     * @param {boolean} [opts.disabled= false] -按钮是否可点击
+     * @param {boolean} [opts.readOnly= false] -按钮是否是只读状态
+     * @param {function} [opts.change= null] -值改变触发
+     * @param {function} [opts.initDone= null] -初始化完成触发
+     * @param {string} opts.element='' -创建城市选择器的元素
+     * @param {string} [opts.placeholder= '请选择城市'] -默认提示语
+     * @param {boolean} [opts.isSearch= true] -是否有搜索功能//todo,这个还没处理
+     * @param {string} [opts.searchPlaceholder= '请输入关键字'] -输入框提示文字
+     * @param {object} [opts.btnStyle= {}] -按钮样式
+     * @param {string} [opts.btnClass= ''] -按钮的class
+     * @param {boolean} [opts.isIcon= true] -是否显示图标
+     * @param {boolean} [opts.isCenter= true] -是否居中
+     * @param {dom} [opts.menuElement= $('body')] -菜单容器放置位置
+     * @param {array} [opts.menuHeadData= ['热门城市', 'AB', 'CD', 'EFG', 'H', 'J', 'KL', 'MNP', 'QR', 'S', 'T', 'W', 'X', 'Y', 'Z']]-菜单头部展示数据
+     * @param {object} [opts.menuStyle= {'position': 'absolute','display': 'none'}] -菜单样式
+     * @param {string} [opts.menuClass= ''] -菜单class
+     * @param {object} [opts.listStyle= {'position': 'absolute','display': 'none'}] -列表样式
+     * @param {string} [opts.listClass= ""] -列表class
+     * @requires 'jquery'
+     * @requires 'require'
+     */
+    function CitySelector(opts) {
+        this.init(opts);
+    }
+
+    CitySelector.prototype = {
+        /*初始化*/
+        init: function (opts) {
+            var _this = this;
+            _this.ele = { //存储当前的dom
+                $cityBtn: '', //城市已选显示区域和搜索区域
+                $cityMenu: '', //没有搜索时的城市下拉菜单
+                $cityList: ''//搜索时的城市下拉列表
+            };
+            _this.data = []; //数据
+            _this.value = []; //已选择的数据
+            _this.parameterSetting(opts); //参数设置
+            _this.createCitySelector(); //创建城市选择器布局
+            _this.styleSetting(); //样式设置
+            _this.elementSetting(); //元素设置
+            _this.statusSetting(); //状态设置
+            _this.opts.initDone &amp;&amp; _this.opts.initDone.call(_this.ele.$cityBtn);
+            _this.dataFn(_this.opts.data); //设置数据
+            _this.valueFn(_this.opts.value); //设置值
+            _this.bindEvent(); //绑定事件
+        },
+        /*参数设置*/
+        parameterSetting: function (opts) {
+            var _this = this;
+            if (!opts) opts = {};
+            opts = $.extend(true, {
+                //数据处理
+                data: '', //整体数据，拆分成数据cityData,cityLetterData,hotCityData
+                //cityData:'',//城市数据
+                //cityLetterData:'',//根据字母的城市数据
+                //hotCityData:'',//热门城市，取前18条数据
+                idFlag: 'id', //标识字段
+                nameFlag: 'name', //名字字段
+                pinyinFlag: 'pinyin', //拼音字段
+                letterFlag: "letter", //大写字母字段
+                hotFlag: "hot", //热门城市标识
+                //common
+                isOwnData: false, //是否是自己的数据
+                whole: false, //false为市级数据，true为市县级数据，显示市县级数据还是只显示市级数据，如果开启这个，需引入的数据源是city_data.js数据源才可以。
+                shorthand: false, //是否使用简称，默认不使用
+                multiSelect: false, //是否多选，默认是单选
+                multiMaximum: '', //最多可以选多少个//todo,这个还没处理完
+                value: null, //值
+                required: true, //是否是必填
+                disabled: false, //按钮是否可点击
+                readOnly: false, //按钮是否是只读状态
+                change: null, //值改变触发
+                initDone: null, //初始化完成触发
+                //btn
+                element: '', //创建城市选择器的元素
+                placeholder: '请选择城市', //默认提示语
+                isSearch: true, //是否有搜索功能//todo,这个还没处理
+                searchPlaceholder: '请输入关键字', //输入框提示文字
+                btnStyle: {},
+                btnClass: '',
+                isIcon: true, //是否显示图标
+                isCenter: true, //是否居中
+                //menu
+                menuElement: $('body'), //菜单容器放置位置
+                menuHeadData: opts.menuHeadData || ['热门城市', 'AB', 'CD', 'EFG', 'H', 'J', 'KL', 'MNP', 'QR', 'S', 'T', 'W', 'X', 'Y', 'Z'], //菜单头部展示数据
+                menuStyle: {
+                    'position': 'absolute',
+                    'display': 'none'
+                },
+                menuClass: '',
+                //list
+                listStyle: {
+                    'position': 'absolute',
+                    'display': 'none'
+                },
+                listClass: ''
+            }, opts);
+            _this.opts = opts;
+            _this.handlers = {}; //存储自定义事件:必须写在上面，写在下面会把别人的也存储起来的
+            _this.opts.change &amp;&amp; _this.on('change', _this.opts.change); //把change事件放入到handlers中
+        },
+
+        /*创建城市选择器的布局*/
+        createCitySelector: function () {
+            var _this = this;
+            _this.createCityBtn(); //城市已选显示区域和搜索区域
+            _this.createCityMenu(); //没有搜索时的城市下拉菜单
+            _this.createCityList(); //搜索时的城市下拉列表
+        },
+        /*城市已选显示区域和搜索区域*/
+        createCityBtn: function () {
+            var _this = this;
+            //已经选中的城市
+            _this.ele.$selected = $('&lt;ol class="city-selected-list">&lt;/ol>');
+            //输入框
+            _this.ele.$input = $('&lt;input type="text" class="city-search-input" placeholder="' + _this.opts.placeholder + '">');
+            _this.opts.element.addClass("city-selector-btn " + _this.opts.btnClass);
+            _this.opts.element.append(_this.ele.$selected);
+            _this.opts.element.append(_this.ele.$input);
+            _this.ele.$cityBtn = _this.opts.element;
+            //搜索图标
+            if (_this.opts.isIcon) {
+                _this.ele.$cityBtn.addClass('triangle triangle-down');
+            }
+        },
+        /*创建没有搜索时的城市下拉菜单*/
+        createCityMenu: function () {
+            var _this = this;
+            _this.ele.$cityMenu = $('&lt;div class="city-selector-menu ' + _this.opts.menuClass + '">&lt;/div>');
+            //菜单头部
+            _this.ele.$cityMenuHeader = $('&lt;div class="csm-header">&lt;/div>');
+            _this.ele.$cityMenu.append(_this.ele.$cityMenuHeader);
+            //菜单内容
+            _this.ele.$cityMenuContent = $('&lt;div class="csm-content">&lt;/div>');
+            _this.ele.$cityMenu.append(_this.ele.$cityMenuContent);
+            //菜单底部
+            _this.ele.$cityMenuFooter = '';
+            if (_this.opts.multiSelect) {
+                _this.ele.$cityMenuFooter = $('&lt;div class="csm-footer">' +
+                        '&lt;div class="csm-footer-l">*可以直接搜索查找城市（支持名称、拼音模糊搜索）&lt;/div>' +
+                        '&lt;div class="csm-footer-r">' +
+                        (_this.opts.multiMaximum ? '&lt;p class="csm-footer-num">&lt;span>0&lt;/span>&lt;span>/&lt;/span>&lt;span>' + _this.opts.multiMaximum + '&lt;/span>&lt;/p>' : '') +
+                        '&lt;a href="javascript:;">清空&lt;/a>' +
+                        '&lt;/div>' +
+                        '&lt;/div>');
+            }
+            _this.ele.$cityMenu.append(_this.ele.$cityMenuFooter);
+            _this.opts.menuElement.append(_this.ele.$cityMenu);
+        },
+        /*创建搜索时的城市下拉列表*/
+        createCityList: function () {
+            var _this = this;
+            _this.ele.$cityList = $('&lt;ul class="city-selector-list ' + _this.opts.listClass + '">&lt;/ul>');
+            _this.opts.menuElement.append(_this.ele.$cityList);
+        },
+
+        /*样式设置*/
+        styleSetting: function () {
+            var _this = this;
+            _this.opts.btnStyle &amp;&amp; _this.ele.$cityBtn.css(_this.opts.btnStyle);
+            _this.opts.menuStyle &amp;&amp; _this.ele.$cityMenu.css(_this.opts.menuStyle);
+            _this.opts.listStyle &amp;&amp; _this.ele.$cityList.css(_this.opts.listStyle);
+        },
+        /*元素设置*/
+        elementSetting: function () {
+            var _this = this;
+            //菜单
+            _this.ele.$cityNum = _this.ele.$cityMenu.find('.csm-footer-num span').eq(0); //已选城市个数
+            _this.ele.$cityEmptyBtn = _this.ele.$cityMenu.find('.csm-footer a').eq(0); //清空按钮
+        },
+        /*状态设置*/
+        statusSetting: function () {
+            var _this = this;
+            //禁用
+            if (_this.opts.disable) {
+                _this.ele.$cityBtn.css({
+                    'cursor': 'no-drop'
+                });
+                _this.ele.$input.css({
+                    'cursor': 'no-drop'
+                });
+                return false;
+            } else if (_this.opts.readOnly) {
+                //只读
+                _this.ele.$cityBtn.css({
+                    'cursor': 'default'
+                });
+                _this.ele.$input.css({
+                    'cursor': 'default'
+                });
+                return false;
+            }
+            //既不禁用也不只读
+            if (!_this.opts.readOnly &amp;&amp; !_this.opts.disable) {
+                _this.ele.$cityBtn.css({
+                    'cursor': 'pointer'
+                });
+                _this.ele.$input.css({
+                    'cursor': 'text'
+                });
+            }
+        },
+
+        /*数据处理*/
+        dataFn: function (parameter) {
+            var _this = this;
+            //如果有自己设置的数据则取自己设置的数据
+            if (parameter) {
+                _this.dealType('array', parameter, _this.dataToPage, 'setData');
+            }
+        },
+        /*处理数据的类型
+         * type,希望最终的类型
+         * parameter，传入的数据,
+         *      function
+         *          function(callback){
+         *              callback(data);
+         *          }
+         *      array
+         *          [
+         *              {id:'1',name:'文本'},
+         *              {id:'2',name:'文本22'},
+         *          ]
+         *      object,如果没有url，直接转成数据
+         *          {
+         *              url:'',
+         *              data:{},
+         *              timeout:0,
+         *              field:''
+         *          }
+         * fn,回调function
+         * flag,是设置值还是数据setValue/setData，string
+         * val为搜索输入框传进来的值,string
+         * */
+        dealType: function (type, parameter, fn, flag, valInput) {
+            var _this = this;
+            //这里把||''去掉了，因为下面的请求会存在判断undefined的情况
+            var val = valInput;
+            //如果传进来的数据是function，将回调函数里的数据取出来
+            if (dataType(parameter) == 'function') {
+                //这里为什么要return呢，我把它删掉了，执行函数，并将this指向_this,取出数据
+                parameter.call(_this, function (data) {
+                    _this.dealType(type, data, fn, flag, val);
+                }, val || '');
+                return false; //阻断后续操作
+            }
+            if (dataType(parameter) == 'object') {
+                if (parameter.url) {
+                    function parameterToFunction(callback, valInput) {
+                        _this.requestAjaxFn(parameter, callback, valInput);
+                    }
+
+                    _this.dealType(type, parameterToFunction, fn, flag, val);
+                    return false;
+                } else {
+                    if (type == 'array') {
+                        parameter = [parameter];
+                        _this.dealType(type, parameter, fn, flag, val);
+                        return false;
+                    }
+                }
+            }
+            var typeToData = '';
+            //匹配到想要的数据
+            if (dataType(parameter) == type) {
+                typeToData = {
+                    'string': parameter,
+                    'array': $.extend(true, [], parameter),
+                    'object': $.extend(true, {}, parameter)
+                }
+                //设置初始数据
+                if (_this.initData == undefined &amp;&amp; flag == 'setData') {
+                    _this.initData = typeToData[type];
+                }
+                //设置默认值,如果没有设置默认值的情况，设置的值则是初始值
+                if (_this.defaultValue == undefined &amp;&amp; flag == 'setValue') {
+                    _this.defaultValue = typeToData[type];
+                }
+                //没有设置数据，或者数值的数据不对则默认初始值为空
+                if (_this.initValue == undefined &amp;&amp; flag == 'setValue') {
+                    _this.initValue = typeToData[type];
+                }
+                fn(parameter, _this);//执行后续操作
+            } else {
+                //无可匹配数据，给你个空值，避免报错
+                typeToData = {
+                    'string': '',
+                    'array': [],
+                    'object': {}
+                }
+                //设置默认值,如果没有设置默认值的情况，设置的值则是初始值
+                if (_this.defaultValue == undefined &amp;&amp; flag == 'setValue') {
+                    _this.defaultValue = typeToData[type];
+                }
+                //没有设置数据，或者数值的数据不对则默认初始值为空
+                if (_this.initValue == undefined &amp;&amp; flag == 'setValue') {
+                    _this.initValue = typeToData[type];
+                    //当第一次进来且没有数据的情况下需要执行一次
+                    fn(_this.initValue, _this);
+                }
+            }
+        },
+        /* 如果是url,需要发送请求,如果要在本地测试的话，你需要指向一下fiddler，并将html的路径改为线上的路径
+         * parameter:传入的请求数据
+         * callback:成功之后，执行回调函数
+         */
+        requestAjaxFn: function (parameter, callback, valInput) {
+            var _this = this;
+            if (valInput) { //如果是有搜索框的输入的话，需要将输入框的值传进去
+                parameter.data.input = valInput || '';
+            }
+            $.ajax({
+                url: parameter.url || '',
+                dataType: 'json',
+                data: parameter.data || {},
+                timeout: parameter.timeout || '0', //代表永不超时
+                success: function (data) {
+                    if (data &amp;&amp; data != null) {
+                        $.each(parameter.field.split('.'), function (i, v) {
+                            data = data[v];
+                        });
+                        callback(data);
+                    } else {
+                        console.log('数据出错了');
+                    }
+                },
+                error: function () {
+                    console.log('请求失败了');
+                }
+            });
+        },
+        /*数据到页面处理*/
+        dataToPage: function (data, _this) {
+            _this.dataSetting(data);
+            _this.dataPage(data);
+        },
+        dataSetting: function (data) {
+            var _this = this;
+            //默认数据
+            _this.default = {
+                provinceData: [],//省份数据
+                municipalData: [],//市级数据
+                municipalAndDistrictData: [],//区县数据+市级数据
+                cityData: '',//存储最终获取的城市数据
+                cityLetterData: {},//存储城市通过首字母分类
+                hotCityData: []//热门城市
+            };
+            //1.走本地默认数据
+            if (_this.opts.isOwnData) {
+                //获取省份和非省份数据
+                $.each(data, function (i, v) {
+                    if (v.parentId == '100000') {
+                        _this.default.provinceData.push(v);
+                    } else {
+                        _this.default.municipalAndDistrictData.push(v);
+                    }
+                });
+                // 根据省份，查找出所有的城市
+                $.each(_this.default.provinceData, function (i, v) {
+                    $.each(data, function (key, value) {
+                        if (v[_this.opts.idFlag] === value.parentId) {
+                            _this.default.municipalData.push(value);
+                        }
+                    });
+                });
+                //根据设置得到城市数据
+                _this.default.cityData = (_this.opts.whole == true ? _this.default.municipalAndDistrictData : _this.default.municipalData);
+                //热门城市，取前18条数据
+                _this.default.hotCityData = _this.default.municipalData.slice(0, 18);
+            } else {
+                //2.走远端数据
+                var hotData = [];
+                $.each(data, function (i, v) {
+                    //如果后端没有提供首字母的字段，取拼音字段的第一个字母进行数据存储，由于后端数据的拼音还是小写，把首字母转换为大写
+                    if (data[i][_this.opts.letterFlag]) {
+                        data[i][_this.opts.letterFlag] = v[_this.opts.pinyinFlag].substring(0, 1).toLocaleUpperCase();
+                    }
+                    //如果有热门城市标识，则存入热门城市数组
+                    if (v[_this.opts.hotFlag]) {
+                        hotData.push(v);
+                    }
+                });
+                _this.default.municipalData = $.extend(true, [], data);
+                _this.default.cityData = $.extend(true, [], data);
+                _this.default.hotCityData = hotData.length > 0 ? hotData : _this.default.municipalData.slice(0, 18);
+            }
+            //存储字母城市的对象，根据字母分类A,B,C...
+            $.each(_this.default.cityData, function (i, v) {
+                //根据首字母进行分类
+                if (v[_this.opts.letterFlag]) {
+                    //如果首字母城市没有这个对象的情况下，先定义一下，不然会报错
+                    if (!_this.default.cityLetterData[v.letter]) {
+                        _this.default.cityLetterData[v.letter] = [];
+                    }
+                    _this.default.cityLetterData[v[_this.opts.letterFlag]].push(v);
+                }
+            });
+            //根据数据区分开各个不同的数据
+            //城市数据
+            _this.opts.cityData = _this.default.cityData;
+            //根据字母的城市数据
+            _this.opts.cityLetterData = _this.default.cityLetterData;
+            //热门城市
+            _this.opts.hotCityData = _this.default.hotCityData;
+        },
+        dataPage: function (data) {
+            var _this = this;
+            _this.data = $.extend(true, [], data);
+            _this.dataHtml();
+            //为什么在data处理层出现value的处理，是因为数据请求延迟问题
+            _this.valueHtml();
+        },
+        dataHtml: function () {
+            var _this = this;
+            _this.dataMenuHtml(_this.opts.menuHeadData, _this.opts.cityLetterData, _this.opts.hotCityData);
+            _this.dataListHtml(_this.opts.cityData);
+        },
+        /*菜单数据*/
+        dataMenuHtml: function (menuHeadData, cityLetterData, hotCityData) {
+            var _this = this;
+            var cityMenuHeadHtml = '';
+            var cityMenuContentHtml = '';
+            $.each(menuHeadData, function (i, v) {
+                //头部
+                cityMenuHeadHtml += '&lt;span>' + v + '&lt;/span>';
+                //内容
+                var menuDlHtml = '';
+                //热门城市处理
+                if (v == '热门城市') {
+                    menuDlHtml += _this.cityDlHtml(hotCityData, '');
+                }
+                //字母城市处理，根据分类，每个类字母的个数不定，要取到对应的城市
+                var menuContData = v.split('');
+                $.each(menuContData, function (index, value) {
+                    if (cityLetterData[value]) {
+                        menuDlHtml += _this.cityDlHtml(cityLetterData[value], value);
+                    }
+                });
+                cityMenuContentHtml += '&lt;dl>' + menuDlHtml + '&lt;/dl>';
+            });
+            _this.ele.$cityMenuHeader.html(cityMenuHeadHtml);
+            _this.ele.$cityMenuContent.html(cityMenuContentHtml);
+            //城市分类切换功能
+            new Tab({
+                element: _this.ele.$cityMenu, //tab切换的元素
+                titleElement: _this.ele.$cityMenu.find('.csm-header>span'), //标题的元素，opts.element.find('.tab-head>li')
+                conElement: _this.ele.$cityMenu.find('.csm-content>dl'), //内容元素，opts.element.find('.tab-body>div'),
+                currentTitleClass: 'csm-header-active', //当前标题的样式
+                currentConClass: 'csm-content-active', //当前内容样式
+            });
+        },
+        /*创建单个字母的布局*/
+        cityDlHtml: function (city, value) {
+            var _this = this;
+            var menuSpanHtml = '';
+            $.each(city, function (letterIndex, letterValue) {
+                menuSpanHtml += '&lt;span data-code="' + letterValue[_this.opts.idFlag] + '">' + (_this.opts.shorthand ? letterValue.shortName : letterValue[_this.opts.nameFlag]) + '&lt;/span>';
+            });
+            return ('&lt;dt>' + value + '&lt;/dt>&lt;dd>' + menuSpanHtml + '&lt;/dd>');
+        },
+        /*列表数据*/
+        dataListHtml: function (data) {
+            var _this = this;
+            _this.ele.$cityList.html(_this.cityLiHtml(data));
+        },
+        /*城市列表内容*/
+        cityLiHtml: function (currentCityData) {
+            var _this = this;
+            var cityListLiHtml = '';
+            if (currentCityData.length > 0) {
+                $.each(currentCityData, function (i, v) {
+                    cityListLiHtml += '&lt;li data-code="' + v[_this.opts.idFlag] + '">' +
+                            '&lt;span class="csl-name">' + (_this.opts.shorthand ? v.shortName : v[_this.opts.nameFlag]) + '&lt;/span>' +
+                            '&lt;span class="csl-spell">' + (v[_this.opts.pinyinFlag] ? _this.titleCase(v[_this.opts.pinyinFlag]) : '') + '&lt;/span>' +
+                            '&lt;/li>';
+                });
+            } else {
+                cityListLiHtml = '&lt;li class="csl-noData">暂无“&lt;span>' + $.trim(_this.ele.$input.val()) + '&lt;/span>”相关数据&lt;/li>';
+            }
+            return cityListLiHtml;
+        },
+        /*首字母大写*/
+        titleCase: function titleCase(s) {
+            var i, ss = s.toLowerCase().split(/\s+/);
+            for (i = 0; i &lt; ss.length; i++) {
+                ss[i] = ss[i].slice(0, 1).toUpperCase() + ss[i].slice(1);
+            }
+            return ss.join(' ');
+        },
+
+        /*值处理*/
+        valueFn: function (parameter) {
+            var _this = this;
+            _this.dealType('array', parameter, _this.valueToPage, 'setValue');
+        },
+        valueToPage: function (value, _this) {
+            _this.valueToPageFn(value.length >= 0, value, _this);
+        },
+        valueToPageFn: function (condition, value, _this) {
+            //数据是符合条件的
+            if (condition) {
+                if (JSON.stringify(_this.value) != JSON.stringify(value)) {
+                    //不需要去数据里面查找，直接赋值，因为可能数据里面没有当前的值
+                    _this.value = $.extend(true, [], value);
+                    _this.valueHtml();
+                    _this.isCenter();
+                    setTimeout(function () {
+                        //值改变之后触发
+                        _this.fire('change', _this.ele.$cityBtn, _this.getValue());
+                    }, 0);
+                } else {
+                    //针对数据比较慢的情况下需要再一次去选中值
+                    _this.valueHtml();
+                }
+            } else {
+                console.log('数据是错误的，请检查');
+            }
+        },
+        valueHtml: function () {
+            var _this = this;
+            _this.updateCityValue();
+            _this.updateCityMenu();
+            _this.upDateCityList();
+        },
+        /*更新已选的城市*/
+        updateCityValue: function () {
+            var _this = this;
+            //已选择城市显示区域
+            var selectedHtml = '';
+            $.each(_this.value, function (i, v) {
+                selectedHtml += '&lt;li class="csb-item" data-code="' + v[_this.opts.idFlag] + '">' +
+                        '&lt;span class="csb-text">' + (_this.opts.shorthand ? v.shortName : v[_this.opts.nameFlag]) + '&lt;/span>' +
+                        (!_this.opts.multiSelect &amp;&amp; _this.opts.required ? '' : '&lt;em class="csb-remove" title="删除">×&lt;/em>') + //单选必填的情况不必显示删除按钮
+                        '&lt;input type="hidden" class="csb-value" name="csb-values[' + i + ']" value="' + v[_this.opts.idFlag] + '" />' +
+                        '&lt;/li>';
+            });
+            _this.ele.$selected.html(selectedHtml);
+        },
+        /*更新下拉菜单*/
+        updateCityMenu: function () {
+            var _this = this;
+            _this.ele.$cityMenu.find('.csm-content span').removeClass('csm-city-active');
+            $.each(_this.value, function (i, v) {
+                _this.ele.$cityMenu.find('.csm-content span').each(function (index, value) {
+                    if (v[_this.opts.idFlag] == $(this).attr('data-code')) {
+                        $(this).addClass('csm-city-active');
+                    }
+                });
+            });
+            _this.ele.$cityNum.html(_this.value.length);
+        },
+        /*更新城市下拉列表*/
+        upDateCityList: function () {
+            var _this = this;
+            _this.ele.$cityList.find('li').removeClass('csl-active');
+            $.each(_this.value, function (i, v) {
+                _this.ele.$cityList.find('li').each(function (index, value) {
+                    if (v[_this.opts.idFlag] == $(this).attr('data-code')) {
+                        $(this).addClass('csl-active');
+                    }
+                });
+            });
+        },
+        /*是否居中*/
+        isCenter: function () {
+            var _this = this;
+            if (_this.value.length == 0) {
+                _this.removeCenter();
+            } else {
+                _this.addCenter();
+            }
+        },
+        addCenter: function () {
+            var _this = this;
+            //_this.opts.isCenter判断需要单独处理不能放在一起
+            _this.opts.isCenter &amp;&amp; _this.ele.$cityBtn.addClass('city-selector-btn-center');
+        },
+        removeCenter: function () {
+            var _this = this;
+            _this.opts.isCenter &amp;&amp; _this.ele.$cityBtn.removeClass('city-selector-btn-center');
+        },
+
+        /*绑定事件*/
+        bindEvent: function () {
+            var _this = this;
+            _this.bindEventDocument();
+            _this.bindEventBtn();
+            _this.bindEventMenu();
+            _this.bindEventList();
+        },
+        /*document事件*/
+        bindEventDocument: function () {
+            var _this = this;
+            $(document).on('click scroll mousedown', function (e) {
+                _this.hide();
+            }).on('resize', function () {
+                if (_this.ele.$cityList.css('display') != 'none') {
+                    _this.setPos(_this.ele.$cityList);
+                } else if (_this.ele.$cityMenu.css('display') != 'none') {
+                    _this.setPos(_this.ele.$cityMenu);
+                }
+            });
+            $('div').on('scroll', function (e) {
+                if ($(this).css('overflow') == 'auto' &amp;&amp; !$(this).hasClass('city-selector-menu') &amp;&amp; $(this).find(_this.ele.$cityBtn).length > 0) {
+                    _this.hide();
+                    _this.ele.$input.blur();
+                }
+            });
+        },
+        /*按钮区域的事件*/
+        bindEventBtn: function () {
+            var _this = this;
+            // 点击按钮的时候
+            // 如果没有显示下拉，则显示下拉菜单或下拉列表，并获取输入框焦点
+            // 如果显示下拉，则隐藏下拉城市，并且输入框失去焦点
+            _this.ele.$cityBtn.on('click', function () {
+                //如果是禁用状态，则无操作
+                if (!_this.opts.readOnly &amp;&amp; !_this.opts.disable) {
+                    _this.removeCenter();
+                    //上箭头的情况，则失焦改为下箭头
+                    if (_this.condition()) {
+                        _this.ele.$input.blur();
+                        _this.hide();
+                    } else {
+                        //显示
+                        _this.ele.$input.focus();
+                        menuPopManager(_this);
+                    }
+                }
+                return false;
+            }).on('scroll mousedown', function () {
+                return false;
+            });
+            //输入框输入的时候，隐藏菜单，显示相应的列表
+            _this.ele.$input
+                    .on('input', function (e) {
+                        var $this = $(this);
+                        if ($.trim($this.val()) == '') {
+                            _this.showMenu();
+                        } else {
+                            _this.showList();
+                            var currentData = [];
+                            $.each(_this.opts.cityData, function (i, v) {
+                                if ((v[_this.opts.nameFlag] + (v[_this.opts.pinyinFlag]).toLowerCase()).indexOf($this.val().toLowerCase()) != -1) { //当前输入的和数据库对比是否存在
+                                    currentData.push(v);
+                                }
+                            });
+                            _this.upDateCityListData(currentData);
+                        }
+                    })
+                    .on('click', function (evt) {
+                        //当点击到输入框区域的时候，并且当前没有显示下拉，则显示出来
+                        if (!_this.opts.readOnly &amp;&amp; !_this.opts.disable) {
+                            //下箭头的情况则获取焦点
+                            if (!_this.condition()) {
+                                _this.ele.$input.focus();
+                                menuPopManager(_this);
+                            }
+                        }
+                        evt.stopPropagation();
+                        return false;
+                    })
+                    .on('keyup', function (e) {
+                        //箭头操作作用域整个菜单列表
+                        var wrap = _this.ele.$cityList;
+                        var keyCode = e.keyCode;
+                        //下箭头操
+                        if (keyCode == 38) {
+                            var lis = wrap.find('li:visible');
+                            var curli = lis.filter('.csl-current');
+                            var index = curli.length == 0 ? 0 : lis.index(curli);
+                            index--
+                            if (index &lt; 0) {
+                                index = lis.length - 1;
+                            }
+                            lis.removeClass('csl-current');
+                            var aimLi = lis.eq(index);
+                            aimLi.addClass('csl-current');
+                            return false;
+                        } else if (keyCode == 40) {
+                            //上箭头操作
+                            var lis = wrap.find('li:visible');
+                            var curli = lis.filter('.csl-current');
+                            var index = curli.length == 0 ? 0 : lis.index(curli);
+                            index++
+                            if (index >= lis.length) {
+                                index = 0;
+                            }
+                            lis.removeClass('csl-current');
+                            var aimLi = lis.eq(index);
+                            aimLi.addClass('csl-current');
+                            return false;
+                        } else if (keyCode == 13) {
+                            //回车操作
+                            var lis = _this.ele.$cityList.find('li');
+                            var curli = lis.filter('.csl-current:visible');
+                            curli.trigger('click');
+                            lis.removeClass('csl-current');
+                            return false;
+                        }
+                    });
+            //点击删除小图标
+            _this.ele.$cityBtn.on('click ', '.csb-remove', function () {
+                //如果是必选的情况，则隐藏菜单
+                if (_this.opts.required) {
+                    //只有当前这1条数据了
+                    if (_this.value.length &lt;= 1) {
+                        console.log('最后一条了，还是必填');
+                    } else {
+                        _this.removeCity($(this).closest('li'));
+                    }
+                } else {
+                    //如果不是必选的情况，则删除当前值
+                    _this.removeCity($(this).closest('li'));
+                }
+                if (!_this.condition()) {
+                    _this.hide();
+                } else {
+                    menuPopManager(_this);
+                    _this.ele.$input.focus();
+                }
+                return false;
+            });
+        },
+        /*当有菜单显示的时候，则是上箭头*/
+        condition: function () {
+            var _this = this;
+            return (_this.ele.$cityList.css('display') != 'none' || _this.ele.$cityMenu.css('display') != 'none');
+        },
+        /*菜单和列表的定位问题*/
+        setPos: function ($eleMenu) {
+            var _this = this;
+            var $ele = _this.ele.$cityBtn;
+            var top = 0;
+            var left = 0;
+            var width = 0;
+            if ($ele.length > 0) {
+                top = $ele.offset().top + $ele.outerHeight() - 1;
+                left = $ele.offset().left;
+                width = $ele.outerWidth();
+                if (top - $(window).scrollTop() + $eleMenu.outerHeight() >= $(window).height()) {
+                    if ($eleMenu.hasClass('menu-search')) {
+                        $eleMenu.css({
+                            'min-height': $eleMenu.css('max-height')
+                        })
+                    }
+                    top = $ele.offset().top - $eleMenu.outerHeight() + 1;
+                }
+                !_this.opts.menuStyle.width &amp;&amp; ($eleMenu.css({ 'width': width }));
+                if ((left + $eleMenu.outerWidth() >= $(window).width())) {
+                    left = $ele.offset().left + width - $eleMenu.outerWidth();
+                }
+                !_this.opts.menuStyle.top &amp;&amp; ($eleMenu.css({ 'top': top }));
+                !_this.opts.menuStyle.left &amp;&amp; ($eleMenu.css({ 'left': left }));
+            }
+        },
+        /*更新城市下拉列表数据*/
+        upDateCityListData: function (currentCityData) {
+            var _this = this;
+            _this.ele.$cityList.html(_this.cityLiHtml(currentCityData));
+            _this.upDateCityList();
+            _this.selFirst();
+        },
+        /*当有数据的时候选中列表的第一个*/
+        selFirst: function () {
+            var _this = this;
+            _this.ele.$cityList.find('li:not(".csl-noData")').removeClass('csl-current').eq(0).addClass('csl-current');
+        },
+        /*按钮菜单的事件*/
+        bindEventMenu: function () {
+            var _this = this;
+            //点击菜单中的事件
+            _this.ele.$cityMenu.on('click', '.csm-content span', function () {
+                _this.cityClickFn($(this), 'csm-city-active');
+                return false;
+            }).on('click', function () {
+                _this.ele.$input.focus();
+                return false;
+            }).on('scroll mousedown', function () {
+                return false;
+            });
+            //清空按钮
+            _this.ele.$cityEmptyBtn.on('click', function () {
+                if (_this.value.length > 0) {
+                    _this.clear();
+                }
+            });
+        },
+        /*每个城市的点击事件*/
+        cityClickFn: function ($this, activeClass) {
+            var _this = this;
+            //多选
+            if (_this.opts.multiSelect) {
+                //已经选中当前的情况
+                if ($this.hasClass(activeClass)) {
+                    //如果是必选的情况，则隐藏菜单
+                    if (_this.opts.required) {
+                        //只有当前这1条数据了
+                        if (_this.value.length &lt;= 1) {
+                            console.log('最后一条了，还是必填');
+                        } else {
+                            _this.removeCity($this);
+                        }
+                    } else {
+                        //如果不是必选的情况，则删除当前值
+                        _this.removeCity($this);
+                    }
+                } else {
+                    //如果没有选中当前的,则增加当前值
+                    _this.addCity($this);
+                }
+                menuPopManager(_this);
+                _this.ele.$input.focus();
+            } else {
+                //单选
+                _this.ele.$input.val('');
+                //已经选中当前的情况
+                if ($this.hasClass(activeClass)) {
+                    //如果是必选的情况，则隐藏菜单
+                    if (_this.opts.required) {
+                        _this.hide();
+                        _this.ele.$input.blur();
+                        return false;
+                    } else {
+                        //如果不是必选的情况，则选中值中删除当前值
+                        _this.removeCity($this);
+                        menuPopManager(_this);
+                        _this.ele.$input.focus();
+                    }
+                } else {
+                    //如果没有选中当前的,点击则当前值就是选中值
+                    _this.value = [];
+                    _this.addCity($this);
+                    _this.hide();
+                    _this.ele.$input.blur();
+                }
+            }
+        },
+        /*删除城市*/
+        removeCity: function ($this) {
+            var _this = this;
+            var curData = $.extend(true, [], _this.value);
+            for (var i = 0; i &lt; curData.length; i++) {
+                if (curData[i][_this.opts.idFlag] == $this.attr('data-code')) {
+                    curData.splice(i, 1);
+                }
+            }
+            _this.valueFn(curData);
+        },
+        /*添加城市*/
+        addCity: function ($this) {
+            var _this = this;
+            var curData = $.extend(true, [], _this.value);
+            $.each(_this.opts.cityData, function (i, v) {
+                if (v[_this.opts.idFlag] == $this.attr('data-code')) {
+                    curData.push(v);
+                }
+            });
+            _this.valueFn(curData);
+        },
+        /*按钮列表的事件*/
+        bindEventList: function () {
+            var _this = this;
+            //点击列表中的事件
+            _this.ele.$cityList.on('click', 'li', function () {
+                _this.cityClickFn($(this), 'csl-active');
+                return false;
+            }).on('click scroll mousedown', function () {
+                return false;
+            });
+        },
+
+        /*自定义事件绑定*/
+        on: function (type, handler) {
+            var _this = this;
+            if (typeof _this.handlers[type] == 'undefined') {
+                _this.handlers[type] = [];
+            }
+            _this.handlers[type].push(handler);
+            return this;
+        },
+        /*自定义事件释放
+         * this指向ele
+         * data为函数里面的参数
+         * return false 之后会阻断同类的函数执行
+         * */
+        fire: function (type, ele, data) {
+            var _this = this;
+            if (_this.handlers[type] instanceof Array) {
+                var handlers = _this.handlers[type];
+                for (var i = 0, len = handlers.length; i &lt; len; i++) {
+                    var temp = handlers[i].call(ele, data);
+                    if (temp === false) {
+                        break;
+                    }
+                }
+            }
+        },
+
+        /**
+         * @description 设置数据方法
+         * @param {object/array/function} parameter - 传入的参数
+         * @example
+         * var citySelector = new citySelector({配置参数});
+         * 设置值方法1：
+         *      citySelector.setData([{
+         *       "allowanceMoney": "80",
+         *       "cityMoney": "100",
+         *       "cityName": "北京市",
+         *       "cityType": 1,
+         *       "id": 41,
+         *       "isHot": 1,
+         *       "isLeaf": 1,
+         *       "isVaild": 1,
+         *       "majorId": "11001",
+         *       "pid": "110",
+         *       "pingyin": "beijing",
+         *       "pinyinShort": "bjs",
+         *       "weight": 101
+         *   }]);
+         * 设置值方法2：
+         *   calendar.setData(function(callback){
+         *    callback([{
+         *       "allowanceMoney": "80",
+         *       "cityMoney": "100",
+         *       "cityName": "北京市",
+         *       "cityType": 1,
+         *       "id": 41,
+         *       "isHot": 1,
+         *       "isLeaf": 1,
+         *       "isVaild": 1,
+         *       "majorId": "11001",
+         *       "pid": "110",
+         *       "pingyin": "beijing",
+         *       "pinyinShort": "bjs",
+         *       "weight": 101
+         *   }]);
+         * 设置值方法3：
+         *      calendar.setData({
+         *           url；'',//请求
+         *           data:{},//数据
+         *           timeout:'0',//超时时间
+         *           field:''//取值的字段
+         *      });
+         */
+        setData: function (parameter) {
+            var _this = this;
+            //数据处理
+            _this.dataFn(parameter);
+        },
+        /**
+         * @description 设置值方法
+         * @param {object/array/function} parameter - 传入的参数
+         * @example
+         * var citySelector = new citySelector({配置参数});
+         * 设置值方法1：
+         *      citySelector.setValue([{
+         *       "allowanceMoney": "80",
+         *       "cityMoney": "100",
+         *       "cityName": "北京市",
+         *       "cityType": 1,
+         *       "id": 41,
+         *       "isHot": 1,
+         *       "isLeaf": 1,
+         *       "isVaild": 1,
+         *       "majorId": "11001",
+         *       "pid": "110",
+         *       "pingyin": "beijing",
+         *       "pinyinShort": "bjs",
+         *       "weight": 101
+         *   }]);
+         * 设置值方法2：
+         *   calendar.setValue(function(callback){
+         *    callback([{
+         *       "allowanceMoney": "80",
+         *       "cityMoney": "100",
+         *       "cityName": "北京市",
+         *       "cityType": 1,
+         *       "id": 41,
+         *       "isHot": 1,
+         *       "isLeaf": 1,
+         *       "isVaild": 1,
+         *       "majorId": "11001",
+         *       "pid": "110",
+         *       "pingyin": "beijing",
+         *       "pinyinShort": "bjs",
+         *       "weight": 101
+         *   }]);
+         * 设置值方法3：
+         *      calendar.setValue({
+         *           url；'',//请求
+         *           data:{},//数据
+         *           timeout:'0',//超时时间
+         *           field:''//取值的字段
+         *      });
+         */
+        setValue: function (parameter) {
+            var _this = this;
+            //值处理
+            _this.valueFn(parameter);
+        },
+        /*设置默认值*/
+        setDefaultValue: function (parameter) {
+            var _this = this;
+            if (parameter) {
+                _this.dealType('array', parameter, function (data) {
+                    _this.defaultValue = $.extend(true, [], data);
+                    //值处理
+                    _this.valueFn(_this.defaultValue);
+                });
+            } else {
+                _this.valueFn(_this.defaultValue);
+            }
+        },
+        /**
+         * @description 获取值
+         * @param {requestCallback} [callback] -回调函数
+         * @return {object} 当前的数据
+         * @example
+         * var citySelector = new citySelector({配置参数});
+         * 获取值方法1：
+         *      citySelector.getValue(function(value){
+         *          //value则为当前值
+         *      });
+         * 获取值方法2：
+         *      citySelector.getValue();//直接返回当前值
+         */
+        getValue: function (callback) {
+            var _this = this;
+            var result = '';
+            //多选
+            if (_this.opts.multiSelect) {
+                result = _this.value.length == 0 ? '' : _this.value;
+            } else {
+                result = _this.value.length == 0 ? '' : _this.value[0];
+            }
+            //如果一个参数都没有，则直接返回数据
+            if (!callback) {
+                return result;
+            } else {
+                callback &amp;&amp; callback(result);
+            }
+        },
+        /**
+         * @description 获取值ID
+         * @return {String} 当前的数据
+         * @example
+         * var citySelector = new citySelector({配置参数});
+         * 获取值方法：
+         *      citySelector.getValueId();//返回值为当前数据,值是通过逗号分隔的字符串
+         */
+        getValueId: function () {
+            var _this = this;
+            return _this.resultData(_this.opts.idFlag);
+        },
+        /**
+         * @description 获取数据Name的集合
+         * @return {String} 当前的数据
+         * @example
+         * var citySelector = new citySelector({配置参数});
+         * 获取值方法：
+         *      citySelector.getValueName();//返回值为当前数据,值是通过逗号分隔的字符串
+         */
+        getValueName: function () {
+            var _this = this;
+            return _this.resultData(_this.opts.nameFlag);
+        },
+        resultData: function (falg) {
+            var _this = this;
+            var result = [];
+            $.each(_this.value, function (i, v) {
+                result.push(v[(falg)]);
+            })
+            return result.join(',');
+        },
+        /**
+         * @description 触发改变
+         * @param {requestCallback} callback -回调函数
+         * @example
+         * var citySelector = new citySelector({配置参数});
+         * citySelector.change(function(value){
+         *      //value为当前值
+         * });
+         */
+        change: function (callback) {
+            var _this = this;
+            callback &amp;&amp; _this.on('change', callback);
+        },
+        /**
+         * @description 重置
+         * @example
+         * var citySelector = new citySelector({配置参数});
+         * citySelector.reset();
+         */
+        reset: function () {
+            var _this = this;
+            _this.valueFn(_this.initValue);
+            _this.isCenter();
+        },
+        /**
+         * @description 清除
+         * @example
+         * var citySelector = new citySelector({配置参数});
+         * citySelector.clear();
+         */
+        clear: function () {
+            var _this = this;
+            _this.valueFn([]);
+            _this.removeCenter();
+        },
+        /**
+         * @description 摧毁:默认只摧毁菜单
+         * @example
+         * var citySelector = new citySelector({配置参数});
+         * citySelector.destroy();
+         */
+        destroy: function () {
+            var _this = this;
+            //把自定义事件清掉
+            _this.handlers = {};
+            _this.ele.$cityBtn.remove();
+            _this.ele.$cityMenu.remove();
+            _this.ele.$cityList.remove();
+        },
+        /**
+         * @description 隐藏
+         * @param {boolean} all -all存在就代表隐藏按钮和菜单，否则只隐藏菜单
+         * @example
+         * var citySelector = new citySelector({配置参数});
+         * citySelector.hide();
+         */
+        hide: function (all) {
+            var _this = this;
+            _this.ele.$cityMenu.hide();
+            _this.ele.$cityList.hide();
+            if (_this.ele.$cityBtn.hasClass('triangle')) {
+                _this.ele.$cityBtn.removeClass('triangle-up').addClass('triangle-down');
+            }
+            _this.isCenter();
+            _this.ele.$input.attr('placeholder', _this.opts.placeholder).val('');
+            all &amp;&amp; _this.ele.$cityBtn.hide();
+        },
+        /**
+         * @description 显示
+         * @param {boolean} all -all存在就代表显示按钮和菜单，否则只显示菜单。调用这个方法的时候需要注意一下，必须有return false,因为有body事件
+         * @example
+         * var citySelector = new citySelector({配置参数});
+         * citySelector.show();
+         */
+        show: function (all) {
+            var _this = this;
+            _this.showMenuOrList();
+            all &amp;&amp; _this.ele.$cityBtn.show();
+        },
+        /*显示菜单或列表*/
+        showMenuOrList: function () {
+            var _this = this;
+            _this.removeCenter();
+            if (_this.ele.$cityBtn.hasClass('triangle')) {
+                _this.ele.$cityBtn.addClass('triangle-up').removeClass('triangle-down');
+            }
+            if ($.trim(_this.ele.$input.val()) == '') {
+                _this.showMenu();
+            } else {
+                _this.showList();
+            }
+            _this.ele.$input.focus().val('').attr('placeholder', _this.opts.searchPlaceholder);
+        },
+        /*显示菜单*/
+        showMenu: function () {
+            var _this = this;
+            _this.ele.$cityList.hide();
+            _this.ele.$cityMenu.show();
+            _this.setPos(_this.ele.$cityMenu);
+        },
+        /*显示列表*/
+        showList: function () {
+            var _this = this;
+            _this.ele.$cityMenu.hide();
+            _this.ele.$cityList.show();
+            _this.setPos(_this.ele.$cityList);
+        },
+        /**
+         * @description 禁用
+         * @example
+         * var citySelector = new citySelector({配置参数});
+         * citySelector.disable();
+         */
+        disable: function () {
+            var _this = this;
+            _this.opts.readOnly = true;
+            _this.opts.disable = true;
+            _this.statusSetting();
+        },
+        /**
+         * @description 启用
+         * @example
+         * var citySelector = new citySelector({配置参数});
+         * citySelector.enable();
+         */
+        enable: function () {
+            var _this = this;
+            _this.opts.disable = false;
+            _this.opts.readOnly = false;
+            _this.statusSetting();
+        }
+    };
+    return CitySelector;
+});</code></pre>
+        </article>
+    </section>
+
+
+
+
+
+
+        
+
+        <footer>
+            Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.4.3</a> on Mon Mar 19 2018 20:57:48 GMT+0800 (中国标准时间)
+        </footer>
+    </div>
+</div>
+<script>prettyPrint();</script>
+<script src="scripts/linenumber.js"></script>
+<script src="scripts/main.js"></script>
+</body>
+</html>

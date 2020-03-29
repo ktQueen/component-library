@@ -1,0 +1,2584 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="utf-8">
+    <title>Source: form_complex_base/js/form_complex_base.js</title>
+    
+    
+    <script src="scripts/prettify/prettify.js"></script>
+    <script src="scripts/prettify/lang-css.js"></script>
+    <script src="scripts/jquery.min.js"></script>
+    <!--[if lt IE 9]>
+      <script src="//html5shiv.googlecode.com/svn/trunk/html5.js"></script>
+    <![endif]-->
+    <link type="text/css" rel="stylesheet" href="styles/prettify-tomorrow.css">
+    <link type="text/css" rel="stylesheet" href="styles/bootstrap.min.css">
+    <link type="text/css" rel="stylesheet" href="styles/jaguar.css">
+    
+    
+    <script>
+    var config = {"monospaceLinks":false,"cleverLinks":false,"default":{"outputSourceFiles":true}};
+    </script>
+    
+
+    
+</head>
+<body>
+<div id="wrap" class="clearfix">
+    
+<div class="navigation">
+    <h3 class="applicationName"><a href="index.html"></a></h3>
+
+    <div class="search">
+        <input id="search" type="text" class="form-control input-sm" placeholder="Search Documentations">
+    </div>
+    <ul class="list">
+    
+        <li class="item" data-name="citySelector">
+            <span class="title">
+                <a href="citySelector.html">citySelector</a>
+                
+            </span>
+            <ul class="members itemMembers">
+            
+            </ul>
+            <ul class="typedefs itemMembers">
+            
+            </ul>
+            <ul class="methods itemMembers">
+            
+            <span class="subtitle">Methods</span>
+            
+                <li data-name="citySelector#change"><a href="citySelector.html#change">change</a></li>
+            
+                <li data-name="citySelector#clear"><a href="citySelector.html#clear">clear</a></li>
+            
+                <li data-name="citySelector#destroy"><a href="citySelector.html#destroy">destroy</a></li>
+            
+                <li data-name="citySelector#disable"><a href="citySelector.html#disable">disable</a></li>
+            
+                <li data-name="citySelector#enable"><a href="citySelector.html#enable">enable</a></li>
+            
+                <li data-name="citySelector#getValue"><a href="citySelector.html#getValue">getValue</a></li>
+            
+                <li data-name="citySelector#getValueId"><a href="citySelector.html#getValueId">getValueId</a></li>
+            
+                <li data-name="citySelector#getValueName"><a href="citySelector.html#getValueName">getValueName</a></li>
+            
+                <li data-name="citySelector#hide"><a href="citySelector.html#hide">hide</a></li>
+            
+                <li data-name="citySelector#reset"><a href="citySelector.html#reset">reset</a></li>
+            
+                <li data-name="citySelector#setData"><a href="citySelector.html#setData">setData</a></li>
+            
+                <li data-name="citySelector#setValue"><a href="citySelector.html#setValue">setValue</a></li>
+            
+                <li data-name="citySelector#show"><a href="citySelector.html#show">show</a></li>
+            
+            </ul>
+            <ul class="events itemMembers">
+            
+            </ul>
+        </li>
+    
+        <li class="item" data-name="custom_mark">
+            <span class="title">
+                <a href="custom_mark.html">custom_mark</a>
+                
+            </span>
+            <ul class="members itemMembers">
+            
+            </ul>
+            <ul class="typedefs itemMembers">
+            
+            </ul>
+            <ul class="methods itemMembers">
+            
+            <span class="subtitle">Methods</span>
+            
+                <li data-name="custom_mark#clear"><a href="custom_mark.html#clear">clear</a></li>
+            
+                <li data-name="custom_mark#destroy"><a href="custom_mark.html#destroy">destroy</a></li>
+            
+                <li data-name="custom_mark#disable"><a href="custom_mark.html#disable">disable</a></li>
+            
+                <li data-name="custom_mark#enable"><a href="custom_mark.html#enable">enable</a></li>
+            
+                <li data-name="custom_mark#getValue"><a href="custom_mark.html#getValue">getValue</a></li>
+            
+                <li data-name="custom_mark#hide"><a href="custom_mark.html#hide">hide</a></li>
+            
+                <li data-name="custom_mark#reset"><a href="custom_mark.html#reset">reset</a></li>
+            
+                <li data-name="custom_mark#setData"><a href="custom_mark.html#setData">setData</a></li>
+            
+                <li data-name="custom_mark#setValue"><a href="custom_mark.html#setValue">setValue</a></li>
+            
+                <li data-name="custom_mark#show"><a href="custom_mark.html#show">show</a></li>
+            
+            </ul>
+            <ul class="events itemMembers">
+            
+            </ul>
+        </li>
+    
+        <li class="item" data-name="DropDown">
+            <span class="title">
+                <a href="DropDown.html">DropDown</a>
+                
+            </span>
+            <ul class="members itemMembers">
+            
+            </ul>
+            <ul class="typedefs itemMembers">
+            
+            </ul>
+            <ul class="methods itemMembers">
+            
+            <span class="subtitle">Methods</span>
+            
+                <li data-name="DropDown#change"><a href="DropDown.html#change">change</a></li>
+            
+                <li data-name="DropDown#clear"><a href="DropDown.html#clear">clear</a></li>
+            
+                <li data-name="DropDown#destroy"><a href="DropDown.html#destroy">destroy</a></li>
+            
+                <li data-name="DropDown#disable"><a href="DropDown.html#disable">disable</a></li>
+            
+                <li data-name="DropDown#enable"><a href="DropDown.html#enable">enable</a></li>
+            
+                <li data-name="DropDown#getValue"><a href="DropDown.html#getValue">getValue</a></li>
+            
+                <li data-name="DropDown#hide"><a href="DropDown.html#hide">hide</a></li>
+            
+                <li data-name="DropDown#required"><a href="DropDown.html#required">required</a></li>
+            
+                <li data-name="DropDown#reset"><a href="DropDown.html#reset">reset</a></li>
+            
+                <li data-name="DropDown#setData"><a href="DropDown.html#setData">setData</a></li>
+            
+                <li data-name="DropDown#setValue"><a href="DropDown.html#setValue">setValue</a></li>
+            
+                <li data-name="DropDown#show"><a href="DropDown.html#show">show</a></li>
+            
+            </ul>
+            <ul class="events itemMembers">
+            
+            </ul>
+        </li>
+    
+        <li class="item" data-name="DropDownCalendar">
+            <span class="title">
+                <a href="DropDownCalendar.html">DropDownCalendar</a>
+                
+            </span>
+            <ul class="members itemMembers">
+            
+            </ul>
+            <ul class="typedefs itemMembers">
+            
+            </ul>
+            <ul class="methods itemMembers">
+            
+            <span class="subtitle">Methods</span>
+            
+                <li data-name="DropDownCalendar#change"><a href="DropDownCalendar.html#change">change</a></li>
+            
+                <li data-name="DropDownCalendar#change"><a href="DropDownCalendar.html#change">change</a></li>
+            
+                <li data-name="DropDownCalendar#clear"><a href="DropDownCalendar.html#clear">clear</a></li>
+            
+                <li data-name="DropDownCalendar#clear"><a href="DropDownCalendar.html#clear">clear</a></li>
+            
+                <li data-name="DropDownCalendar#close"><a href="DropDownCalendar.html#close">close</a></li>
+            
+                <li data-name="DropDownCalendar#destroy"><a href="DropDownCalendar.html#destroy">destroy</a></li>
+            
+                <li data-name="DropDownCalendar#destroy"><a href="DropDownCalendar.html#destroy">destroy</a></li>
+            
+                <li data-name="DropDownCalendar#disable"><a href="DropDownCalendar.html#disable">disable</a></li>
+            
+                <li data-name="DropDownCalendar#disable"><a href="DropDownCalendar.html#disable">disable</a></li>
+            
+                <li data-name="DropDownCalendar#enable"><a href="DropDownCalendar.html#enable">enable</a></li>
+            
+                <li data-name="DropDownCalendar#enable"><a href="DropDownCalendar.html#enable">enable</a></li>
+            
+                <li data-name="DropDownCalendar#getValue"><a href="DropDownCalendar.html#getValue">getValue</a></li>
+            
+                <li data-name="DropDownCalendar#getValue"><a href="DropDownCalendar.html#getValue">getValue</a></li>
+            
+                <li data-name="DropDownCalendar#hide"><a href="DropDownCalendar.html#hide">hide</a></li>
+            
+                <li data-name="DropDownCalendar#hide"><a href="DropDownCalendar.html#hide">hide</a></li>
+            
+                <li data-name="DropDownCalendar#open"><a href="DropDownCalendar.html#open">open</a></li>
+            
+                <li data-name="DropDownCalendar#reset"><a href="DropDownCalendar.html#reset">reset</a></li>
+            
+                <li data-name="DropDownCalendar#reset"><a href="DropDownCalendar.html#reset">reset</a></li>
+            
+                <li data-name="DropDownCalendar#setValue"><a href="DropDownCalendar.html#setValue">setValue</a></li>
+            
+                <li data-name="DropDownCalendar#setValue"><a href="DropDownCalendar.html#setValue">setValue</a></li>
+            
+                <li data-name="DropDownCalendar#show"><a href="DropDownCalendar.html#show">show</a></li>
+            
+                <li data-name="DropDownCalendar#show"><a href="DropDownCalendar.html#show">show</a></li>
+            
+            </ul>
+            <ul class="events itemMembers">
+            
+            </ul>
+        </li>
+    
+        <li class="item" data-name="DropDownCalendar">
+            <span class="title">
+                <a href="DropDownCalendar.html">DropDownCalendar</a>
+                
+            </span>
+            <ul class="members itemMembers">
+            
+            </ul>
+            <ul class="typedefs itemMembers">
+            
+            </ul>
+            <ul class="methods itemMembers">
+            
+            <span class="subtitle">Methods</span>
+            
+                <li data-name="DropDownCalendar#change"><a href="DropDownCalendar.html#change">change</a></li>
+            
+                <li data-name="DropDownCalendar#change"><a href="DropDownCalendar.html#change">change</a></li>
+            
+                <li data-name="DropDownCalendar#clear"><a href="DropDownCalendar.html#clear">clear</a></li>
+            
+                <li data-name="DropDownCalendar#clear"><a href="DropDownCalendar.html#clear">clear</a></li>
+            
+                <li data-name="DropDownCalendar#close"><a href="DropDownCalendar.html#close">close</a></li>
+            
+                <li data-name="DropDownCalendar#destroy"><a href="DropDownCalendar.html#destroy">destroy</a></li>
+            
+                <li data-name="DropDownCalendar#destroy"><a href="DropDownCalendar.html#destroy">destroy</a></li>
+            
+                <li data-name="DropDownCalendar#disable"><a href="DropDownCalendar.html#disable">disable</a></li>
+            
+                <li data-name="DropDownCalendar#disable"><a href="DropDownCalendar.html#disable">disable</a></li>
+            
+                <li data-name="DropDownCalendar#enable"><a href="DropDownCalendar.html#enable">enable</a></li>
+            
+                <li data-name="DropDownCalendar#enable"><a href="DropDownCalendar.html#enable">enable</a></li>
+            
+                <li data-name="DropDownCalendar#getValue"><a href="DropDownCalendar.html#getValue">getValue</a></li>
+            
+                <li data-name="DropDownCalendar#getValue"><a href="DropDownCalendar.html#getValue">getValue</a></li>
+            
+                <li data-name="DropDownCalendar#hide"><a href="DropDownCalendar.html#hide">hide</a></li>
+            
+                <li data-name="DropDownCalendar#hide"><a href="DropDownCalendar.html#hide">hide</a></li>
+            
+                <li data-name="DropDownCalendar#open"><a href="DropDownCalendar.html#open">open</a></li>
+            
+                <li data-name="DropDownCalendar#reset"><a href="DropDownCalendar.html#reset">reset</a></li>
+            
+                <li data-name="DropDownCalendar#reset"><a href="DropDownCalendar.html#reset">reset</a></li>
+            
+                <li data-name="DropDownCalendar#setValue"><a href="DropDownCalendar.html#setValue">setValue</a></li>
+            
+                <li data-name="DropDownCalendar#setValue"><a href="DropDownCalendar.html#setValue">setValue</a></li>
+            
+                <li data-name="DropDownCalendar#show"><a href="DropDownCalendar.html#show">show</a></li>
+            
+                <li data-name="DropDownCalendar#show"><a href="DropDownCalendar.html#show">show</a></li>
+            
+            </ul>
+            <ul class="events itemMembers">
+            
+            </ul>
+        </li>
+    
+        <li class="item" data-name="DropDownMultiple">
+            <span class="title">
+                <a href="DropDownMultiple.html">DropDownMultiple</a>
+                
+            </span>
+            <ul class="members itemMembers">
+            
+            </ul>
+            <ul class="typedefs itemMembers">
+            
+            </ul>
+            <ul class="methods itemMembers">
+            
+            <span class="subtitle">Methods</span>
+            
+                <li data-name="DropDownMultiple#change"><a href="DropDownMultiple.html#change">change</a></li>
+            
+                <li data-name="DropDownMultiple#clear"><a href="DropDownMultiple.html#clear">clear</a></li>
+            
+                <li data-name="DropDownMultiple#destroy"><a href="DropDownMultiple.html#destroy">destroy</a></li>
+            
+                <li data-name="DropDownMultiple#disable"><a href="DropDownMultiple.html#disable">disable</a></li>
+            
+                <li data-name="DropDownMultiple#enable"><a href="DropDownMultiple.html#enable">enable</a></li>
+            
+                <li data-name="DropDownMultiple#getValue"><a href="DropDownMultiple.html#getValue">getValue</a></li>
+            
+                <li data-name="DropDownMultiple#getValueId"><a href="DropDownMultiple.html#getValueId">getValueId</a></li>
+            
+                <li data-name="DropDownMultiple#getValueName"><a href="DropDownMultiple.html#getValueName">getValueName</a></li>
+            
+                <li data-name="DropDownMultiple#hide"><a href="DropDownMultiple.html#hide">hide</a></li>
+            
+                <li data-name="DropDownMultiple#required"><a href="DropDownMultiple.html#required">required</a></li>
+            
+                <li data-name="DropDownMultiple#reset"><a href="DropDownMultiple.html#reset">reset</a></li>
+            
+                <li data-name="DropDownMultiple#setData"><a href="DropDownMultiple.html#setData">setData</a></li>
+            
+                <li data-name="DropDownMultiple#setValue"><a href="DropDownMultiple.html#setValue">setValue</a></li>
+            
+                <li data-name="DropDownMultiple#show"><a href="DropDownMultiple.html#show">show</a></li>
+            
+            </ul>
+            <ul class="events itemMembers">
+            
+            </ul>
+        </li>
+    
+        <li class="item" data-name="DropDownMultipleSearch">
+            <span class="title">
+                <a href="DropDownMultipleSearch.html">DropDownMultipleSearch</a>
+                
+            </span>
+            <ul class="members itemMembers">
+            
+            </ul>
+            <ul class="typedefs itemMembers">
+            
+            </ul>
+            <ul class="methods itemMembers">
+            
+            <span class="subtitle">Methods</span>
+            
+                <li data-name="DropDownMultipleSearch#change"><a href="DropDownMultipleSearch.html#change">change</a></li>
+            
+                <li data-name="DropDownMultipleSearch#clear"><a href="DropDownMultipleSearch.html#clear">clear</a></li>
+            
+                <li data-name="DropDownMultipleSearch#destroy"><a href="DropDownMultipleSearch.html#destroy">destroy</a></li>
+            
+                <li data-name="DropDownMultipleSearch#disable"><a href="DropDownMultipleSearch.html#disable">disable</a></li>
+            
+                <li data-name="DropDownMultipleSearch#enable"><a href="DropDownMultipleSearch.html#enable">enable</a></li>
+            
+                <li data-name="DropDownMultipleSearch#getValue"><a href="DropDownMultipleSearch.html#getValue">getValue</a></li>
+            
+                <li data-name="DropDownMultipleSearch#getValueId"><a href="DropDownMultipleSearch.html#getValueId">getValueId</a></li>
+            
+                <li data-name="DropDownMultipleSearch#getValueName"><a href="DropDownMultipleSearch.html#getValueName">getValueName</a></li>
+            
+                <li data-name="DropDownMultipleSearch#hide"><a href="DropDownMultipleSearch.html#hide">hide</a></li>
+            
+                <li data-name="DropDownMultipleSearch#required"><a href="DropDownMultipleSearch.html#required">required</a></li>
+            
+                <li data-name="DropDownMultipleSearch#reset"><a href="DropDownMultipleSearch.html#reset">reset</a></li>
+            
+                <li data-name="DropDownMultipleSearch#setData"><a href="DropDownMultipleSearch.html#setData">setData</a></li>
+            
+                <li data-name="DropDownMultipleSearch#setValue"><a href="DropDownMultipleSearch.html#setValue">setValue</a></li>
+            
+                <li data-name="DropDownMultipleSearch#show"><a href="DropDownMultipleSearch.html#show">show</a></li>
+            
+            </ul>
+            <ul class="events itemMembers">
+            
+            </ul>
+        </li>
+    
+        <li class="item" data-name="DropDownSingle">
+            <span class="title">
+                <a href="DropDownSingle.html">DropDownSingle</a>
+                
+            </span>
+            <ul class="members itemMembers">
+            
+            </ul>
+            <ul class="typedefs itemMembers">
+            
+            </ul>
+            <ul class="methods itemMembers">
+            
+            <span class="subtitle">Methods</span>
+            
+                <li data-name="DropDownSingle#change"><a href="DropDownSingle.html#change">change</a></li>
+            
+                <li data-name="DropDownSingle#clear"><a href="DropDownSingle.html#clear">clear</a></li>
+            
+                <li data-name="DropDownSingle#destroy"><a href="DropDownSingle.html#destroy">destroy</a></li>
+            
+                <li data-name="DropDownSingle#disable"><a href="DropDownSingle.html#disable">disable</a></li>
+            
+                <li data-name="DropDownSingle#enable"><a href="DropDownSingle.html#enable">enable</a></li>
+            
+                <li data-name="DropDownSingle#getValue"><a href="DropDownSingle.html#getValue">getValue</a></li>
+            
+                <li data-name="DropDownSingle#getValueId"><a href="DropDownSingle.html#getValueId">getValueId</a></li>
+            
+                <li data-name="DropDownSingle#getValueName"><a href="DropDownSingle.html#getValueName">getValueName</a></li>
+            
+                <li data-name="DropDownSingle#hide"><a href="DropDownSingle.html#hide">hide</a></li>
+            
+                <li data-name="DropDownSingle#required"><a href="DropDownSingle.html#required">required</a></li>
+            
+                <li data-name="DropDownSingle#reset"><a href="DropDownSingle.html#reset">reset</a></li>
+            
+                <li data-name="DropDownSingle#setData"><a href="DropDownSingle.html#setData">setData</a></li>
+            
+                <li data-name="DropDownSingle#setValue"><a href="DropDownSingle.html#setValue">setValue</a></li>
+            
+                <li data-name="DropDownSingle#show"><a href="DropDownSingle.html#show">show</a></li>
+            
+            </ul>
+            <ul class="events itemMembers">
+            
+            </ul>
+        </li>
+    
+        <li class="item" data-name="DropDownSingleSearch">
+            <span class="title">
+                <a href="DropDownSingleSearch.html">DropDownSingleSearch</a>
+                
+            </span>
+            <ul class="members itemMembers">
+            
+            </ul>
+            <ul class="typedefs itemMembers">
+            
+            </ul>
+            <ul class="methods itemMembers">
+            
+            <span class="subtitle">Methods</span>
+            
+                <li data-name="DropDownSingleSearch#change"><a href="DropDownSingleSearch.html#change">change</a></li>
+            
+                <li data-name="DropDownSingleSearch#clear"><a href="DropDownSingleSearch.html#clear">clear</a></li>
+            
+                <li data-name="DropDownSingleSearch#destroy"><a href="DropDownSingleSearch.html#destroy">destroy</a></li>
+            
+                <li data-name="DropDownSingleSearch#disable"><a href="DropDownSingleSearch.html#disable">disable</a></li>
+            
+                <li data-name="DropDownSingleSearch#enable"><a href="DropDownSingleSearch.html#enable">enable</a></li>
+            
+                <li data-name="DropDownSingleSearch#getValue"><a href="DropDownSingleSearch.html#getValue">getValue</a></li>
+            
+                <li data-name="DropDownSingleSearch#getValueId"><a href="DropDownSingleSearch.html#getValueId">getValueId</a></li>
+            
+                <li data-name="DropDownSingleSearch#getValueName"><a href="DropDownSingleSearch.html#getValueName">getValueName</a></li>
+            
+                <li data-name="DropDownSingleSearch#hide"><a href="DropDownSingleSearch.html#hide">hide</a></li>
+            
+                <li data-name="DropDownSingleSearch#required"><a href="DropDownSingleSearch.html#required">required</a></li>
+            
+                <li data-name="DropDownSingleSearch#reset"><a href="DropDownSingleSearch.html#reset">reset</a></li>
+            
+                <li data-name="DropDownSingleSearch#setData"><a href="DropDownSingleSearch.html#setData">setData</a></li>
+            
+                <li data-name="DropDownSingleSearch#setValue"><a href="DropDownSingleSearch.html#setValue">setValue</a></li>
+            
+                <li data-name="DropDownSingleSearch#show"><a href="DropDownSingleSearch.html#show">show</a></li>
+            
+            </ul>
+            <ul class="events itemMembers">
+            
+            </ul>
+        </li>
+    
+        <li class="item" data-name="FilterBar">
+            <span class="title">
+                <a href="FilterBar.html">FilterBar</a>
+                
+            </span>
+            <ul class="members itemMembers">
+            
+            </ul>
+            <ul class="typedefs itemMembers">
+            
+            </ul>
+            <ul class="methods itemMembers">
+            
+            <span class="subtitle">Methods</span>
+            
+                <li data-name="FilterBar#change"><a href="FilterBar.html#change">change</a></li>
+            
+                <li data-name="FilterBar#clear"><a href="FilterBar.html#clear">clear</a></li>
+            
+                <li data-name="FilterBar#destroy"><a href="FilterBar.html#destroy">destroy</a></li>
+            
+                <li data-name="FilterBar#disable"><a href="FilterBar.html#disable">disable</a></li>
+            
+                <li data-name="FilterBar#enable"><a href="FilterBar.html#enable">enable</a></li>
+            
+                <li data-name="FilterBar#getValue"><a href="FilterBar.html#getValue">getValue</a></li>
+            
+                <li data-name="FilterBar#hide"><a href="FilterBar.html#hide">hide</a></li>
+            
+                <li data-name="FilterBar#reset"><a href="FilterBar.html#reset">reset</a></li>
+            
+                <li data-name="FilterBar#setData"><a href="FilterBar.html#setData">setData</a></li>
+            
+                <li data-name="FilterBar#setValue"><a href="FilterBar.html#setValue">setValue</a></li>
+            
+                <li data-name="FilterBar#show"><a href="FilterBar.html#show">show</a></li>
+            
+            </ul>
+            <ul class="events itemMembers">
+            
+            </ul>
+        </li>
+    
+        <li class="item" data-name="Form">
+            <span class="title">
+                <a href="Form.html">Form</a>
+                
+            </span>
+            <ul class="members itemMembers">
+            
+            </ul>
+            <ul class="typedefs itemMembers">
+            
+            </ul>
+            <ul class="methods itemMembers">
+            
+            <span class="subtitle">Methods</span>
+            
+                <li data-name="Form#add"><a href="Form.html#add">add</a></li>
+            
+                <li data-name="Form#clear"><a href="Form.html#clear">clear</a></li>
+            
+                <li data-name="Form#destroy"><a href="Form.html#destroy">destroy</a></li>
+            
+                <li data-name="Form#disable"><a href="Form.html#disable">disable</a></li>
+            
+                <li data-name="Form#enable"><a href="Form.html#enable">enable</a></li>
+            
+                <li data-name="Form#getDom"><a href="Form.html#getDom">getDom</a></li>
+            
+                <li data-name="Form#getValue"><a href="Form.html#getValue">getValue</a></li>
+            
+                <li data-name="Form#hide"><a href="Form.html#hide">hide</a></li>
+            
+                <li data-name="Form#required"><a href="Form.html#required">required</a></li>
+            
+                <li data-name="Form#reset"><a href="Form.html#reset">reset</a></li>
+            
+                <li data-name="Form#setData"><a href="Form.html#setData">setData</a></li>
+            
+                <li data-name="Form#setValue"><a href="Form.html#setValue">setValue</a></li>
+            
+                <li data-name="Form#show"><a href="Form.html#show">show</a></li>
+            
+                <li data-name="Form#verify"><a href="Form.html#verify">verify</a></li>
+            
+            </ul>
+            <ul class="events itemMembers">
+            
+            </ul>
+        </li>
+    
+        <li class="item" data-name="FormComplexBlockParaConfig">
+            <span class="title">
+                <a href="FormComplexBlockParaConfig.html">FormComplexBlockParaConfig</a>
+                
+            </span>
+            <ul class="members itemMembers">
+            
+            </ul>
+            <ul class="typedefs itemMembers">
+            
+            </ul>
+            <ul class="methods itemMembers">
+            
+            <span class="subtitle">Methods</span>
+            
+                <li data-name="FormComplexBlockParaConfig#clear"><a href="FormComplexBlockParaConfig.html#clear">clear</a></li>
+            
+                <li data-name="FormComplexBlockParaConfig#destroy"><a href="FormComplexBlockParaConfig.html#destroy">destroy</a></li>
+            
+                <li data-name="FormComplexBlockParaConfig#disable"><a href="FormComplexBlockParaConfig.html#disable">disable</a></li>
+            
+                <li data-name="FormComplexBlockParaConfig#enable"><a href="FormComplexBlockParaConfig.html#enable">enable</a></li>
+            
+                <li data-name="FormComplexBlockParaConfig#getValue"><a href="FormComplexBlockParaConfig.html#getValue">getValue</a></li>
+            
+                <li data-name="FormComplexBlockParaConfig#hide"><a href="FormComplexBlockParaConfig.html#hide">hide</a></li>
+            
+                <li data-name="FormComplexBlockParaConfig#required"><a href="FormComplexBlockParaConfig.html#required">required</a></li>
+            
+                <li data-name="FormComplexBlockParaConfig#reset"><a href="FormComplexBlockParaConfig.html#reset">reset</a></li>
+            
+                <li data-name="FormComplexBlockParaConfig#setData"><a href="FormComplexBlockParaConfig.html#setData">setData</a></li>
+            
+                <li data-name="FormComplexBlockParaConfig#setValue"><a href="FormComplexBlockParaConfig.html#setValue">setValue</a></li>
+            
+                <li data-name="FormComplexBlockParaConfig#show"><a href="FormComplexBlockParaConfig.html#show">show</a></li>
+            
+            </ul>
+            <ul class="events itemMembers">
+            
+            </ul>
+        </li>
+    
+        <li class="item" data-name="FormComplexParaConfig">
+            <span class="title">
+                <a href="FormComplexParaConfig.html">FormComplexParaConfig</a>
+                
+            </span>
+            <ul class="members itemMembers">
+            
+            </ul>
+            <ul class="typedefs itemMembers">
+            
+            </ul>
+            <ul class="methods itemMembers">
+            
+            <span class="subtitle">Methods</span>
+            
+                <li data-name="FormComplexParaConfig#clear"><a href="FormComplexParaConfig.html#clear">clear</a></li>
+            
+                <li data-name="FormComplexParaConfig#destroy"><a href="FormComplexParaConfig.html#destroy">destroy</a></li>
+            
+                <li data-name="FormComplexParaConfig#disable"><a href="FormComplexParaConfig.html#disable">disable</a></li>
+            
+                <li data-name="FormComplexParaConfig#enable"><a href="FormComplexParaConfig.html#enable">enable</a></li>
+            
+                <li data-name="FormComplexParaConfig#getValue"><a href="FormComplexParaConfig.html#getValue">getValue</a></li>
+            
+                <li data-name="FormComplexParaConfig#hide"><a href="FormComplexParaConfig.html#hide">hide</a></li>
+            
+                <li data-name="FormComplexParaConfig#required"><a href="FormComplexParaConfig.html#required">required</a></li>
+            
+                <li data-name="FormComplexParaConfig#reset"><a href="FormComplexParaConfig.html#reset">reset</a></li>
+            
+                <li data-name="FormComplexParaConfig#setData"><a href="FormComplexParaConfig.html#setData">setData</a></li>
+            
+                <li data-name="FormComplexParaConfig#setValue"><a href="FormComplexParaConfig.html#setValue">setValue</a></li>
+            
+                <li data-name="FormComplexParaConfig#show"><a href="FormComplexParaConfig.html#show">show</a></li>
+            
+            </ul>
+            <ul class="events itemMembers">
+            
+            </ul>
+        </li>
+    
+        <li class="item" data-name="FormComplexTableParaConfig">
+            <span class="title">
+                <a href="FormComplexTableParaConfig.html">FormComplexTableParaConfig</a>
+                
+            </span>
+            <ul class="members itemMembers">
+            
+            </ul>
+            <ul class="typedefs itemMembers">
+            
+            </ul>
+            <ul class="methods itemMembers">
+            
+            <span class="subtitle">Methods</span>
+            
+                <li data-name="FormComplexTableParaConfig#clear"><a href="FormComplexTableParaConfig.html#clear">clear</a></li>
+            
+                <li data-name="FormComplexTableParaConfig#destroy"><a href="FormComplexTableParaConfig.html#destroy">destroy</a></li>
+            
+                <li data-name="FormComplexTableParaConfig#disable"><a href="FormComplexTableParaConfig.html#disable">disable</a></li>
+            
+                <li data-name="FormComplexTableParaConfig#enable"><a href="FormComplexTableParaConfig.html#enable">enable</a></li>
+            
+                <li data-name="FormComplexTableParaConfig#getValue"><a href="FormComplexTableParaConfig.html#getValue">getValue</a></li>
+            
+                <li data-name="FormComplexTableParaConfig#hide"><a href="FormComplexTableParaConfig.html#hide">hide</a></li>
+            
+                <li data-name="FormComplexTableParaConfig#required"><a href="FormComplexTableParaConfig.html#required">required</a></li>
+            
+                <li data-name="FormComplexTableParaConfig#reset"><a href="FormComplexTableParaConfig.html#reset">reset</a></li>
+            
+                <li data-name="FormComplexTableParaConfig#setData"><a href="FormComplexTableParaConfig.html#setData">setData</a></li>
+            
+                <li data-name="FormComplexTableParaConfig#setValue"><a href="FormComplexTableParaConfig.html#setValue">setValue</a></li>
+            
+                <li data-name="FormComplexTableParaConfig#show"><a href="FormComplexTableParaConfig.html#show">show</a></li>
+            
+            </ul>
+            <ul class="events itemMembers">
+            
+            </ul>
+        </li>
+    
+        <li class="item" data-name="FormFieldCheckbox">
+            <span class="title">
+                <a href="FormFieldCheckbox.html">FormFieldCheckbox</a>
+                
+            </span>
+            <ul class="members itemMembers">
+            
+            </ul>
+            <ul class="typedefs itemMembers">
+            
+            </ul>
+            <ul class="methods itemMembers">
+            
+            <span class="subtitle">Methods</span>
+            
+                <li data-name="FormFieldCheckbox#change"><a href="FormFieldCheckbox.html#change">change</a></li>
+            
+                <li data-name="FormFieldCheckbox#clear"><a href="FormFieldCheckbox.html#clear">clear</a></li>
+            
+                <li data-name="FormFieldCheckbox#destroy"><a href="FormFieldCheckbox.html#destroy">destroy</a></li>
+            
+                <li data-name="FormFieldCheckbox#disable"><a href="FormFieldCheckbox.html#disable">disable</a></li>
+            
+                <li data-name="FormFieldCheckbox#enable"><a href="FormFieldCheckbox.html#enable">enable</a></li>
+            
+                <li data-name="FormFieldCheckbox#getValue"><a href="FormFieldCheckbox.html#getValue">getValue</a></li>
+            
+                <li data-name="FormFieldCheckbox#getValueId"><a href="FormFieldCheckbox.html#getValueId">getValueId</a></li>
+            
+                <li data-name="FormFieldCheckbox#getValueName"><a href="FormFieldCheckbox.html#getValueName">getValueName</a></li>
+            
+                <li data-name="FormFieldCheckbox#hide"><a href="FormFieldCheckbox.html#hide">hide</a></li>
+            
+                <li data-name="FormFieldCheckbox#required"><a href="FormFieldCheckbox.html#required">required</a></li>
+            
+                <li data-name="FormFieldCheckbox#reset"><a href="FormFieldCheckbox.html#reset">reset</a></li>
+            
+                <li data-name="FormFieldCheckbox#setData"><a href="FormFieldCheckbox.html#setData">setData</a></li>
+            
+                <li data-name="FormFieldCheckbox#setValue"><a href="FormFieldCheckbox.html#setValue">setValue</a></li>
+            
+                <li data-name="FormFieldCheckbox#show"><a href="FormFieldCheckbox.html#show">show</a></li>
+            
+            </ul>
+            <ul class="events itemMembers">
+            
+            </ul>
+        </li>
+    
+        <li class="item" data-name="FormFieldCity">
+            <span class="title">
+                <a href="FormFieldCity.html">FormFieldCity</a>
+                
+            </span>
+            <ul class="members itemMembers">
+            
+            </ul>
+            <ul class="typedefs itemMembers">
+            
+            </ul>
+            <ul class="methods itemMembers">
+            
+            <span class="subtitle">Methods</span>
+            
+                <li data-name="FormFieldCity#change"><a href="FormFieldCity.html#change">change</a></li>
+            
+                <li data-name="FormFieldCity#clear"><a href="FormFieldCity.html#clear">clear</a></li>
+            
+                <li data-name="FormFieldCity#destroy"><a href="FormFieldCity.html#destroy">destroy</a></li>
+            
+                <li data-name="FormFieldCity#disable"><a href="FormFieldCity.html#disable">disable</a></li>
+            
+                <li data-name="FormFieldCity#enable"><a href="FormFieldCity.html#enable">enable</a></li>
+            
+                <li data-name="FormFieldCity#getValue"><a href="FormFieldCity.html#getValue">getValue</a></li>
+            
+                <li data-name="FormFieldCity#hide"><a href="FormFieldCity.html#hide">hide</a></li>
+            
+                <li data-name="FormFieldCity#required"><a href="FormFieldCity.html#required">required</a></li>
+            
+                <li data-name="FormFieldCity#reset"><a href="FormFieldCity.html#reset">reset</a></li>
+            
+                <li data-name="FormFieldCity#setData"><a href="FormFieldCity.html#setData">setData</a></li>
+            
+                <li data-name="FormFieldCity#setValue"><a href="FormFieldCity.html#setValue">setValue</a></li>
+            
+                <li data-name="FormFieldCity#show"><a href="FormFieldCity.html#show">show</a></li>
+            
+            </ul>
+            <ul class="events itemMembers">
+            
+            </ul>
+        </li>
+    
+        <li class="item" data-name="FormFieldDate">
+            <span class="title">
+                <a href="FormFieldDate.html">FormFieldDate</a>
+                
+            </span>
+            <ul class="members itemMembers">
+            
+            </ul>
+            <ul class="typedefs itemMembers">
+            
+            </ul>
+            <ul class="methods itemMembers">
+            
+            <span class="subtitle">Methods</span>
+            
+                <li data-name="FormFieldDate#change"><a href="FormFieldDate.html#change">change</a></li>
+            
+                <li data-name="FormFieldDate#clear"><a href="FormFieldDate.html#clear">clear</a></li>
+            
+                <li data-name="FormFieldDate#destroy"><a href="FormFieldDate.html#destroy">destroy</a></li>
+            
+                <li data-name="FormFieldDate#disable"><a href="FormFieldDate.html#disable">disable</a></li>
+            
+                <li data-name="FormFieldDate#enable"><a href="FormFieldDate.html#enable">enable</a></li>
+            
+                <li data-name="FormFieldDate#getValue"><a href="FormFieldDate.html#getValue">getValue</a></li>
+            
+                <li data-name="FormFieldDate#hide"><a href="FormFieldDate.html#hide">hide</a></li>
+            
+                <li data-name="FormFieldDate#required"><a href="FormFieldDate.html#required">required</a></li>
+            
+                <li data-name="FormFieldDate#reset"><a href="FormFieldDate.html#reset">reset</a></li>
+            
+                <li data-name="FormFieldDate#setValue"><a href="FormFieldDate.html#setValue">setValue</a></li>
+            
+                <li data-name="FormFieldDate#show"><a href="FormFieldDate.html#show">show</a></li>
+            
+            </ul>
+            <ul class="events itemMembers">
+            
+            </ul>
+        </li>
+    
+        <li class="item" data-name="FormFieldManifest">
+            <span class="title">
+                <a href="FormFieldManifest.html">FormFieldManifest</a>
+                
+            </span>
+            <ul class="members itemMembers">
+            
+            </ul>
+            <ul class="typedefs itemMembers">
+            
+            </ul>
+            <ul class="methods itemMembers">
+            
+            <span class="subtitle">Methods</span>
+            
+                <li data-name="FormFieldManifest#change"><a href="FormFieldManifest.html#change">change</a></li>
+            
+                <li data-name="FormFieldManifest#clear"><a href="FormFieldManifest.html#clear">clear</a></li>
+            
+                <li data-name="FormFieldManifest#destroy"><a href="FormFieldManifest.html#destroy">destroy</a></li>
+            
+                <li data-name="FormFieldManifest#disable"><a href="FormFieldManifest.html#disable">disable</a></li>
+            
+                <li data-name="FormFieldManifest#enable"><a href="FormFieldManifest.html#enable">enable</a></li>
+            
+                <li data-name="FormFieldManifest#getValue"><a href="FormFieldManifest.html#getValue">getValue</a></li>
+            
+                <li data-name="FormFieldManifest#hide"><a href="FormFieldManifest.html#hide">hide</a></li>
+            
+                <li data-name="FormFieldManifest#required"><a href="FormFieldManifest.html#required">required</a></li>
+            
+                <li data-name="FormFieldManifest#reset"><a href="FormFieldManifest.html#reset">reset</a></li>
+            
+                <li data-name="FormFieldManifest#setData"><a href="FormFieldManifest.html#setData">setData</a></li>
+            
+                <li data-name="FormFieldManifest#setValue"><a href="FormFieldManifest.html#setValue">setValue</a></li>
+            
+                <li data-name="FormFieldManifest#show"><a href="FormFieldManifest.html#show">show</a></li>
+            
+            </ul>
+            <ul class="events itemMembers">
+            
+            </ul>
+        </li>
+    
+        <li class="item" data-name="FormFieldPlainText">
+            <span class="title">
+                <a href="FormFieldPlainText.html">FormFieldPlainText</a>
+                
+            </span>
+            <ul class="members itemMembers">
+            
+            </ul>
+            <ul class="typedefs itemMembers">
+            
+            </ul>
+            <ul class="methods itemMembers">
+            
+            <span class="subtitle">Methods</span>
+            
+                <li data-name="FormFieldPlainText#change"><a href="FormFieldPlainText.html#change">change</a></li>
+            
+                <li data-name="FormFieldPlainText#clear"><a href="FormFieldPlainText.html#clear">clear</a></li>
+            
+                <li data-name="FormFieldPlainText#destroy"><a href="FormFieldPlainText.html#destroy">destroy</a></li>
+            
+                <li data-name="FormFieldPlainText#disable"><a href="FormFieldPlainText.html#disable">disable</a></li>
+            
+                <li data-name="FormFieldPlainText#enable"><a href="FormFieldPlainText.html#enable">enable</a></li>
+            
+                <li data-name="FormFieldPlainText#getValue"><a href="FormFieldPlainText.html#getValue">getValue</a></li>
+            
+                <li data-name="FormFieldPlainText#hide"><a href="FormFieldPlainText.html#hide">hide</a></li>
+            
+                <li data-name="FormFieldPlainText#required"><a href="FormFieldPlainText.html#required">required</a></li>
+            
+                <li data-name="FormFieldPlainText#reset"><a href="FormFieldPlainText.html#reset">reset</a></li>
+            
+                <li data-name="FormFieldPlainText#setValue"><a href="FormFieldPlainText.html#setValue">setValue</a></li>
+            
+                <li data-name="FormFieldPlainText#show"><a href="FormFieldPlainText.html#show">show</a></li>
+            
+            </ul>
+            <ul class="events itemMembers">
+            
+            </ul>
+        </li>
+    
+        <li class="item" data-name="FormFieldRadio">
+            <span class="title">
+                <a href="FormFieldRadio.html">FormFieldRadio</a>
+                
+            </span>
+            <ul class="members itemMembers">
+            
+            </ul>
+            <ul class="typedefs itemMembers">
+            
+            </ul>
+            <ul class="methods itemMembers">
+            
+            <span class="subtitle">Methods</span>
+            
+                <li data-name="FormFieldRadio#change"><a href="FormFieldRadio.html#change">change</a></li>
+            
+                <li data-name="FormFieldRadio#clear"><a href="FormFieldRadio.html#clear">clear</a></li>
+            
+                <li data-name="FormFieldRadio#destroy"><a href="FormFieldRadio.html#destroy">destroy</a></li>
+            
+                <li data-name="FormFieldRadio#disable"><a href="FormFieldRadio.html#disable">disable</a></li>
+            
+                <li data-name="FormFieldRadio#enable"><a href="FormFieldRadio.html#enable">enable</a></li>
+            
+                <li data-name="FormFieldRadio#getValue"><a href="FormFieldRadio.html#getValue">getValue</a></li>
+            
+                <li data-name="FormFieldRadio#getValueId"><a href="FormFieldRadio.html#getValueId">getValueId</a></li>
+            
+                <li data-name="FormFieldRadio#getValueName"><a href="FormFieldRadio.html#getValueName">getValueName</a></li>
+            
+                <li data-name="FormFieldRadio#hide"><a href="FormFieldRadio.html#hide">hide</a></li>
+            
+                <li data-name="FormFieldRadio#required"><a href="FormFieldRadio.html#required">required</a></li>
+            
+                <li data-name="FormFieldRadio#reset"><a href="FormFieldRadio.html#reset">reset</a></li>
+            
+                <li data-name="FormFieldRadio#setData"><a href="FormFieldRadio.html#setData">setData</a></li>
+            
+                <li data-name="FormFieldRadio#setValue"><a href="FormFieldRadio.html#setValue">setValue</a></li>
+            
+                <li data-name="FormFieldRadio#show"><a href="FormFieldRadio.html#show">show</a></li>
+            
+            </ul>
+            <ul class="events itemMembers">
+            
+            </ul>
+        </li>
+    
+        <li class="item" data-name="FormFieldSelect">
+            <span class="title">
+                <a href="FormFieldSelect.html">FormFieldSelect</a>
+                
+            </span>
+            <ul class="members itemMembers">
+            
+            </ul>
+            <ul class="typedefs itemMembers">
+            
+            </ul>
+            <ul class="methods itemMembers">
+            
+            <span class="subtitle">Methods</span>
+            
+                <li data-name="FormFieldSelect#change"><a href="FormFieldSelect.html#change">change</a></li>
+            
+                <li data-name="FormFieldSelect#clear"><a href="FormFieldSelect.html#clear">clear</a></li>
+            
+                <li data-name="FormFieldSelect#destroy"><a href="FormFieldSelect.html#destroy">destroy</a></li>
+            
+                <li data-name="FormFieldSelect#disable"><a href="FormFieldSelect.html#disable">disable</a></li>
+            
+                <li data-name="FormFieldSelect#enable"><a href="FormFieldSelect.html#enable">enable</a></li>
+            
+                <li data-name="FormFieldSelect#getValue"><a href="FormFieldSelect.html#getValue">getValue</a></li>
+            
+                <li data-name="FormFieldSelect#getValueId"><a href="FormFieldSelect.html#getValueId">getValueId</a></li>
+            
+                <li data-name="FormFieldSelect#getValueName"><a href="FormFieldSelect.html#getValueName">getValueName</a></li>
+            
+                <li data-name="FormFieldSelect#hide"><a href="FormFieldSelect.html#hide">hide</a></li>
+            
+                <li data-name="FormFieldSelect#required"><a href="FormFieldSelect.html#required">required</a></li>
+            
+                <li data-name="FormFieldSelect#reset"><a href="FormFieldSelect.html#reset">reset</a></li>
+            
+                <li data-name="FormFieldSelect#setData"><a href="FormFieldSelect.html#setData">setData</a></li>
+            
+                <li data-name="FormFieldSelect#setValue"><a href="FormFieldSelect.html#setValue">setValue</a></li>
+            
+                <li data-name="FormFieldSelect#show"><a href="FormFieldSelect.html#show">show</a></li>
+            
+            </ul>
+            <ul class="events itemMembers">
+            
+            </ul>
+        </li>
+    
+        <li class="item" data-name="FormFieldUm">
+            <span class="title">
+                <a href="FormFieldUm.html">FormFieldUm</a>
+                
+            </span>
+            <ul class="members itemMembers">
+            
+            </ul>
+            <ul class="typedefs itemMembers">
+            
+            </ul>
+            <ul class="methods itemMembers">
+            
+            <span class="subtitle">Methods</span>
+            
+                <li data-name="FormFieldUm#change"><a href="FormFieldUm.html#change">change</a></li>
+            
+                <li data-name="FormFieldUm#clear"><a href="FormFieldUm.html#clear">clear</a></li>
+            
+                <li data-name="FormFieldUm#destroy"><a href="FormFieldUm.html#destroy">destroy</a></li>
+            
+                <li data-name="FormFieldUm#disable"><a href="FormFieldUm.html#disable">disable</a></li>
+            
+                <li data-name="FormFieldUm#enable"><a href="FormFieldUm.html#enable">enable</a></li>
+            
+                <li data-name="FormFieldUm#getValue"><a href="FormFieldUm.html#getValue">getValue</a></li>
+            
+                <li data-name="FormFieldUm#hide"><a href="FormFieldUm.html#hide">hide</a></li>
+            
+                <li data-name="FormFieldUm#required"><a href="FormFieldUm.html#required">required</a></li>
+            
+                <li data-name="FormFieldUm#reset"><a href="FormFieldUm.html#reset">reset</a></li>
+            
+                <li data-name="FormFieldUm#setValue"><a href="FormFieldUm.html#setValue">setValue</a></li>
+            
+                <li data-name="FormFieldUm#show"><a href="FormFieldUm.html#show">show</a></li>
+            
+            </ul>
+            <ul class="events itemMembers">
+            
+            </ul>
+        </li>
+    
+        <li class="item" data-name="FormFieldUpload">
+            <span class="title">
+                <a href="FormFieldUpload.html">FormFieldUpload</a>
+                
+            </span>
+            <ul class="members itemMembers">
+            
+            </ul>
+            <ul class="typedefs itemMembers">
+            
+            </ul>
+            <ul class="methods itemMembers">
+            
+            <span class="subtitle">Methods</span>
+            
+                <li data-name="FormFieldUpload#change"><a href="FormFieldUpload.html#change">change</a></li>
+            
+                <li data-name="FormFieldUpload#clear"><a href="FormFieldUpload.html#clear">clear</a></li>
+            
+                <li data-name="FormFieldUpload#destroy"><a href="FormFieldUpload.html#destroy">destroy</a></li>
+            
+                <li data-name="FormFieldUpload#disable"><a href="FormFieldUpload.html#disable">disable</a></li>
+            
+                <li data-name="FormFieldUpload#enable"><a href="FormFieldUpload.html#enable">enable</a></li>
+            
+                <li data-name="FormFieldUpload#getValue"><a href="FormFieldUpload.html#getValue">getValue</a></li>
+            
+                <li data-name="FormFieldUpload#hide"><a href="FormFieldUpload.html#hide">hide</a></li>
+            
+                <li data-name="FormFieldUpload#required"><a href="FormFieldUpload.html#required">required</a></li>
+            
+                <li data-name="FormFieldUpload#reset"><a href="FormFieldUpload.html#reset">reset</a></li>
+            
+                <li data-name="FormFieldUpload#setValue"><a href="FormFieldUpload.html#setValue">setValue</a></li>
+            
+                <li data-name="FormFieldUpload#show"><a href="FormFieldUpload.html#show">show</a></li>
+            
+            </ul>
+            <ul class="events itemMembers">
+            
+            </ul>
+        </li>
+    
+        <li class="item" data-name="FormFiledText">
+            <span class="title">
+                <a href="FormFiledText.html">FormFiledText</a>
+                
+            </span>
+            <ul class="members itemMembers">
+            
+            </ul>
+            <ul class="typedefs itemMembers">
+            
+            </ul>
+            <ul class="methods itemMembers">
+            
+            <span class="subtitle">Methods</span>
+            
+                <li data-name="FormFiledText#change"><a href="FormFiledText.html#change">change</a></li>
+            
+                <li data-name="FormFiledText#clear"><a href="FormFiledText.html#clear">clear</a></li>
+            
+                <li data-name="FormFiledText#destroy"><a href="FormFiledText.html#destroy">destroy</a></li>
+            
+                <li data-name="FormFiledText#disable"><a href="FormFiledText.html#disable">disable</a></li>
+            
+                <li data-name="FormFiledText#enable"><a href="FormFiledText.html#enable">enable</a></li>
+            
+                <li data-name="FormFiledText#getValue"><a href="FormFiledText.html#getValue">getValue</a></li>
+            
+                <li data-name="FormFiledText#hide"><a href="FormFiledText.html#hide">hide</a></li>
+            
+                <li data-name="FormFiledText#required"><a href="FormFiledText.html#required">required</a></li>
+            
+                <li data-name="FormFiledText#reset"><a href="FormFiledText.html#reset">reset</a></li>
+            
+                <li data-name="FormFiledText#setValue"><a href="FormFiledText.html#setValue">setValue</a></li>
+            
+                <li data-name="FormFiledText#show"><a href="FormFiledText.html#show">show</a></li>
+            
+            </ul>
+            <ul class="events itemMembers">
+            
+            </ul>
+        </li>
+    
+        <li class="item" data-name="FormVerify">
+            <span class="title">
+                <a href="FormVerify.html">FormVerify</a>
+                
+            </span>
+            <ul class="members itemMembers">
+            
+            </ul>
+            <ul class="typedefs itemMembers">
+            
+            </ul>
+            <ul class="methods itemMembers">
+            
+            <span class="subtitle">Methods</span>
+            
+                <li data-name="FormVerify#errorNum"><a href="FormVerify.html#errorNum">errorNum</a></li>
+            
+                <li data-name="FormVerify#reset"><a href="FormVerify.html#reset">reset</a></li>
+            
+            </ul>
+            <ul class="events itemMembers">
+            
+            </ul>
+        </li>
+    
+        <li class="item" data-name="FuzzySearch">
+            <span class="title">
+                <a href="FuzzySearch.html">FuzzySearch</a>
+                
+            </span>
+            <ul class="members itemMembers">
+            
+            </ul>
+            <ul class="typedefs itemMembers">
+            
+            </ul>
+            <ul class="methods itemMembers">
+            
+            <span class="subtitle">Methods</span>
+            
+                <li data-name="FuzzySearch#change"><a href="FuzzySearch.html#change">change</a></li>
+            
+                <li data-name="FuzzySearch#clear"><a href="FuzzySearch.html#clear">clear</a></li>
+            
+                <li data-name="FuzzySearch#destroy"><a href="FuzzySearch.html#destroy">destroy</a></li>
+            
+                <li data-name="FuzzySearch#disable"><a href="FuzzySearch.html#disable">disable</a></li>
+            
+                <li data-name="FuzzySearch#enable"><a href="FuzzySearch.html#enable">enable</a></li>
+            
+                <li data-name="FuzzySearch#getValue"><a href="FuzzySearch.html#getValue">getValue</a></li>
+            
+                <li data-name="FuzzySearch#hide"><a href="FuzzySearch.html#hide">hide</a></li>
+            
+                <li data-name="FuzzySearch#reset"><a href="FuzzySearch.html#reset">reset</a></li>
+            
+                <li data-name="FuzzySearch#setData"><a href="FuzzySearch.html#setData">setData</a></li>
+            
+                <li data-name="FuzzySearch#setValue"><a href="FuzzySearch.html#setValue">setValue</a></li>
+            
+                <li data-name="FuzzySearch#show"><a href="FuzzySearch.html#show">show</a></li>
+            
+            </ul>
+            <ul class="events itemMembers">
+            
+            </ul>
+        </li>
+    
+        <li class="item" data-name="ListSelect">
+            <span class="title">
+                <a href="ListSelect.html">ListSelect</a>
+                
+            </span>
+            <ul class="members itemMembers">
+            
+            </ul>
+            <ul class="typedefs itemMembers">
+            
+            </ul>
+            <ul class="methods itemMembers">
+            
+            </ul>
+            <ul class="events itemMembers">
+            
+            </ul>
+        </li>
+    
+        <li class="item" data-name="Manifest1">
+            <span class="title">
+                <a href="Manifest1.html">Manifest1</a>
+                
+            </span>
+            <ul class="members itemMembers">
+            
+            </ul>
+            <ul class="typedefs itemMembers">
+            
+            </ul>
+            <ul class="methods itemMembers">
+            
+            <span class="subtitle">Methods</span>
+            
+                <li data-name="Manifest1#change"><a href="Manifest1.html#change">change</a></li>
+            
+                <li data-name="Manifest1#clear"><a href="Manifest1.html#clear">clear</a></li>
+            
+                <li data-name="Manifest1#destroy"><a href="Manifest1.html#destroy">destroy</a></li>
+            
+                <li data-name="Manifest1#disabled"><a href="Manifest1.html#disabled">disabled</a></li>
+            
+                <li data-name="Manifest1#enabled"><a href="Manifest1.html#enabled">enabled</a></li>
+            
+                <li data-name="Manifest1#getValue"><a href="Manifest1.html#getValue">getValue</a></li>
+            
+                <li data-name="Manifest1#hide"><a href="Manifest1.html#hide">hide</a></li>
+            
+                <li data-name="Manifest1#reset"><a href="Manifest1.html#reset">reset</a></li>
+            
+                <li data-name="Manifest1#setData"><a href="Manifest1.html#setData">setData</a></li>
+            
+                <li data-name="Manifest1#setValue"><a href="Manifest1.html#setValue">setValue</a></li>
+            
+                <li data-name="Manifest1#show"><a href="Manifest1.html#show">show</a></li>
+            
+            </ul>
+            <ul class="events itemMembers">
+            
+            </ul>
+        </li>
+    
+        <li class="item" data-name="Modal">
+            <span class="title">
+                <a href="Modal.html">Modal</a>
+                
+            </span>
+            <ul class="members itemMembers">
+            
+            </ul>
+            <ul class="typedefs itemMembers">
+            
+            </ul>
+            <ul class="methods itemMembers">
+            
+            <span class="subtitle">Methods</span>
+            
+                <li data-name="Modal#destroy"><a href="Modal.html#destroy">destroy</a></li>
+            
+                <li data-name="Modal#footer"><a href="Modal.html#footer">footer</a></li>
+            
+                <li data-name="Modal#hide"><a href="Modal.html#hide">hide</a></li>
+            
+                <li data-name="Modal#setContent"><a href="Modal.html#setContent">setContent</a></li>
+            
+                <li data-name="Modal#show"><a href="Modal.html#show">show</a></li>
+            
+            </ul>
+            <ul class="events itemMembers">
+            
+            </ul>
+        </li>
+    
+        <li class="item" data-name="ProgressBar">
+            <span class="title">
+                <a href="ProgressBar.html">ProgressBar</a>
+                
+            </span>
+            <ul class="members itemMembers">
+            
+            </ul>
+            <ul class="typedefs itemMembers">
+            
+            </ul>
+            <ul class="methods itemMembers">
+            
+            <span class="subtitle">Methods</span>
+            
+                <li data-name="ProgressBar#clear"><a href="ProgressBar.html#clear">clear</a></li>
+            
+                <li data-name="ProgressBar#destroy"><a href="ProgressBar.html#destroy">destroy</a></li>
+            
+                <li data-name="ProgressBar#getValue"><a href="ProgressBar.html#getValue">getValue</a></li>
+            
+                <li data-name="ProgressBar#hide"><a href="ProgressBar.html#hide">hide</a></li>
+            
+                <li data-name="ProgressBar#reset"><a href="ProgressBar.html#reset">reset</a></li>
+            
+                <li data-name="ProgressBar#setValue"><a href="ProgressBar.html#setValue">setValue</a></li>
+            
+                <li data-name="ProgressBar#show"><a href="ProgressBar.html#show">show</a></li>
+            
+            </ul>
+            <ul class="events itemMembers">
+            
+            </ul>
+        </li>
+    
+        <li class="item" data-name="Switch">
+            <span class="title">
+                <a href="Switch.html">Switch</a>
+                
+            </span>
+            <ul class="members itemMembers">
+            
+            </ul>
+            <ul class="typedefs itemMembers">
+            
+            </ul>
+            <ul class="methods itemMembers">
+            
+            <span class="subtitle">Methods</span>
+            
+                <li data-name="Switch#change"><a href="Switch.html#change">change</a></li>
+            
+                <li data-name="Switch#clear"><a href="Switch.html#clear">clear</a></li>
+            
+                <li data-name="Switch#destroy"><a href="Switch.html#destroy">destroy</a></li>
+            
+                <li data-name="Switch#disable"><a href="Switch.html#disable">disable</a></li>
+            
+                <li data-name="Switch#enable"><a href="Switch.html#enable">enable</a></li>
+            
+                <li data-name="Switch#getValue"><a href="Switch.html#getValue">getValue</a></li>
+            
+                <li data-name="Switch#hide"><a href="Switch.html#hide">hide</a></li>
+            
+                <li data-name="Switch#reset"><a href="Switch.html#reset">reset</a></li>
+            
+                <li data-name="Switch#setValue"><a href="Switch.html#setValue">setValue</a></li>
+            
+                <li data-name="Switch#show"><a href="Switch.html#show">show</a></li>
+            
+            </ul>
+            <ul class="events itemMembers">
+            
+            </ul>
+        </li>
+    
+        <li class="item" data-name="Tab1">
+            <span class="title">
+                <a href="Tab1.html">Tab1</a>
+                
+            </span>
+            <ul class="members itemMembers">
+            
+            </ul>
+            <ul class="typedefs itemMembers">
+            
+            </ul>
+            <ul class="methods itemMembers">
+            
+            </ul>
+            <ul class="events itemMembers">
+            
+            </ul>
+        </li>
+    
+        <li class="item" data-name="Tooltip">
+            <span class="title">
+                <a href="Tooltip.html">Tooltip</a>
+                
+            </span>
+            <ul class="members itemMembers">
+            
+            </ul>
+            <ul class="typedefs itemMembers">
+            
+            </ul>
+            <ul class="methods itemMembers">
+            
+            <span class="subtitle">Methods</span>
+            
+                <li data-name="Tooltip#destroy"><a href="Tooltip.html#destroy">destroy</a></li>
+            
+            </ul>
+            <ul class="events itemMembers">
+            
+            </ul>
+        </li>
+    
+        <li class="item" data-name="Um">
+            <span class="title">
+                <a href="Um.html">Um</a>
+                
+            </span>
+            <ul class="members itemMembers">
+            
+            </ul>
+            <ul class="typedefs itemMembers">
+            
+            </ul>
+            <ul class="methods itemMembers">
+            
+            </ul>
+            <ul class="events itemMembers">
+            
+            </ul>
+        </li>
+    
+        <li class="item" data-name="Um">
+            <span class="title">
+                <a href="Um.html">Um</a>
+                
+            </span>
+            <ul class="members itemMembers">
+            
+            </ul>
+            <ul class="typedefs itemMembers">
+            
+            </ul>
+            <ul class="methods itemMembers">
+            
+            </ul>
+            <ul class="events itemMembers">
+            
+            </ul>
+        </li>
+    
+    </ul>
+</div>
+    <div class="main">
+        <h1 class="page-title" data-filename="form_complex_base_js_form_complex_base.js.html">Source: form_complex_base/js/form_complex_base.js</h1>
+        
+
+
+    
+    <section>
+        <article>
+            <pre class="prettyprint source "><code>require.config({
+    paths: {
+        'cssFile': 'modules/libs/rq/css.min'
+    }
+});
+define([
+    'modules/form_base/js/form_base',
+    'modules/utils/true_or_false',
+    'modules/utils/data_type',
+    'modules/utils/number_change',
+    'modules/utils/function_deal',
+    'modules/form_verify/js/form_verify', //校验组件
+    'modules/tooltip/js/tooltip', //气泡型提示组件
+    'modules/message/js/message', //顶部滑动式提示组件
+
+    'modules/form_field_plainText/js/form_field_plainText',
+    'modules/form_field_text/js/form_field_text',
+    'modules/form_field_select/js/form_field_select',
+    'modules/form_field_date/js/form_field_date',
+    'modules/form_field_radio/js/form_field_radio',
+    'modules/form_field_checkbox/js/form_field_checkbox',
+    'modules/form_field_manifest/js/form_field_manifest',
+    'modules/form_field_upload/js/form_field_upload',
+    'modules/form_field_um/js/form_field_um',
+    'modules/form_field_city_selector/js/form_field_city_selector',//城市选择，
+    'modules/form_complex_base/js/form_complex_manager',
+    'cssFile!modules/form_complex_base/css/form_complex_base'
+], function(FormBase, trueOrFalse, dataType, numberChange, functionDeal,
+            FormVerify, Tooltip, Message,
+            FormFieldPlainText, FormFieldText,
+            FormFieldSelect, FormFieldDate,
+            FormFieldRadio, FormFieldCheckbox,
+            FormFieldManifest, FormFieldUpload, FormFieldUm,FormFieldCity,formComplexManager
+        ) {
+    /**
+     * 表单复合类型组件的基础文件
+     * @alias form_complex_base
+     * @author kt
+     * @since 2017-9-7
+     */
+    var FormComplexBase = function() {};
+    FormComplexBase.prototype = {
+        /*参数设置*/
+        commonParameterSetting: function(opts) {
+            var _this = this;
+            if (!opts) opts = {};
+            opts = $.extend(true, {
+                name: '', //唯一标识
+                element: '', //当前需要生成字段的元素
+                className: '', //可以为当前元素添加class
+                style: {}, //设置样式
+                layout: 'left-right', //布局，一种为上下结构'up-down'，一种为左右结构'left-right'，默认为左右结构布局
+                isShowRequired: false, //当必填的时候是否显示必填标志，默认是隐藏的
+                requiredLocation: 'before', //必填标志的位置，可以在字段前before，也可以在末尾显示before， 默认在字段前显示
+                title: '', //标题
+                titleStyle: {},
+                contentStyle: {}, //内容样式
+                readOnly: (opts.disabled || false), //只读
+                disabled: false, //禁用
+                tip: '', //在表单字段组件下面一行添加提示文字
+                maxNum: '', //添加的条数限制
+                isHide: false, //是否隐藏，默认是显示的
+                canNull:false,
+                //校验配置（2）
+                byteChinese: '1', //中文一个字符占几个字节,默认为一个字符占1个字节
+                checkType: 'all', //单个校验还是整体校验：all/oneByOne,all整体校验是全部提示规则都出来，oneByOne一个一个校验是单个校验完了再校验下一个
+                isChangeCheck: true, //值改变的时候是否执行校验
+                //提示
+                checkTipType: 'tooltip', //校验提示类型,message/tooltip
+                isTipBorder: true, //是否校验元素需要红框提示,两种提示都可以设置
+                isSetRowLineHeight: false, //使用气泡提示时，是整体校验的情况下，提示会遮挡输入框的情况，可以设置行高，默认是不设置，鼠标移入显示当前提示，移除其他提示
+                checkTipShape: 'hollow', //气泡提示形状
+                checkTipDirection: 'top', //气泡提示方向
+                checkTipLocation: 'left', //气泡提示位置
+                checkTipTime: '2', //消息提示显示时间
+                valueIsArray:false,//当没有加减行的时候，获取值默认不是一个数组，强制是一个数组的，则返回一个数组
+            }, opts);
+            _this.opts = opts;
+            _this.opts = functionDeal(_this.opts);
+            _this.validators = []; //校验
+            _this.tooltip = []; //提示存储，为了再次校验的时候清空
+            _this.handlers = {}; //自定义事件存储
+            _this.fileIdArr = []; //表单的字段的参数数组存储,每次进来都要清空
+            _this.$fileIds = []; /*存储表单里面的字段，后面可以根据这个存储的字段通过name找到对应的字段进行操作*/
+        },
+        /*创建配置内容*/
+        createFormComplex: function() {
+            var _this = this;
+            _this.createFormComplexBase({
+                eleHtml: '&lt;table>'+
+                            '&lt;thead>&lt;/thead>'+
+                            '&lt;tbody>&lt;/tbody>'+
+                        '&lt;/table>'
+            });
+        },
+        /*创建表单混合元素
+         *param为参数,标题和必填标志不能换行，换行被解析，获取的宽度就不够了
+         */
+        createFormComplexBase: function(param) {
+            var _this = this;
+            var className = ' ' + _this.opts.className;
+            var requiredClass = (_this.opts.requiredLocation == 'before') ? '' : ' form-complex-required-after';
+            var layoutClass = ((_this.opts.layout == 'left-right') ? ' form-complex-leftRight' : ' form-complex-upDown')
+            _this.opts.element
+                    .addClass('form-clear form-complex ' + layoutClass + requiredClass + ' ' + _this.ownClass + className)
+                    .html('&lt;div class="form-complex-head">'+
+                                (trueOrFalse(_this.opts.isShowRequired) ? '&lt;span class="form-required">*&lt;/span>' : '') + (trueOrFalse(_this.opts.title) ? '&lt;span class="form-complex-title">' + _this.opts.title + '&lt;/span>' : '') +
+                            '&lt;/div>'+
+                            '&lt;div class="form-complex-content">'+param.eleHtml +
+                             (_this.opts.tip ? '&lt;p class="form-tip">' + _this.opts.tip + '&lt;/p>' : '') +
+                            '&lt;/div>')
+                    .attr('name', _this.opts.name || '');
+        },
+        /*元素设置*/
+        elementSetting: function() {
+            var _this = this;
+            _this.$field = _this.opts.element; //字段区域
+            _this.$required = _this.opts.element.find('.form-complex-head .form-required'); //必填元素标志
+            _this.$head = _this.opts.element.find('.form-complex-head'); //标题文字区域
+            _this.$title = _this.opts.element.find('.form-complex-title'); //标题文字区域
+            _this.$content = _this.opts.element.find('.form-complex-content'); //内容区域
+            _this.$element = _this.$table = _this.$content.find('table');
+            _this.$thead = _this.$content.find('thead').eq(0);
+            _this.$tbody = _this.$content.find('tbody').eq(0);
+        },
+        /*样式设置*/
+        styleSetting: function() {
+            var _this = this;
+            //字段样式处理
+            _this.opts.style &amp;&amp;  _this.$field.css(_this.opts.style);
+            //标题的样式设置
+            _this.opts.titleStyle &amp;&amp; _this.$head.css(_this.opts.titleStyle);
+            //内容样式处理
+            _this.opts.contentStyle &amp;&amp; _this.$content.css(_this.opts.contentStyle);
+            //必填标志样式处理
+            _this.requiredLocationFn(_this.opts.isShowRequired);
+        },
+        //必填标志现实与隐藏的处理
+        requiredLocationFn: function(isRequired) {
+            var _this = this;
+            var requiredWidth = 0;
+            if (trueOrFalse(isRequired)) { //如果显示必填标志
+                _this.$required.show();
+                requiredWidth = _this.$required.outerWidth() + 1; //这里为什么要加1呢，是因为宽度有的时候小数会自己舍掉
+            } else { //否则隐藏必填标志
+                _this.$required.hide();
+            }
+            if (_this.opts.layout == 'left-right') {
+                var titleWidth = 0;
+                if (!!_this.opts.title) {
+                    titleWidth = _this.$title.outerWidth() + 1; //这里为什么要加1呢，是因为宽度有的时候小数会自己舍掉
+                }
+                _this.$content.css({
+                    'width': 'calc(100% - ' + (titleWidth + requiredWidth) + 'px)'
+                });
+            }
+        },
+        /*创建表格*/
+        createTable: function() {
+            var _this = this;
+            //标题
+            if (_this.opts.childrenThead &amp;&amp; _this.opts.childrenThead.length > 0) {
+                var theadHtml = '';
+                $.each(_this.opts.childrenThead, function(i, v) {
+                    if (dataType(v) == 'string') {
+                        if (v == 'hiddenField') {
+                            theadHtml += '&lt;th style="display:none;">&lt;/th>';
+                        } else {
+                            theadHtml += '&lt;th>' + v + '&lt;/th>';
+                        }
+                    } else if (dataType(v) == 'object') {
+                        var required = '';
+                        if (v.isShowRequired == true) {
+                            required = '&lt;span class="form-required">*&lt;/span>';
+                        }
+                        theadHtml += '&lt;th>' + required + '&lt;span>' + v.value + '&lt;/span>&lt;/th>';
+                    }
+                });
+                _this.$thead.html('&lt;tr>' + theadHtml + '&lt;/tr>');
+            }
+            //内容
+            if (_this.opts.childrenTbody.length == 1 &amp;&amp; dataType(_this.opts.childrenTbody[0]) == 'array') { //如果childrenTbody的长度为一并且第一个是数组的情况下，则只去第一个
+                _this.opts.childrenTbody = _this.opts.childrenTbody[0];
+            }
+            //如果可以为空，默认不添加行
+            if (!_this.opts.canNull) _this.addRow(0, $.extend(true, [], _this.opts.childrenTbody));
+            _this.indexFn();
+            if (_this.opts.value) { //todo,值处理,表单工具需要，这里设置定时器是因为设置值的时候有可能没有加载完成
+                _this.setValue(_this.opts.value);
+            }
+            if (_this.opts.data) { //todo,块添加里面设置数据时的操作
+                _this.setData(_this.opts.data);
+            }
+        },
+        /*添加行
+         * index:在哪个位置加入行
+         * value:这一行的配置值
+         * */
+        addRow: function(index, value) {
+            var _this = this;
+            var tdHtml = '';
+            var fileIdObj = {};
+            var $fileIdsObj = {};
+            var validators = {};
+            $.each(value, function(i, v) {
+                if (v.type == 'hidden') {
+                    tdHtml += '&lt;td style="display: none;">&lt;div>&lt;/div>&lt;/td>';
+                } else {
+                    tdHtml += '&lt;td>&lt;div>&lt;/div>&lt;/td>';
+                }
+            });
+            var $rowDom = $('&lt;tr>' + tdHtml + '&lt;/tr>');
+            if (_this.$tbody.children('tr').length == 0) {
+                _this.$tbody.append($rowDom);
+            } else {
+                _this.$tbody.children('tr').eq(index - 1).after($rowDom);
+            }
+            $fileIdsObj.$dom = $rowDom;
+            $.each(value, function(i, v) {
+                v.element = _this.$tbody.children('tr').eq(index).children('td').eq(i).find('div').eq(0);
+                v.disabled = v.disabled ? v.disabled : _this.opts.disabled;
+                if (v.name) {
+                    fileIdObj[v.name] = v;
+                } else {
+                    fileIdObj[v.type] = v;
+                }
+                _this.createFieldSingle(v, $fileIdsObj, validators,i);
+            });
+            _this.fileIdArr.splice(index, 0, fileIdObj);
+            _this.$fileIds.splice(index, 0, $fileIdsObj);
+            _this.validators.splice(index, 0, validators);
+            _this.bindAreaEvent($fileIdsObj);
+            _this.rows ? _this.rows.push($fileIdsObj) : this.rows = [$fileIdsObj]; //初始化时用
+            _this.opts.disabled &amp;&amp; _this.disable();
+        },
+        /*根据类型创建单个字段*/
+        createFieldSingle: function(v, $fileIdsObj, validators,i) {
+            var _this = this;
+            //只有当你设置有改变执行校验的时候才去设置下面的函数，默认是有的
+            //把校验执行放在函数里传到各个字段里去，在值改变的时候去执行
+            if (v.name) {
+                validators[v.name] = v.validators;
+                _this.opts.isChangeCheck &amp;&amp; (v.formValidatorsCallback = function() {
+                    _this.verify(v.name, $fileIdsObj.$dom.index());
+                });
+            }
+            if (v.requiredLocation == 'after') { //如果数据配置了必填标志在后面的处理,将isRequiredAfter改为true
+                _this.isRequiredAfter = true;
+            }
+            var objType={
+                'text':FormFieldText,
+                'password':FormFieldText,
+                'textarea':FormFieldText,
+                'hidden':FormFieldText,
+                'textareaAuto':FormFieldText,
+                'plainText':FormFieldPlainText,
+                'single':FormFieldSelect,
+                'singleSearch':FormFieldSelect,
+                'multiple':FormFieldSelect,
+                'multipleSearch':FormFieldSelect,
+                'date':FormFieldDate,
+                'date2':FormFieldDate,
+                'radio':FormFieldRadio,
+                'checkbox':FormFieldCheckbox,
+                'manifest':FormFieldManifest,
+                'upload':FormFieldUpload,
+                'umEditor':FormFieldUm,
+                'city':FormFieldCity,
+                'paraConfig':formComplexManager.FormComplexParaConfig,
+                'tableParaConfig':formComplexManager.FormComplexTableParaConfig,
+                'blockParaConfig':formComplexManager.FormComplexBlockParaConfig
+            };
+            if(objType[v.type]){
+                $fileIdsObj[v.name] =new objType[v.type](v);
+            }else if (v.type == 'index') { //索引，目前支持数字类型：阿拉伯数字number,罗马数字roman,中文数字chinese
+                //设置当前元素的样式
+                v.element.addClass('form-complex-index');
+                v.style &amp;&amp; v.element.css(v.style);
+                if (v.name) {
+                    $fileIdsObj[v.name] = _this.formComplexIndexNB = new FormFieldPlainText(v);
+                } else {
+                    _this.formComplexIndexNB = new FormFieldPlainText(v);
+                }
+            } else if (v.type == 'actions') { //操作配置
+                _this.dataTypeIsArray = true; //说明当前需要的是一个数组
+                v.element.addClass('form-complex-actions');
+                v.style &amp;&amp; v.element.css(v.style);
+                v = $.extend(true, {
+                    type: "actions",
+                    value: [], //"add","remove","up","down","upToTop","downToBottom"
+                    plusOnlyOne: false, //是否添加最后一行的操作，默认不是，点击哪行添加哪行
+                    isDeleteOnlyOne: false, //是否可以删除唯一一行,默认是不可以的
+                    language: "icon", //图标icon ,文字character
+                    updateValue:'',//复制的时候，获取当前行的某些数据
+                    style:{},
+                }, v);
+                _this.plusOnlyOne = v.plusOnlyOne;
+                _this.updateValue = v.updateValue;
+                _this.isDeleteOnlyOne=v.isDeleteOnlyOne;
+                _this.isDeleteOnlyOneIndex=i;//操作的在哪个位置
+                _this.isDeleteOnlyOne &amp;&amp; _this.$content.addClass('deleteOnlyOne');
+                if (v.value) {
+                    var btnsHtml = '';
+                    var character = {
+                        'add': '添加',
+                        'remove': '删除',
+                        'up': '上移',
+                        'down': '下移',
+                        'upToTop': '上移到顶部',
+                        'downToBottom': '下移到底部'
+                    };
+                    $.each(v.value, function(index, value) {
+                        var className = 'form-actions form-actions-' + v.language;
+                        if (dataType(value) == 'string') {
+                            btnsHtml += '&lt;span class="' + className + ' djiui-icon djiui-icon-actions-' + value + '" title="' + character[value] + '">' + character[value] + '&lt;/span>';
+                        } else if (dataType(value) == 'object') {
+                            btnsHtml += '&lt;span class="' + className + ' djiui-icon djiui-icon-actions-' + value.code + '" title="' + value.title + '" code="' + value.code + '">' + value.title + '&lt;/span>';
+                            if (!_this.handlers[value.code]) {
+                                _this.on(value.code, value.fn);
+                            }
+                        }
+                    });
+                    v.element.html(btnsHtml);
+                }
+            }
+        },
+        /*列表的索引值*/
+        indexFn: function() {
+            var _this = this;
+            $.each(_this.fileIdArr, function(iArr, vArr) {
+                $.each(vArr, function(i, v) {
+                    if (v.type == 'index') {
+                        _this.indexNumber(iArr, v);
+                    }
+                });
+            });
+        },
+        /*索引值处理*/
+        indexNumber: function(iArr, v) {
+            var _this = this;
+            var newValue = $.extend(true, {}, v);
+            //设置当前元素的值
+            var reg = /{{(.*?)}}/gi; //正则匹配花括号
+            var index = iArr + 1;
+            if (reg.test(newValue.value) &amp;&amp; newValue.value.match(reg) == '{{index}}') {
+                if (newValue.language == 'roman') { //罗马数字
+                    index = numberChange.toRoman(index);
+                } else if (newValue.language == 'chinese') { //中文数字
+                    index = numberChange.toChinese(index);
+                }
+                newValue.value = newValue.value.replace(reg, index);
+            }
+            _this.formComplexIndexNB.$element &amp;&amp; _this.formComplexIndexNB.setValue(newValue.value);
+            v.element.html(newValue.value);
+        },
+        /*-----------------------联动----------------*/
+        /*
+         * 维护交互方法列表
+         * */
+        addAreaEvent: function(handlerEvent) {
+            if (!this.handlerEvents) {
+                this.handlerEvents = [];
+            }
+            this.handlerEvents.push(handlerEvent);
+        },
+        /*
+         * 当行创建完成之后，绑定相关的交互方法
+         * */
+        bindAreaEvent: function(curObj) {
+            var _this = this;
+            if (!_this.handlerEvents) {
+                return;
+            }
+            if (!curObj) { //不是手动添加的
+                for (var j = 0; j &lt; _this.rows.length; j++) {
+                    for (var i = 0; i &lt; _this.handlerEvents.length; i++) {
+                        _this.linkHandle(i, _this.handlerEvents[i], _this, _this.rows[j]);
+                    }
+                }
+            } else {
+                for (var i = 0; i &lt; _this.handlerEvents.length; i++) {
+                    _this.linkHandle(i, _this.handlerEvents[i], _this, curObj);
+                }
+            }
+        },
+        /*事件改变*/
+        change: function(parameter, callback, curObj) {
+            var _this = this;
+            if (curObj) { //如果是联动的情况
+                curObj[parameter].change(callback);
+            } else {
+                $.each(_this.$fileIds, function(i, v) {
+                    v[parameter].change(callback);
+                });
+            }
+        },
+        /*条件和参数是否是function处理*/
+        functionDeal: function(para, name, defaultValue, curObj) {
+            var _this = this;
+            if (para) { //当有设置条件时
+                if (dataType(para) == 'function') { //如果数据类型是function的情况
+                    return para(name, curObj);
+                } else if (dataType(para) == 'object' &amp;&amp; para.dataType &amp;&amp; para.dataType == 'function') {
+                    if (para.value &amp;&amp; para.value.indexOf('function') != -1 &amp;&amp; para.value.indexOf('(') != -1) { //如果当前传入的参数是字符串并且存在function则将字符串转为function
+                        para = (new Function('return( ' + para.value + ' );'))();
+                        var result;
+                        var result2 = para(name, curObj, function(data) {
+                            result = data;
+                        });
+                        return result ? result : result2;
+                    } else {
+                        if (para.value) {
+                            return para.value;
+                        } else {
+                            return defaultValue;
+                        }
+                    }
+                } else {
+                    return para;
+                }
+            } else { //如果没有条件，则直接返回true
+                return defaultValue;
+            }
+        },
+        /*-----------------事件操作----------------*/
+        /*操作类型绑定事件*/
+        bindEvent: function() {
+            var _this = this;
+            //添加行
+            _this.$field.on('click', '.djiui-icon-actions-add', function(e) {
+                //添加行的时候复制该行的数据
+                var clone=$.extend(true, [], _this.opts.childrenTbody);
+                if($(this).closest('thead').length>0){//头部点击
+                    _this.addRowFn(0,clone);
+                }else{//内容点击
+                    var trIndex=$(this).closest('tr').index();
+                    if (_this.opts.maxNum) {
+                        if (_this.$tbody.children('tr').length >= _this.opts.maxNum) {
+                            new Message().error('添加条数超过限制' + _this.opts.maxNum + '条');
+                            return false;
+                        }
+                    }
+                    if ($(this).attr('disable')) return false;
+                    _this.updateValue &amp;&amp; $.each(clone,function(i,v){
+                        $.each(_this.updateValue,function(index,value){
+                            if(v.name &amp;&amp; v.name==value){
+                                clone[i].value=_this.getValue()[trIndex][v.name];
+                            }
+                        });
+                    });
+                    _this.addRowFn(trIndex,clone);
+                }
+                _this.isShowRemoveBtn();
+                _this.codeFn(e, $(this));
+                return false; //阻止冒泡
+            });
+            //删除行
+            _this.$field.on('click', '.djiui-icon-actions-remove', function(e) {
+                var $this=$(this);
+                var index = $this.closest('tr').index();
+                if ($this.attr('disable')) return false;
+                _this.destroy(index); //摧毁对应的的所有
+                _this.codeFn(e, $this,{
+                    index:index
+                });
+                return false; //阻止冒泡
+            });
+            //上移行
+            _this.$field.on('click', '.djiui-icon-actions-up', function(e) {
+                if ($(this).attr('disable')) return false;
+                var $tr = $(this).closest('tr');
+                var index = $tr.index(); //当前位置的索引
+                if (index != 0) { //不是第一行
+                    require(['modules/utils/array_exchange_location'], function(arrayLocation) {
+                        arrayLocation.exchange(_this.fileIdArr, index, index - 1);
+                        arrayLocation.exchange(_this.$fileIds, index, index - 1);
+                        arrayLocation.exchange(_this.validators, index, index - 1);
+                        arrayLocation.exchange(_this.tooltip, index, index - 1);
+                        $tr.prev().before($tr);
+                        _this.indexFn();
+                    });
+                }
+                _this.codeFn(e, $(this));
+                return false; //阻止冒泡
+            });
+            //下移行
+            _this.$field.on('click', '.djiui-icon-actions-down', function(e) {
+                if ($(this).attr('disable')) return false;
+                var $tr = $(this).closest('tr');
+                var index = $tr.index(); //当前位置的索引
+                if (index != _this.$field.children('tr').length - 1) { //不是最后一行
+                    require(['modules/utils/array_exchange_location'], function(arrayLocation) {
+                        arrayLocation.exchange(_this.fileIdArr, index, index + 1);
+                        arrayLocation.exchange(_this.$fileIds, index, index + 1);
+                        arrayLocation.exchange(_this.validators, index, index + 1);
+                        arrayLocation.exchange(_this.tooltip, index, index + 1);
+                        $tr.next().after($tr);
+                        _this.indexFn();
+                    });
+                }
+                _this.codeFn(e, $(this));
+                return false; //阻止冒泡
+            });
+            //上移到顶部
+            _this.$field.on('click', '.djiui-icon-actions-upToTop', function(e) {
+                if ($(this).attr('disable')) return false;
+                var $tr = $(this).closest('tr');
+                var index = $tr.index(); //当前位置的索引
+                if (index != 0) { //不是第一行
+                    require(['modules/utils/array_exchange_location'], function(arrayLocation) {
+                        arrayLocation.toFirst(_this.fileIdArr, index);
+                        arrayLocation.toFirst(_this.$fileIds, index);
+                        arrayLocation.toFirst(_this.validators, index);
+                        arrayLocation.toFirst(_this.tooltip, index);
+                        _this.$tbody.children('tr').eq(0).before($tr);
+                        _this.indexFn();
+                    });
+                }
+                _this.codeFn(e, $(this));
+                return false; //阻止冒泡
+            });
+            //下移到底部
+            _this.$field.on('click', '.djiui-icon-actions-downToBottom', function(e) {
+                if ($(this).attr('disable')) return false;
+                var $tr = $(this).closest('tr');
+                var index = $tr.index(); //当前位置的索引
+                if (index != _this.$tbody.children('tr').length) { //不是最后一行
+                    require(['modules/utils/array_exchange_location'], function(arrayLocation) {
+                        arrayLocation.toLast(_this.fileIdArr, index);
+                        arrayLocation.toLast(_this.$fileIds, index);
+                        arrayLocation.toLast(_this.validators, index);
+                        arrayLocation.toLast(_this.tooltip, index);
+                        _this.$tbody.children('tr').eq(_this.$tbody.children('tr').length - 1).after($tr);
+                        _this.indexFn();
+                    });
+                }
+                _this.codeFn(e, $(this));
+                return false; //阻止冒泡
+            });
+            /*自定义按钮事件*/
+            _this.$field.bind('click', function(e) {
+                _this.codeFn(e, $(this));
+                return false; //阻止冒泡
+            });
+        },
+        /*执行之定义函数*/
+        codeFn: function(e, $this,param) {
+            var _this = this;
+            if ($(e.target).attr('code')) {
+                _this.fire($(e.target).attr('code'), $(e.target), $this,param);
+            }
+        },
+        /*----------------------------------对外的方法---------------------*/
+        /*设置的数据型的通用方法
+         * ([{name:value,name:value}])数组一一对应设置
+         * ({name,value},1)，对应行设置
+         * */
+        setWay1: function(parameter, rowIndex, way) {
+            var _this = this;
+            if (dataType(parameter) == 'array') { //如果传入的是一个数组，则是设置整个值
+                $.each(parameter, function(index, value) {
+                    if (index >= _this.fileIdArr.length) {
+                        _this.addRowFn(index - 1);
+                    }
+                    _this.setRowWay1(value, index, way);
+                });
+            } else if (dataType(parameter) == 'object') { //如果是对象，则需要告诉我设置哪一行的值
+                if (rowIndex == undefined) { rowIndex = 0 };
+                if (rowIndex >= _this.fileIdArr.length) {
+                    _this.addRowFn(rowIndex - 1);
+                }
+                _this.setRowWay1(parameter, rowIndex, way);
+            }
+            _this.isShowRemoveBtn();
+        },
+        setRowWay1: function(parameter, rowIndex, way) {
+            var _this = this;
+            $.each(parameter, function(i, v) { //循环行数据
+                if (_this.$fileIds[rowIndex]  &amp;&amp; _this.$fileIds[rowIndex][i]) {
+                    _this.$fileIds[rowIndex][i][way](v);
+                }
+            });
+        },
+        /*添加行函数*/
+        addRowFn: function(index,children) {
+            var _this = this;
+            if (_this.plusOnlyOne) { //添加到最后一行
+                _this.addRow(_this.$tbody.children('tr').length, children||$.extend(true, [], _this.opts.childrenTbody));
+            } else { //点击哪行添加哪行
+                _this.addRow(index + 1, children || $.extend(true, [], _this.opts.childrenTbody));
+            }
+            _this.indexFn();
+        },
+        /*是否显示删除按钮*/
+        isShowRemoveBtn: function() {
+            var _this = this;
+            if(_this.isDeleteOnlyOne){//如果是可以删除最后一行的情况
+                if(_this.$tbody.children('tr').length&lt;1 ){//如果表格行一行也没有则显示
+                    _this.$tbody.html('&lt;tr class="form-complex-noData">&lt;td colspan="'+_this.opts.childrenTbody.length+'">暂无数据&lt;/td>&lt;/tr>');
+                    if(_this.opts.childrenThead ){
+                        if(_this.$thead.find('.form-actions').length==0){
+                            var className = 'form-actions form-actions-icon';
+                            _this.$thead.find('th').eq(_this.isDeleteOnlyOneIndex).append('&lt;span class="' + className + ' djiui-icon djiui-icon-actions-add" title="添加"  code="add">添加&lt;/span>');
+                        }
+                        _this.$thead.find('.form-actions').show();
+                    }
+                }else{//超过一行则隐藏
+                    if(_this.$tbody.children('tr').hasClass('form-complex-noData') &amp;&amp; _this.$tbody.children('tr').length==1){
+                        _this.$thead.find('.form-actions').show();
+                    }else{
+                        _this.$thead.find('.form-actions').hide();
+                        _this.$tbody.find('.form-complex-noData').remove();
+                    }
+                }
+            }else{
+                if (_this.$tbody.children('tr').length > 1) {
+                    _this.$tbody.children('tr').children('td').children('.form-complex-actions').find('.djiui-icon-actions-remove').css('display', 'inline-block');
+                } else {
+                    _this.$tbody.children('tr').children('td').children('.form-complex-actions').find('.djiui-icon-actions-remove').css('display', 'none');
+                }
+            }
+        },
+        /*设置只有name型的通用方法
+         * ('name1',index)一行中的一个
+         * (['name1','name2'],index)一行中的多个
+         * (index)一行中的所有有name的字段
+         * ()全部
+         * parameter，要清除的name,可以是单个name,也可以是数组name
+         * rowIndex name的行索引,根据索引去匹配
+         * way 要执行的方法
+         * */
+        setWay2: function(parameter, rowIndex, way) {
+            var _this = this;
+            if (parameter != undefined) { //传值了，一个和多个的情况['name1','name2']
+                if (rowIndex == undefined) { rowIndex = 0; }
+                if (dataType(parameter) == 'string') { //第几行的name
+                    return _this.setRowWay2([parameter], rowIndex, way);
+                } else if (dataType(parameter) == 'array') { //第几行的多个name,如果是多行的多个name只能自己去循环
+                    return _this.setRowWay2(parameter, rowIndex, way);
+                } else if (dataType(parameter) == 'number') { //传入的是一行
+                    var nameArr = [];
+                    _this.fileIdArr[parameter] &amp;&amp; $.each(_this.fileIdArr[parameter], function(i, v) {
+                        nameArr.push(v.name);
+                    });
+                    return _this.setRowWay2(nameArr, parameter, way);
+                }
+            } else { //没有传值，全部执行方法
+                var eleArr = [];
+                $.each(_this.$fileIds, function(index, value) {
+                    $.each(value, function(i, v) {
+                        if (i != '$dom') {
+                            eleArr.push(v.$element);
+                            v[way]();
+                        }
+                    });
+                });
+                return eleArr;
+            }
+        },
+        setRowWay2: function(parameter, rowIndex, way) {
+            var _this = this;
+            var eleArr = [];
+            $.each(parameter, function(i, v) { //循环行数据
+                if (_this.$fileIds[rowIndex][v]) {
+                    eleArr.push(_this.$fileIds[rowIndex][v].$element);
+                    _this.$fileIds[rowIndex][v][way]();
+                }
+            });
+            return eleArr;
+        },
+        /**
+         * @description 设置数据方法
+         * @param {array|object} parameter - 传入的参数（设置值的数据）
+         * @param {string} rowIndex - 行索引(当parameter是object时需要传入rowIndex)
+         * @example
+         * var formComplex = new FormComplex({配置参数});
+         * 设置值方法1：
+         *      formComplex.setData(([{name:data,name:data},{name:data,name:data}]));//数组形式，根据索引匹配
+         * 设置值方法2：
+         *      formComplex.setData({name:data},row);//对象形式，则传你要设置的行的索引即可
+         */
+        setData: function(parameter, rowIndex) {
+            var _this = this;
+            //如果有设置数据,并且没有data的情况下，则把数据同步到配置上
+            var data;
+            if (dataType(parameter) == 'array') {
+                data = parameter[parameter.length - 1];
+            } else if (dataType(parameter) == 'object') {
+                data = parameter;
+            }
+            data &amp;&amp; $.each(data, function(i, v) {
+                $.each(_this.opts.childrenTbody, function(iTbody, vTbody) {
+                    $.each(vTbody, function(iFiled, vFiled) {
+                        if (iFiled == 'name' &amp;&amp; vFiled == i) {
+                            _this.opts.childrenTbody[iTbody].data = v;
+                        }
+                    });
+                });
+            });
+            _this.setWay1(parameter, rowIndex, 'setData');
+        },
+        /**
+         * @description 设置值方法
+         * @param {array|object} parameter - 传入的参数（设置值的数据）
+         * @param {string} rowIndex - 行索引(当parameter是object时需要传入rowIndex)
+         * @example
+         * var formComplex = new FormComplex({配置参数});
+         * 设置值方法1：
+         *      formComplex.setValue(([{name:value,name:value},{name:value,name:value}]));//数组形式，根据索引匹配
+         * 设置值方法2：
+         *      formComplex.setValue({name:value},row);//对象形式，则传你要设置的行的索引即可
+         */
+        setValue: function(parameter, rowIndex) {
+            var _this = this;
+            _this.setWay1(parameter, rowIndex, 'setValue');
+        },
+        /*设置旧值，会在对应的元素加一个属性oldValue
+         *  ([{name:value,name:value},{name:value,name:value}])数组形式，根据索引匹配
+         *  ({name:value},row)对象形式，则传你要设置的行的索引即可
+         * */
+        setOldValue: function(parameter, rowIndex) {
+            var _this = this;
+            _this.setWay1(parameter, rowIndex, 'setOldValue');
+        },
+        /*设置默认值
+         *  ([{name:value,name:value},{name:value,name:value}])数组形式，根据索引匹配
+         *  ({name:value},row)对象形式，则传你要设置的行的索引即可
+         * */
+        setDefaultValue: function(parameter, rowIndex) {
+            var _this = this;
+            _this.setWay1(parameter, rowIndex, 'setDefaultValue');
+        },
+        /**
+         * @description 获取值
+         * @param {requestCallback} [callback] -回调函数
+         * @return {array} 当前的数据
+         * @example
+         * var formComplex = new FormComplex({配置参数});
+         * 获取值方法1：
+         *      formComplex.getValue(function(value){
+         *          //value则为当前值
+         *      });//返回值为回调函数执行结果
+         * 获取值方法2：
+         *      formComplex.getValue();//返回的是以表格为维度，行为一个对象的形式返回值
+         */
+        getValue: function(callback, isTemplate) {
+            var _this = this;
+            var result = [];
+            $.each(_this.$fileIds, function(index, value) { //这个循环出来的是一行的数据
+                result[index] = {};
+                $.each(value, function(i, v) {
+                    if (i != '$dom') {
+                        result[index][i] = _this.$fileIds[index][i].getValue('', isTemplate);
+                    }
+                });
+            });
+            if(result.length==0){//如果当前没有数据的话，则返回一个空的字符串
+                result='';
+            }
+            if(_this.opts.valueIsArray){//value得到的是一个数组
+
+            }else{
+                if (!_this.dataTypeIsArray) { //如果当前有添加的操作，则是数组形式传出，如果不是拿对象
+                    result = result &amp;&amp; result[0];
+                }
+            }
+            if (callback) {
+                return callback(result);
+            } else {
+                return result;
+            }
+        },
+        /**
+         * @description 重置
+         * @param {string/array} [parameter] -要重置的name,可以是单个name,也可以是数组name
+         * @param {string} [rowIndex] -name的行索引,根据索引去匹配
+         * @example
+         * var formComplex = new FormComplex({配置参数});
+         * formComplex.reset('name1',index);//一行中的一个
+         * formComplex.reset(['name1','name2'],index);//一行中的多个
+         * formComplex.reset(index);//一行中的所有有name的字段
+         * formComplex.reset();//全部
+         */
+        reset: function(parameter, rowIndex) {
+            var _this = this;
+            _this.setWay2(parameter, rowIndex, 'reset');
+        },
+        /**
+         * @description 清除
+         * @param {string/array} [parameter] -要清除的name,可以是单个name,也可以是数组name
+         * @param {string} [rowIndex] -name的行索引,根据索引去匹配
+         * @example
+         * var formComplex = new FormComplex({配置参数});
+         * formComplex.clear('name1',index);//一行中的一个
+         * formComplex.clear(['name1','name2'],index);//一行中的多个
+         * formComplex.clear(index);//一行中的所有有name的字段
+         * formComplex.clear();//全部
+         */
+        clear: function(parameter, rowIndex) {
+            var _this = this;
+            _this.setWay2(parameter, rowIndex, 'clear');
+        },
+        /**
+         * @description 摧毁
+         * @param {string/array} [parameter] -要摧毁的name,可以是单个name,也可以是数组name
+         * @param {string} [rowIndex] -name的行索引,根据索引去匹配
+         * @example
+         * var formComplex = new FormComplex({配置参数});
+         * formComplex.destroy('name1',index);//一行中的一个
+         * formComplex.destroy(['name1','name2'],index);//一行中的多个
+         * formComplex.destroy(index);//一行中的所有有name的字段
+         * formComplex.destroy();//全部
+         */
+        destroy: function(parameter, rowIndex) {
+            var _this = this;
+            _this.setWay2(parameter, rowIndex, 'destroy');
+            if(dataType(parameter) == 'number'){
+                _this.$tbody.children('tr').eq(parameter).remove();
+                _this.fileIdArr.splice(parameter, 1); //删除行数据
+                _this.$fileIds.splice(parameter, 1); //删除行数据
+                _this.validators.splice(parameter, 1); //删除行数据
+                _this.tooltip.splice(parameter, 1); //删除行数据
+            }
+            (parameter == undefined) &amp;&amp; (_this.$field.remove());
+            _this.indexFn();
+            _this.isShowRemoveBtn();
+        },
+        /**
+         * @description 显示
+         * @param {string/array} [parameter] -要显示的name,可以是单个name,也可以是数组name
+         * @param {string} [rowIndex] -name的行索引,根据索引去匹配
+         * @example
+         * var formComplex = new FormComplex({配置参数});
+         * formComplex.show('name1',index);//一行中的一个
+         * formComplex.show(['name1','name2'],index);//一行中的多个
+         * formComplex.show(index);//一行中的所有有name的字段
+         * formComplex.show();//全部
+         */
+        show: function(parameter, rowIndex) {
+            var _this = this;
+            var eleArr = _this.setWay2(parameter, rowIndex, 'show');
+            dataType(parameter) == 'number' &amp;&amp; (_this.$tbody.children('tr').eq(parameter).show());
+            if (parameter == undefined) {
+                _this.$field.show();
+                _this.$tbody.children('tr').show();
+            }
+            $.each(eleArr, function(i, v) {
+                v.removeAttr('isHide');
+            });
+        },
+        /**
+         * @description 隐藏（隐藏的元素不能获取值）
+         * @param {string/array} [parameter] -要隐藏的name,可以是单个name,也可以是数组name
+         * @param {string} [rowIndex] -name的行索引,根据索引去匹配
+         * @example
+         * var formComplex = new FormComplex({配置参数});
+         * formComplex.hide('name1',index);//一行中的一个
+         * formComplex.hide(['name1','name2'],index);//一行中的多个
+         * formComplex.hide(index);//一行中的所有有name的字段
+         * formComplex.hide();//全部
+         */
+        hide: function(parameter, rowIndex) {
+            var _this = this;
+            var eleArr = _this.setWay2(parameter, rowIndex, 'hide');
+            dataType(parameter) == 'number' &amp;&amp; (_this.$tbody.children('tr').eq(parameter).hide());
+            parameter == undefined &amp;&amp; (_this.$field.hide());
+            $.each(eleArr, function(i, v) {
+                v.attr('isHide', true);
+            });
+        },
+        /**
+         * @description 禁用
+         * @param {string/array} [parameter] -要禁用的name,可以是单个name,也可以是数组name
+         * @param {string} [rowIndex] -name的行索引,根据索引去匹配
+         * @example
+         * var formComplex = new FormComplex({配置参数});
+         * formComplex.disable('name1',index);//一行中的一个
+         * formComplex.disable(['name1','name2'],index);//一行中的多个
+         * formComplex.disable(index);//一行中的所有有name的字段
+         * formComplex.disable();//全部
+         */
+        disable: function(parameter, rowIndex) {
+            var _this = this;
+            _this.setWay2(parameter, rowIndex, 'disable');
+            dataType(parameter) == 'number' &amp;&amp; (_this.$tbody.children('tr').find('.form-actions').attr('disable', 'disable').css('cursor', 'no-drop'));
+            if (parameter == undefined) { //整体禁用的时候把按钮同时禁用
+                _this.opts.disabled=true;
+                _this.$tbody.children('tr').find('.form-actions').attr('disable', 'disable').css('cursor', 'no-drop');
+            }
+        },
+        /**
+         * @description 启用
+         * @param {string/array} [parameter] -要启用的name,可以是单个name,也可以是数组name
+         * @param {string} [rowIndex] -name的行索引,根据索引去匹配
+         * @example
+         * var formComplex = new FormComplex({配置参数});
+         * formComplex.enable('name1',index);//一行中的一个
+         * formComplex.enable(['name1','name2'],index);//一行中的多个
+         * formComplex.enable(index);//一行中的所有有name的字段
+         * formComplex.enable();//全部
+         */
+        enable: function(parameter, rowIndex) {
+            var _this = this;
+            _this.opts.disabled=false;
+            _this.setWay2(parameter, rowIndex, 'enable');
+            dataType(parameter) == 'number' &amp;&amp; (_this.$tbody.children('tr').find('.form-actions').removeAttr('disable').css('cursor', 'pointer'));
+            if (parameter == undefined) { //整体启用的时候把按钮同时启用
+                _this.$tbody.children('tr').find('.form-actions').removeAttr('disable').css('cursor', 'pointer');
+            }
+        },
+        /**
+         * @description 是否必填：根据是否必填，显示前面的必填标志
+         * @param {boolean} isRequired -是否必填
+         * @example
+         * var formComplex = new FormComplex({配置参数});
+         * formComplex.required(false);
+         */
+        required: function(isRequired) {
+            var _this = this;
+            if (dataType(isRequired) == 'boolean') { //必填
+                _this.$required &amp;&amp; _this.$required.remove();
+                if (isRequired) {
+                    var str = '&lt;span class="form-required">*&lt;/span>';
+                    _this.$required = $(str);
+                    _this.$title.before(_this.$required);
+                    _this.requiredLocationFn(isRequired);
+                }
+            }
+        },
+        /*校验*/
+        verify: function(parameter, rowIndex) {
+            var _this = this;
+            var result = [];
+            var checkResult = true;
+            if (parameter) {
+                result.push(_this.verifyOne(parameter, rowIndex, _this));
+            } else {
+                result.push(_this.verifyArr(_this.validators), _this);
+            }
+            $.each(result, function(i, v) {
+                if (v == false) {
+                    checkResult = false;
+                }
+            });
+            return checkResult;
+        },
+        verifyArr: function(validators, _this) {
+            var _this = this;
+            var result = [];
+            var checkResult = true;
+            $.each(validators, function(index, value) {
+                $.each(value, function(i, v) {
+                    if (dataType(v) == 'array') { //字段类型有数据的情况下
+                        result.push(_this.verifyOne(i, index, _this));
+                    } else { //再次复合
+                        if (_this.$fileIds[index][i].fileIdArr) {
+                            result.push(_this.$fileIds[index][i].verifyArr(_this.$fileIds[index][i].validators, _this.$fileIds[index][i]));
+                        }
+                    }
+                });
+            });
+            $.each(result, function(i, v) {
+                if (v == false) {
+                    checkResult = false;
+                }
+            });
+            return checkResult;
+        },
+        verifyOne: function(i, index, _this) {
+            if (!_this.tooltip[index]) {
+                _this.tooltip[index] = {};
+            }
+            var check = {
+                byteChinese: _this.opts.byteChinese, //中文一个字符占几个字节,默认为一个字符占1个字节
+                isCheckRemote: true, //如果是校验全部，不走远端校验,单个校验走远端校验
+                verify: []
+            };
+            if(_this.fileIdArr[index]){
+                var $currentElement = _this.fileIdArr[index][i].element.find('.form-field-element');
+                var resultValue;
+                if (dataType(_this.getValue()) == 'array') {
+                    resultValue = _this.getValue()[index][i];
+                } else {
+                    resultValue = _this.getValue()[i];
+                }
+                resultValue=_this.getVerifyValue(_this.fileIdArr[index][i],resultValue);
+                check.verify.push({
+                    name: i, //需要校验的元素的name,可以通过表单的getValue来作为值判断,必填
+                    element: $currentElement,
+                    validators: _this.fileIdArr[index][i].validators, //校验规则数组，必填
+                    byteChinese: _this.fileIdArr[index][i].byteChinese ?
+                            _this.fileIdArr[index][i].byteChinese : _this.opts.byteChinese, //中文一个字符占几个字节,默认为一个字符占1个字节
+                    value: resultValue, //需要校验的值,如果没有配置就是name对应的值
+                    isCheck: $currentElement.attr('isHide') ? false : true, //如果是隐藏状态则不执行校验
+                    isCheckRemote: $currentElement.attr('oldvalue') == resultValue ? false : true
+                });
+                return _this.check(check, index);
+            }
+        },
+        /*根据类型拿到不同的值*/
+        getVerifyValue:function(v,value){
+            var _this = this;
+            var currentValue='';
+            if (v.type == 'date'||v.type == 'date2') {
+                currentValue=value.startTime
+                        ?value.endTime
+                            ?value.startTime+((v.menu &amp;&amp; v.menu.separator)?v.menu.separator:' ~ ')+value.endTime
+                            :value.startTime
+                        :'';
+            }else{
+                currentValue=value;
+            }
+            return currentValue;
+        },
+        /*校验提示*/
+        check: function(check, index) {
+            var _this = this;
+            //执行校验
+            var checkInstance = new FormVerify(check);
+            //将校验结果对应的提示
+            $.each(checkInstance.result, function(i, v) {
+                _this.tooltip[index][i] &amp;&amp; _this.tooltip[index][i].destroy(); //不管是成功还是失败，都把上次校验的提示清除掉
+                var $currentElement = _this.fileIdArr[index][i].element.find('.form-field-element');
+                if (v.resultStatus == 'error') { //校验失败
+                    if (_this.opts.checkTipType == 'tooltip') {
+                        _this.tooltip[index][i] = new Tooltip({
+                            element: $currentElement.parent(), //气泡元素
+                            message: v.resultMsg, //气泡提示文字
+                            shape: _this.opts.checkTipShape, //气泡的形状：solid(实心)/hollow(空心)
+                            direction: _this.opts.checkTipDirection, //气泡的方向：top/bottom/left/right
+                            status: v.resultStatus, //气泡的颜色状态：default/success/error/wraning/primary/info
+                            location: _this.opts.checkTipLocation //气泡的位置：(上下气泡)left/center/right,（左右气泡）top/middle/bottom
+                        });
+                        if (_this.opts.checkType == 'all') { //如果选择的是整体校验模式, //如果是一个一个验证则没有交互动作
+                            if (_this.opts.isSetRowLineHeight != true) { //如果设置了行高模式,则在行上加了class，默认是鼠标移入显示当前，隐藏其他
+                                (_this.verifyBindEvent($currentElement, _this.tooltip[index][i].$tooltip)); //当是全部校验，不是一个一个校验的时候增加一种交互
+                            }
+                        }
+                    } else {
+                        new Message({
+                            duration: _this.opts.checkTipTime
+                        })[v.resultStatus](v.resultMsg);
+                    }
+                    _this.opts.isTipBorder &amp;&amp; $currentElement.addClass('form-verify-tip'); //是否提示边框
+                    if (_this.opts.checkType == 'oneByOne') return false; //单个提示
+                } else { //校验成功
+                    _this.opts.isTipBorder &amp;&amp; $currentElement.removeClass('form-verify-tip'); //如果设置了边框提示，校验成功的时候则删除掉边框
+                }
+            });
+            if (checkInstance.errorNum() == 0) {
+                return true;
+            } else {
+                return false;
+            }
+        },
+        /*校验绑定一些交互事件*/
+        verifyBindEvent: function($ele, $tooltip) {
+            var _this = this;
+            $ele.on('mouseenter', function() {
+                _this.$tbody.find('.tooltip').fadeOut();
+                $tooltip.stop().fadeIn();
+            });
+            $ele.on('mouseleave', function() {
+                $tooltip.stop().fadeOut();
+            });
+        }
+    };
+    return FormBase.extend(FormComplexBase);
+});</code></pre>
+        </article>
+    </section>
+
+
+
+
+
+
+        
+
+        <footer>
+            Documentation generated by <a href="https://github.com/jsdoc3/jsdoc">JSDoc 3.4.3</a> on Mon Mar 19 2018 20:57:48 GMT+0800 (中国标准时间)
+        </footer>
+    </div>
+</div>
+<script>prettyPrint();</script>
+<script src="scripts/linenumber.js"></script>
+<script src="scripts/main.js"></script>
+</body>
+</html>

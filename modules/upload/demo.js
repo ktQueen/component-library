@@ -21,6 +21,6 @@ require([
         responseKeys: { "repCode": "code", "repData": "data", "message": "codeMsg" }, //上传成功后 返回的数据 状态 数据 和 信息的key
         uploadedFileKeys: { "fileName": "name", "fileUrl": "url" }, //返回的数据的格式 文件名  和 文件 路径
 
-        url: "http://processmanager.djtest.cn/processDynTemp/uploadAttachment?processKey=BLJQX"
+        url: ""
     });*/
 });
