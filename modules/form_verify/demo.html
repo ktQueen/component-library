@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>表单校验</title>
+    <link rel="stylesheet" href="demo.css" />
+    <script data-main="demo.js" src="../libs/rq/require.js"></script>
+</head>
+<body>
+    <h1>校验组件</h1>
+    <h2>表单校验只返回结果值，不负责提示消息，提示信息调用提示组件，校验值返回校验的结果</h2>
+    <div class="demo-test">
+        <input type="text" id="demo1" value="111" name="username"/>
+    </div>
+    <div class="demo-test">
+        <input type="text" id="demo2" value="" name="username1"/>
+    </div>
+    <button id="num">获取错误的个数</button>
+</body>
+</html>
