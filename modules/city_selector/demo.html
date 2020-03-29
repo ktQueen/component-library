@@ -1,0 +1,235 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <title>城市选择器</title>
+    <link rel="stylesheet" href="demo.css" />
+    <script data-main="demo.js" src="../libs/rq/require.js"></script>
+</head>
+<body>
+    <h2>使用默认数据的方式</h2>
+    <h4>demo示例</h4>
+    <div id="demo1"></div>
+    <h4>代码示例</h4>
+    <pre>
+        html部分:
+            &lt;div id="demo1"&gt;&lt;/div&gt;
+            &lt;script data-main="你自己的js文件路径" src="modules/libs/rq/require.js"&gt;&lt;/script&gt;
+        js部分:
+            require.config({
+                baseUrl: 'http://localhost:63342/github/component-library/'
+            });
+            require([
+                'modules/city_selector/js/city_selector',
+                'modules/city_selector/js/city_data'//默认数据文件
+            ], function(CitySelector,cityData) {
+                new CitySelector({
+                    element:$('#demo1'),
+                    data:cityData,//数据
+                    isOwnData:true,//是否是默认数据
+                    required:false,//是否是必填
+                });
+            });
+    </pre>
+    <hr/>
+    <h2>使用自定义数据的方式</h2>
+    <h4>方法演示</h4>
+    <div>
+        <button class="set">设置值</button>
+        <button class="get">获取值</button>
+        <button class="reset">重置</button>
+        <button class="clear">清除</button>
+        <button class="destroy">摧毁</button>
+        <button class="show">显示</button>
+        <button class="hide">隐藏</button>
+        <button class="change">手动出发改变函数</button>
+        <button class="disable">禁用</button>
+        <button class="enable">启用</button>
+    </div>
+    <h4>demo示例</h4>
+    <div id="demo2"></div>
+    <h4>代码示例</h4>
+    <pre>
+        html部分:
+            &lt;div id="demo2"&gt;&lt;/div&gt;
+            &lt;script data-main="你自己的js文件路径" src="modules/libs/rq/require.js"&gt;&lt;/script&gt;
+        js部分:
+            require.config({
+                baseUrl: 'http://localhost:63342/github/component-library/'
+            });
+            require([
+                'modules/city_selector/js/city_selector'
+            ], function(CitySelector) {
+                new CitySelector({
+                    element:$('#demo2'),
+                    multiSelect:true,
+                    idFlag:'pingyin',//标识字段
+                    nameFlag:'cityName',//名字字段
+                    pinyinFlag:'pingyin',//拼音字段
+                    hotFlag:'isHot',//热门城市字段
+                    data:function(callback){//获取自定义数据
+                        $.ajax({
+                            url:'js/city.json',
+                            dataType:'json',
+                            success:function(data){
+                                callback(data.repData.citySubjectResultList);
+                            },
+                            error:function(){}
+                        });
+                    }
+                });
+            });
+    </pre>
+    <hr/>
+    <h2>城市选择布局展示</h2>
+    <!--城市已选显示区域和搜索区域-->
+    <div class="city-selector-btn city-selector-btn-center">
+        <ol class="city-selected-list">
+            <li class="csb-item">
+                <span class="csb-text">乌鲁木齐</span>
+                <em class="csb-remove" title="删除">×</em>
+                <input type="hidden" class="csb-value" name="csb-values[0]" value="乌鲁木齐" />
+            </li>
+            <li class="csb-item">
+                <span class="csb-text">乌鲁木齐</span>
+                <em class="csb-remove" title="删除">×</em>
+                <input type="hidden" class="csb-value" name="csb-values[0]" value="乌鲁木齐" />
+            </li>
+            <li class="csb-item">
+                <span class="csb-text">乌鲁木齐</span>
+                <em class="csb-remove" title="删除">×</em>
+                <input type="hidden" class="csb-value" name="csb-values[0]" value="乌鲁木齐" />
+            </li>
+        </ol>
+        <input type="text" class="city-search-input" >
+    </div>
+    <br/>
+    <!--没有搜索时的城市展示菜单-->
+    <div class="city-selector-menu">
+        <div class="csm-header">
+            <span class="csm-header-active">热门城市</span>
+            <span>AB</span>
+            <span>CD</span>
+            <span>EFG</span>
+            <span>H</span>
+            <span>J</span>
+            <span>KL</span>
+            <span>MNP</span>
+            <span>QR</span>
+            <span>S</span>
+            <span>T</span>
+            <span>W</span>
+            <span>X</span>
+            <span>Y</span>
+            <span>Z</span>
+        </div>
+        <div class="csm-content">
+            <dl class="csm-content-AB csm-content-active">
+                <dt>A</dt>
+                <dd>
+                    <span>北京市</span>
+                    <span>北京市</span>
+                    <span>北京市</span>
+                    <span>北京市</span>
+                    <span>北京市</span>
+                    <span>北京市</span>
+                    <span>北京市</span>
+                    <span>北京市</span>
+                    <span>北京市</span>
+                    <span>北京市</span>
+                    <span>北京市</span>
+                    <span>北京市</span>
+                    <span>北京市</span>
+                    <span>北京市</span>
+                    <span>北京市</span>
+                    <span>北京市</span>
+                    <span>北京市</span>
+                    <span>北京市</span>
+                </dd>
+                <dt>B</dt>
+                <dd>
+                    <span>北京市</span>
+                    <span>北京市</span>
+                    <span>北京市</span>
+                    <span>北京市</span>
+                    <span>北京市</span>
+                    <span>北京市</span>
+                    <span>北京市</span>
+                    <span>北京市</span>
+                    <span>北京市</span>
+                    <span>北京市</span>
+                    <span>北京市</span>
+                    <span>北京市</span>
+                    <span>北京市</span>
+                    <span>北京市</span>
+                    <span>北京市</span>
+                    <span>北京市</span>
+                    <span>北京市</span>
+                    <span>北京市</span>
+                </dd>
+                <dt>B</dt>
+                <dd>
+                    <span>北京市</span>
+                    <span>北京市</span>
+                    <span>北京市</span>
+                    <span>北京市</span>
+                    <span>北京市</span>
+                    <span>北京市</span>
+                    <span>北京市</span>
+                    <span>北京市</span>
+                    <span>北京市</span>
+                    <span>北京市</span>
+                    <span>北京市</span>
+                    <span>北京市</span>
+                    <span>北京市</span>
+                    <span>北京市</span>
+                    <span>北京市</span>
+                    <span>北京市</span>
+                    <span>北京市</span>
+                    <span>北京市</span>
+                </dd>
+            </dl>
+        </div>
+        <div class="csm-footer">
+            <div class="csm-footer-l">*可以直接搜索查找城市（支持名称、拼音模糊搜索）</div>
+            <div class="csm-footer-r">
+                <p class="csm-footer-num"><span>5</span><span>/</span><span>5</span></p>
+                <a href="javascript:;">清空</a>
+            </div>
+        </div>
+    </div>
+    <br/>
+    <!--搜索时的城市展示列表-->
+    <ul class="city-selector-list">
+        <li class="csl-active">
+            <span class="csl-name">北京</span>
+            <span class="csl-spell">Beijing</span>
+        </li>
+        <li>
+            <span class="csl-name">北京</span>
+            <span class="csl-spell">Beijing</span>
+        </li>
+        <li>
+            <span class="csl-name">北京</span>
+            <span class="csl-spell">Beijing</span>
+        </li>
+        <li>
+            <span class="csl-name">北京</span>
+            <span class="csl-spell">Beijing</span>
+        </li>
+        <li>
+            <span class="csl-name">北京</span>
+            <span class="csl-spell">Beijing</span>
+        </li>
+        <li>
+            <span class="csl-name">北京</span>
+            <span class="csl-spell">Beijing</span>
+        </li>
+        <li>
+            <span class="csl-name">北京</span>
+            <span class="csl-spell">Beijing</span>
+        </li>
+    </ul>
+    <br/>
+</body>
+</html>

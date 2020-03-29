@@ -1,0 +1,277 @@
+@charset "utf-8";
+@import '../../../src/scss/common/common.scss';
+$borderColor:#ddd;
+//三角形triangle
+.triangle:before {
+	position: absolute;
+	top: 50%;
+	margin-top: -3px;
+	right: 8px;
+}
+.triangle-up {
+	@include triangle(12px, #666, top);
+}
+
+.triangle-down {
+	@include triangle(12px, #666, bottom);
+}
+//城市已选显示区域和搜索区域
+.city-selector-btn{
+	@extend %box-sizing;//组件用盒模型，避免打乱使用者结构
+	@extend %clearfix;
+	position: relative;
+	font-size: 12px;
+	font-family: 'Microsoft YaHei', sans-serif;
+	padding:2px 10px 2px 0px;
+	background: #fff;
+	cursor: pointer;
+	min-height: 26px;
+	//已选城市列表
+	.city-selected-list{
+		margin: 0px;
+		padding: 0px;
+	}
+	//标签
+	.csb-item{
+		list-style: none;
+		float: left;
+		position: relative;
+		padding: 0 6px 0 6px;
+		margin: 2px;
+		border-radius: 5px;
+		border: 1px solid #ddd;
+		opacity: 0.85;
+		&:hover {
+			opacity: 1;
+			background: #f1f1f1;
+			.csb-remove{
+				display: inline-block;
+			}
+		}
+		&:first-child{
+			margin-left: 6px;
+		}
+		&:last-child{
+			margin-right: 6px;
+		}
+	}
+	//标签内容
+	.csb-text {
+		display: inline-block;
+		line-height: 20px;
+	}
+	//移除标签
+	.csb-remove {
+		position: absolute;
+		top: -6px;
+		right: -6px;
+		width: 14px;
+		height: 14px;
+		text-align: center;
+		line-height: 12px;
+		border-radius: 50%;
+		cursor: pointer;
+		font-style: normal;
+		background: #FFBFBF;
+		color: #fff;
+		display: none;
+	}
+	//城市搜索框
+	.city-search-input{
+		float: left;
+		height: 24px;
+		margin:1px 0px 1px 2px;
+		padding: 0 6px;
+		border: 1px solid transparent;
+		border-radius: 5px;
+		font-size: 14px;
+		line-height: 24px;
+	}
+	//如果当选择好城市后需要让城市居中，输入框获取焦点后城市居左让输入框跟随在后面
+	@at-root .city-selector-btn-center{
+		.city-selected-list{
+			@extend %clearfix;
+			display: table!important;
+			margin: 0 auto;
+			min-height: 24px;
+		}
+		.city-search-input{
+			display: none;
+		}
+	}
+}
+//没有搜索时的城市展示菜单
+.city-selector-menu{
+	@extend %box-sizing;//组件用盒模型，避免打乱使用者结构
+	padding: 0px!important;
+	border: 1px solid $borderColor;
+	font-size: 14px;
+	color: #666;
+	background: #fff;
+	box-shadow: 0px 0px 15px #ddd;
+	min-width: 400px;
+	//城市切换头部
+	@at-root .csm-header{
+		background: #F9F9F9;
+		border-bottom: 1px solid $borderColor;
+		span{
+			display: inline-block;
+			position: relative;
+			bottom: -1px;
+			padding: 6px 6px;
+			line-height: 20px;
+			color: #666;
+			text-decoration: none;
+			cursor: pointer;
+			border-bottom: 1px solid transparent;
+			//当前选中的tab标题
+			&.csm-header-active{
+				color: $mainColor;
+				border-bottom-color:$mainColor;
+				&:hover{
+					border-bottom-color:$mainColor;
+				}
+			}
+			//鼠标移入效果
+			&:hover{
+				border-bottom-color:#000;
+			}
+		}
+	}
+	//城市切换内容
+	@at-root .csm-content{
+		padding: 10px 20px;
+		max-height: 240px;
+		overflow: auto;
+		//字母分区
+		dl{
+			margin: 0px;
+			padding: 0px;
+			display: none;
+		}
+		.csm-content-active{
+			display: block;
+		}
+		//标题
+		dt{
+			margin: 0px;
+			padding: 0px;
+			color: $mainColor;
+			font-weight: normal;
+		}
+		//内容块
+		dd{
+			margin: 0px;
+			padding: 0px;
+		}
+		//每一个城市
+		span{
+			display: inline-block;
+			padding: 3px 5px;
+			margin: 1px 1px;
+			cursor: pointer;
+			&:hover{
+				background: #F9F9F9;
+			}
+			//已经选中的城市
+			&.csm-city-active{
+				background: #FFBFBF;
+				color: #fff;
+			}
+		}
+	}
+	//城市切换底部
+	@at-root .csm-footer{
+		@extend %clearfix;
+		padding: 10px 20px;
+		font-size: 12px;
+		.csm-footer-l{
+			float: left;
+			color: #999;
+		}
+		.csm-footer-r{
+			float: right;
+		}
+		//城市统计
+		.csm-footer-num{
+			float: left;
+			margin: 0px;
+			padding: 0px 20px;
+			span{
+				display: inline-block;
+				padding: 0 2px;
+			}
+			span:nth-child(1){
+				color: $mainColor;
+			}
+			span:nth-child(2){}
+			span:nth-child(3){}
+		}
+		//清空按钮
+		a{
+			float: left;
+			text-decoration: none;
+			color: $mainColor;
+		}
+	}
+}
+//搜索时的城市展示列表
+.city-selector-list{
+	@extend %box-sizing;//组件用盒模型，避免打乱使用者结构
+	margin: 0px;
+	padding: 0px;
+	border: 1px solid $borderColor;
+	font-size: 14px;
+	color: #666;
+	background: #fff;
+	max-height: 200px;
+	min-width: 260px;
+	overflow: auto;
+	//城市列表
+	li{
+		@extend %clearfix;
+		list-style: none;
+		padding: 5px 10px;
+		border-bottom: 1px solid $borderColor;
+		line-height: 20px;
+		cursor: pointer;
+		//最后一个不要边框
+		&:last-child{
+			border: none;
+		}
+		//已经选中的城市
+		&.csl-active{
+			border-left: 2px solid $mainColor;
+			background-color: #FAF2F2;
+			&.csl-current,&:hover{
+				background-color: #FAF2F2;
+			}
+		}
+		//鼠标或键盘定位城市
+		&.csl-current,&:hover{
+			background-color: #F9F9F9;
+		}
+		//没有数据的乘客
+		&.csl-noData{
+			background-color: #F9F9F9;
+			cursor: text;
+			&:hover{
+				border-left:none;
+				background-color: #F9F9F9;
+			}
+			span{
+				color:$mainColor ;
+			}
+		}
+	}
+	//城市名称
+	.csl-name{
+		float: left;
+	}
+	//城市拼音
+	.csl-spell{
+		float: right;
+		font-size: 12px;
+		color: $mainColor;
+	}
+}

@@ -1,0 +1,17 @@
+html, body {
+  background: #eee; }
+  html button, body button {
+    padding: 4px 20px;
+    border: none;
+    background: #00adee;
+    color: #fff;
+    margin-right: 10px;
+    margin-top: 10px;
+    border-radius: 5px;
+    cursor: pointer; }
+
+pre {
+  background: #fff;
+  border-radius: 5px; }
+
+/*# sourceMappingURL=demo.css.map */

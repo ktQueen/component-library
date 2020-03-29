@@ -1,0 +1,19 @@
+@charset "utf-8";
+//@import '../../src/scss/reset/reset.scss';
+html,body {
+	background: #eee;
+	button {
+		padding: 4px 20px;
+		border: none;
+		background: #00adee;
+		color: #fff;
+		margin-right: 10px;
+		margin-top: 10px;
+		border-radius: 5px;
+		cursor: pointer;
+	}
+}
+pre{
+	background: #fff;
+	border-radius: 5px;
+}

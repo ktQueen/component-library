@@ -1,0 +1,236 @@
+.city-selector-btn, .city-selector-btn-center .city-selected-list, .csm-footer, .city-selector-list li {
+  *zoom: 1; }
+  .city-selector-btn:after, .city-selector-btn-center .city-selected-list:after, .csm-footer:after, .city-selector-list li:after {
+    content: '\0020';
+    display: block;
+    height: 0;
+    clear: both; }
+
+.city-selector-btn, .city-selector-menu, .city-selector-list {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+  .city-selector-btn *, .city-selector-menu *, .city-selector-list *,
+  .city-selector-btn *:before,
+  .city-selector-menu *:before,
+  .city-selector-list *:before,
+  .city-selector-btn *:after,
+  .city-selector-menu *:after,
+  .city-selector-list *:after {
+    -moz-box-sizing: inherit;
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit; }
+
+.triangle:before {
+  position: absolute;
+  top: 50%;
+  margin-top: -3px;
+  right: 8px; }
+
+.triangle-up:before {
+  display: inline-block;
+  content: '';
+  width: 0px;
+  height: 0px;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 6px;
+  vertical-align: middle; }
+.triangle-up:before {
+  border-top-width: 0px;
+  border-bottom-color: #666; }
+
+.triangle-down:before {
+  display: inline-block;
+  content: '';
+  width: 0px;
+  height: 0px;
+  border-color: transparent;
+  border-style: solid;
+  border-width: 6px;
+  vertical-align: middle; }
+.triangle-down:before {
+  border-bottom-width: 0px;
+  border-top-color: #666; }
+
+.city-selector-btn {
+  position: relative;
+  font-size: 12px;
+  font-family: 'Microsoft YaHei', sans-serif;
+  padding: 2px 10px 2px 0px;
+  background: #fff;
+  cursor: pointer;
+  min-height: 26px; }
+  .city-selector-btn .city-selected-list {
+    margin: 0px;
+    padding: 0px; }
+  .city-selector-btn .csb-item {
+    list-style: none;
+    float: left;
+    position: relative;
+    padding: 0 6px 0 6px;
+    margin: 2px;
+    border-radius: 5px;
+    border: 1px solid #ddd;
+    opacity: 0.85; }
+    .city-selector-btn .csb-item:hover {
+      opacity: 1;
+      background: #f1f1f1; }
+      .city-selector-btn .csb-item:hover .csb-remove {
+        display: inline-block; }
+    .city-selector-btn .csb-item:first-child {
+      margin-left: 6px; }
+    .city-selector-btn .csb-item:last-child {
+      margin-right: 6px; }
+  .city-selector-btn .csb-text {
+    display: inline-block;
+    line-height: 20px; }
+  .city-selector-btn .csb-remove {
+    position: absolute;
+    top: -6px;
+    right: -6px;
+    width: 14px;
+    height: 14px;
+    text-align: center;
+    line-height: 12px;
+    border-radius: 50%;
+    cursor: pointer;
+    font-style: normal;
+    background: #FFBFBF;
+    color: #fff;
+    display: none; }
+  .city-selector-btn .city-search-input {
+    float: left;
+    height: 24px;
+    margin: 1px 0px 1px 2px;
+    padding: 0 6px;
+    border: 1px solid transparent;
+    border-radius: 5px;
+    font-size: 14px;
+    line-height: 24px; }
+  .city-selector-btn-center .city-selected-list {
+    display: table !important;
+    margin: 0 auto;
+    min-height: 24px; }
+  .city-selector-btn-center .city-search-input {
+    display: none; }
+
+.city-selector-menu {
+  padding: 0px !important;
+  border: 1px solid #ddd;
+  font-size: 14px;
+  color: #666;
+  background: #fff;
+  box-shadow: 0px 0px 15px #ddd;
+  min-width: 400px; }
+  .csm-header {
+    background: #F9F9F9;
+    border-bottom: 1px solid #ddd; }
+    .csm-header span {
+      display: inline-block;
+      position: relative;
+      bottom: -1px;
+      padding: 6px 6px;
+      line-height: 20px;
+      color: #666;
+      text-decoration: none;
+      cursor: pointer;
+      border-bottom: 1px solid transparent; }
+      .csm-header span.csm-header-active {
+        color: #e6454a;
+        border-bottom-color: #e6454a; }
+        .csm-header span.csm-header-active:hover {
+          border-bottom-color: #e6454a; }
+      .csm-header span:hover {
+        border-bottom-color: #000; }
+  .csm-content {
+    padding: 10px 20px;
+    max-height: 240px;
+    overflow: auto; }
+    .csm-content dl {
+      margin: 0px;
+      padding: 0px;
+      display: none; }
+    .csm-content .csm-content-active {
+      display: block; }
+    .csm-content dt {
+      margin: 0px;
+      padding: 0px;
+      color: #e6454a;
+      font-weight: normal; }
+    .csm-content dd {
+      margin: 0px;
+      padding: 0px; }
+    .csm-content span {
+      display: inline-block;
+      padding: 3px 5px;
+      margin: 1px 1px;
+      cursor: pointer; }
+      .csm-content span:hover {
+        background: #F9F9F9; }
+      .csm-content span.csm-city-active {
+        background: #FFBFBF;
+        color: #fff; }
+  .csm-footer {
+    padding: 10px 20px;
+    font-size: 12px; }
+    .csm-footer .csm-footer-l {
+      float: left;
+      color: #999; }
+    .csm-footer .csm-footer-r {
+      float: right; }
+    .csm-footer .csm-footer-num {
+      float: left;
+      margin: 0px;
+      padding: 0px 20px; }
+      .csm-footer .csm-footer-num span {
+        display: inline-block;
+        padding: 0 2px; }
+      .csm-footer .csm-footer-num span:nth-child(1) {
+        color: #e6454a; }
+    .csm-footer a {
+      float: left;
+      text-decoration: none;
+      color: #e6454a; }
+
+.city-selector-list {
+  margin: 0px;
+  padding: 0px;
+  border: 1px solid #ddd;
+  font-size: 14px;
+  color: #666;
+  background: #fff;
+  max-height: 200px;
+  min-width: 260px;
+  overflow: auto; }
+  .city-selector-list li {
+    list-style: none;
+    padding: 5px 10px;
+    border-bottom: 1px solid #ddd;
+    line-height: 20px;
+    cursor: pointer; }
+    .city-selector-list li:last-child {
+      border: none; }
+    .city-selector-list li.csl-active {
+      border-left: 2px solid #e6454a;
+      background-color: #FAF2F2; }
+      .city-selector-list li.csl-active.csl-current, .city-selector-list li.csl-active:hover {
+        background-color: #FAF2F2; }
+    .city-selector-list li.csl-current, .city-selector-list li:hover {
+      background-color: #F9F9F9; }
+    .city-selector-list li.csl-noData {
+      background-color: #F9F9F9;
+      cursor: text; }
+      .city-selector-list li.csl-noData:hover {
+        border-left: none;
+        background-color: #F9F9F9; }
+      .city-selector-list li.csl-noData span {
+        color: #e6454a; }
+  .city-selector-list .csl-name {
+    float: left; }
+  .city-selector-list .csl-spell {
+    float: right;
+    font-size: 12px;
+    color: #e6454a; }
+
+/*# sourceMappingURL=city_selector.css.map */
