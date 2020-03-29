@@ -1,0 +1,50 @@
+.switch-sort {
+  -moz-box-sizing: border-box;
+  -webkit-box-sizing: border-box;
+  box-sizing: border-box; }
+  .switch-sort *,
+  .switch-sort *:before,
+  .switch-sort *:after {
+    -moz-box-sizing: inherit;
+    -webkit-box-sizing: inherit;
+    box-sizing: inherit; }
+
+.switch-sort {
+  position: relative;
+  padding-right: 20px;
+  height: 30px;
+  text-align: center;
+  line-height: 30px;
+  cursor: pointer; }
+  .switch-sort .showtext {
+    display: inline-block;
+    width: 100%;
+    height: 100%;
+    white-space: nowrap;
+    text-overflow: ellipsis;
+    -o-text-overflow: ellipsis;
+    overflow: hidden;
+    font-size: 15px;
+    cursor: inherit;
+    text-align: center;
+    background: #fff;
+    border: none; }
+
+.switch-icon:after {
+  content: '';
+  position: absolute;
+  top: 50%;
+  margin-top: -9px;
+  right: 10px;
+  width: 6px;
+  height: 19.2px; }
+
+.switch-icon-up:after {
+  background: url("../img/switch_up.png") no-repeat;
+  background-size: contain; }
+
+.switch-icon-down:after {
+  background: url("../img/switch_down.png") no-repeat;
+  background-size: contain; }
+
+/*# sourceMappingURL=switch.css.map */
