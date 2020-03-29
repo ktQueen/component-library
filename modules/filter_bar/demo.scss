@@ -1,0 +1,36 @@
+@import '../../src/scss/reset/reset.scss';
+body {
+    padding: 20px;
+    .filter {
+        float: left;
+        min-width: 100px;
+        max-width: 160px;
+        margin-right: 20px;
+    }
+    .filter-bar {
+        overflow: hidden;
+    }
+    h1 {
+        font-size: 24px;
+        font-weight: bold;
+    }
+    h2 {
+        font-size: 20px;
+    }
+    .form {
+        padding: 20px;
+    }
+    button {
+        padding: 4px 20px;
+        border: none;
+        background: #00adee;
+        color: #fff;
+        margin-right: 10px;
+        margin-top: 10px;
+        border-radius: 5px;
+        cursor: pointer;
+    }
+    input {
+        border: none;
+    }
+}
