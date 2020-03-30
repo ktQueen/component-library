@@ -15,15 +15,15 @@
 ## docs里面是文档说明
 
     API图示
-    ![image-20200329152442666](docs/api-opts.jpg)
-    ![image-20200329152442666](docs/api-methods.jpg)
+![image-20200329152442666](docs/api-opts.jpg)
+![image-20200329152442666](docs/api-methods.jpg)
 
 ## mudules是组件
 
 ####     form组件的设计和实现
-    ![image-20200329152442666](docs/form1.jpg)
-    ![image-20200329152442666](docs/form2.jpg)
-    ![image-20200329152442666](docs/form3.jpg)
+![image-20200329152442666](docs/form1.jpg)
+![image-20200329152442666](docs/form2.jpg)
+![image-20200329152442666](docs/form3.jpg)
 
 ####     组件目录
     calendar日历选择
