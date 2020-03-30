@@ -15,14 +15,19 @@
 ## docs里面是文档说明
 
     API图示
+    配置参数说明图示：
 ![image-20200329152442666](docs/api-opts.jpg)
+    方法使用说明图示：
 ![image-20200329152442666](docs/api-methods.jpg)
 
 ## mudules是组件
 
-####     form组件的设计和实现
+####     组件的设计和实现
+    过滤器和表单组件之间的关联关系
 ![image-20200329152442666](docs/form1.jpg)
+    表单组件的设计
 ![image-20200329152442666](docs/form2.jpg)
+    formDefine的配置数据结构
 ![image-20200329152442666](docs/form3.jpg)
 
 ####     组件目录
